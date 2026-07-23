@@ -9,7 +9,8 @@
         "fr": "Tapas",
         "nl": "Tapas",
         "it": "Tapas",
-        "uk": "Тапас"
+        "uk": "Тапас",
+        "ru": "Тапас"
       },
       "note": {
         "es": "",
@@ -18,7 +19,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -31,7 +33,8 @@
             "fr": "Olives ou chips",
             "nl": "Olijven of chips",
             "it": "Olive o patatine",
-            "uk": "Оливки або чипси"
+            "uk": "Оливки або чипси",
+            "ru": "Оливки или чипсы"
           },
           "d": {
             "es": "Para picar mientras llega el resto.",
@@ -40,7 +43,8 @@
             "fr": "À grignoter en attendant.",
             "nl": "Om te knabbelen terwijl de rest komt.",
             "it": "Per sgranocchiare in attesa del resto.",
-            "uk": "Поки готується решта."
+            "uk": "Поки готується решта.",
+            "ru": "Пока готовится остальное."
           }
         },
         {
@@ -55,7 +59,8 @@
             "fr": "Pain à l'aïoli et tomate",
             "nl": "Brood met aioli en tomaat",
             "it": "Pane con aioli e pomodoro",
-            "uk": "Хліб з айолі та томатом"
+            "uk": "Хліб з айолі та томатом",
+            "ru": "Хлеб с айоли и томатом"
           },
           "d": {
             "es": "Pan tostado, alioli casero y tomate.",
@@ -64,7 +69,8 @@
             "fr": "Pain grillé, aïoli maison et tomate.",
             "nl": "Geroosterd brood, huisgemaakte aioli en tomaat.",
             "it": "Pane tostato, aioli fatto in casa e pomodoro.",
-            "uk": "Тости, домашнє айолі й томат."
+            "uk": "Тости, домашнє айолі й томат.",
+            "ru": "Тосты, домашний айоли и томат."
           }
         },
         {
@@ -80,7 +86,8 @@
             "fr": "Salade russe",
             "nl": "Russische salade",
             "it": "Insalata russa",
-            "uk": "Олів'є"
+            "uk": "Олів'є",
+            "ru": "Оливье"
           },
           "d": {
             "es": "La clásica, con atún y mayonesa.",
@@ -89,7 +96,8 @@
             "fr": "La classique, thon et mayonnaise.",
             "nl": "De klassieker, met tonijn en mayo.",
             "it": "La classica, con tonno e maionese.",
-            "uk": "Класика — з тунцем і майонезом."
+            "uk": "Класика — з тунцем і майонезом.",
+            "ru": "Классика — с тунцом и майонезом."
           }
         },
         {
@@ -102,7 +110,8 @@
             "fr": "Champignons à l'ail",
             "nl": "Knoflookchampignons",
             "it": "Funghi all'aglio",
-            "uk": "Гриби в часнику"
+            "uk": "Гриби в часнику",
+            "ru": "Грибы в чесноке"
           },
           "d": {
             "es": "Salteadas con ajo y aceite de oliva.",
@@ -111,7 +120,8 @@
             "fr": "Sautées à l'ail et huile d'olive.",
             "nl": "Gebakken met knoflook en olijfolie.",
             "it": "Saltati in aglio e olio d'oliva.",
-            "uk": "Смажені з часником та оливковою олією."
+            "uk": "Смажені з часником та оливковою олією.",
+            "ru": "Обжаренные с чесноком и оливковым маслом."
           }
         },
         {
@@ -127,7 +137,8 @@
             "fr": "Nachos au guacamole",
             "nl": "Nacho's met guacamole",
             "it": "Nachos con guacamole",
-            "uk": "Начос з гуакамоле"
+            "uk": "Начос з гуакамоле",
+            "ru": "Начос с гуакамоле"
           },
           "d": {
             "es": "Con guacamole, tomate y cheddar.",
@@ -136,7 +147,8 @@
             "fr": "Guacamole, tomate et cheddar.",
             "nl": "Met guacamole, tomaat en cheddar.",
             "it": "Con guacamole, pomodoro e cheddar.",
-            "uk": "З гуакамоле, томатом і чедером."
+            "uk": "З гуакамоле, томатом і чедером.",
+            "ru": "С гуакамоле, томатом и чеддером."
           },
           "pop": true
         },
@@ -152,7 +164,8 @@
             "fr": "Houmous et gressins",
             "nl": "Hummus met broodstengels",
             "it": "Hummus con grissini",
-            "uk": "Хумус із паличками"
+            "uk": "Хумус із паличками",
+            "ru": "Хумус с хлебными палочками"
           },
           "d": {
             "es": "Hummus de garbanzo con picos de pan.",
@@ -161,7 +174,8 @@
             "fr": "Houmous de pois chiches et gressins.",
             "nl": "Kikkererwtenhummus met broodstengels.",
             "it": "Hummus di ceci con grissini.",
-            "uk": "Хумус із нуту з хлібними паличками."
+            "uk": "Хумус із нуту з хлібними паличками.",
+            "ru": "Хумус из нута с хлебными палочками."
           }
         },
         {
@@ -176,7 +190,8 @@
             "fr": "Tortilla",
             "nl": "Tortilla",
             "it": "Tortilla",
-            "uk": "Тортилья"
+            "uk": "Тортилья",
+            "ru": "Тортилья"
           },
           "d": {
             "es": "Tortilla de patata tradicional.",
@@ -185,7 +200,8 @@
             "fr": "Tortilla de pommes de terre.",
             "nl": "Traditionele aardappelomelet.",
             "it": "Tradizionale frittata di patate spagnola.",
-            "uk": "Традиційна картопляна тортилья."
+            "uk": "Традиційна картопляна тортилья.",
+            "ru": "Традиционный картофельный омлет."
           }
         },
         {
@@ -202,7 +218,8 @@
             "fr": "Croquettes de morue (3 pc)",
             "nl": "Kabeljauwkroketten (3 st.)",
             "it": "Crocchette di baccalà (3 pz)",
-            "uk": "Крокети з тріски (3 шт.)"
+            "uk": "Крокети з тріски (3 шт.)",
+            "ru": "Крокеты из трески (3 шт.)"
           },
           "d": {
             "es": "Cremosas, rebozadas y fritas.",
@@ -211,7 +228,8 @@
             "fr": "Crémeuses, panées et frites.",
             "nl": "Romig, gepaneerd en gebakken.",
             "it": "Cremose, impanate e fritte.",
-            "uk": "Кремові, в паніровці, смажені."
+            "uk": "Кремові, в паніровці, смажені.",
+            "ru": "Кремовые, в панировке, жареные."
           }
         },
         {
@@ -227,7 +245,8 @@
             "fr": "Croquettes de jambon ibérique (3 pc)",
             "nl": "Iberische ham kroketten (3 st.)",
             "it": "Crocchette di prosciutto iberico (3 pz)",
-            "uk": "Крокети з іберійською шинкою (3 шт.)"
+            "uk": "Крокети з іберійською шинкою (3 шт.)",
+            "ru": "Крокеты с иберийским хамоном (3 шт.)"
           },
           "d": {
             "es": "El clásico del bar, cremosas por dentro.",
@@ -236,7 +255,8 @@
             "fr": "Le classique du bar, crémeuses.",
             "nl": "De barklassieker, romig vanbinnen.",
             "it": "Il classico del bar, cremose all'interno.",
-            "uk": "Класика бару, кремові всередині."
+            "uk": "Класика бару, кремові всередині.",
+            "ru": "Классика бара, кремовые внутри."
           },
           "pop": true
         },
@@ -253,7 +273,8 @@
             "fr": "Œufs brouillés mer et terre",
             "nl": "Roerei zee en land",
             "it": "Uova strapazzate mare e terra",
-            "uk": "Яєчня 'море й суша'"
+            "uk": "Яєчня 'море й суша'",
+            "ru": "Яичница «море и суша»"
           },
           "d": {
             "es": "Champiñones, setas, gambas, ajetes y espárragos.",
@@ -262,7 +283,8 @@
             "fr": "Champignons, crevettes, aillets et asperges.",
             "nl": "Champignons, garnalen, knoflookscheuten en asperges.",
             "it": "Funghi champignon, funghi, gamberi, agli teneri e asparagi.",
-            "uk": "Гриби, креветки, часникові паростки, спаржа."
+            "uk": "Гриби, креветки, часникові паростки, спаржа.",
+            "ru": "Шампиньоны, грибы, креветки, чесночные ростки и спаржа."
           }
         },
         {
@@ -277,7 +299,8 @@
             "fr": "Œufs brouillés champignons à l'ail",
             "nl": "Roerei met knoflookchampignons",
             "it": "Uova strapazzate con funghi all'aglio",
-            "uk": "Яєчня з грибами в часнику"
+            "uk": "Яєчня з грибами в часнику",
+            "ru": "Яичница с грибами в чесноке"
           },
           "d": {
             "es": "Huevos revueltos con setas y ajo.",
@@ -286,7 +309,8 @@
             "fr": "Œufs brouillés aux champignons et ail.",
             "nl": "Roerei met champignons en knoflook.",
             "it": "Uova strapazzate con funghi e aglio.",
-            "uk": "Яєчня-бовтанка з грибами й часником."
+            "uk": "Яєчня-бовтанка з грибами й часником.",
+            "ru": "Яичница-болтунья с грибами и чесноком."
           }
         },
         {
@@ -301,7 +325,8 @@
             "fr": "Œufs cassés au jambon",
             "nl": "Gebroken eieren met ham",
             "it": "Uova fritte con prosciutto",
-            "uk": "Яйця з шинкою"
+            "uk": "Яйця з шинкою",
+            "ru": "Яичница с хамоном"
           },
           "d": {
             "es": "Con jamón y patatas fritas.",
@@ -310,7 +335,8 @@
             "fr": "Avec jambon et frites.",
             "nl": "Met ham en friet.",
             "it": "Con prosciutto e patatine fritte.",
-            "uk": "З шинкою та картоплею фрі."
+            "uk": "З шинкою та картоплею фрі.",
+            "ru": "С хамоном и картофелем фри."
           }
         },
         {
@@ -323,7 +349,8 @@
             "fr": "Patatas bravas",
             "nl": "Patatas bravas",
             "it": "Patatas bravas",
-            "uk": "Пататас бравас"
+            "uk": "Пататас бравас",
+            "ru": "Пататас бравас"
           },
           "d": {
             "es": "Con salsa brava picante.",
@@ -332,7 +359,8 @@
             "fr": "Sauce brava épicée.",
             "nl": "Met pittige bravasaus.",
             "it": "Con salsa brava piccante.",
-            "uk": "З гострим соусом брава."
+            "uk": "З гострим соусом брава.",
+            "ru": "С острым соусом брава."
           }
         },
         {
@@ -347,7 +375,8 @@
             "fr": "Chips aux anchois",
             "nl": "Chips met ansjovis",
             "it": "Patatine con acciughe",
-            "uk": "Чипси з анчоусами"
+            "uk": "Чипси з анчоусами",
+            "ru": "Чипсы с анчоусами"
           },
           "d": {
             "es": "Boquerones en vinagre sobre patatas.",
@@ -356,7 +385,8 @@
             "fr": "Anchois au vinaigre sur chips.",
             "nl": "Ansjovis in azijn op chips.",
             "it": "Acciughe marinate all'aceto su patatine.",
-            "uk": "Анчоуси в оцті на чипсах."
+            "uk": "Анчоуси в оцті на чипсах.",
+            "ru": "Анчоусы в уксусе на чипсах."
           }
         },
         {
@@ -371,7 +401,8 @@
             "fr": "Aiguillettes de poulet",
             "nl": "Kiptenders",
             "it": "Bocconcini di pollo",
-            "uk": "Курячі смужки"
+            "uk": "Курячі смужки",
+            "ru": "Куриные полоски"
           },
           "d": {
             "es": "Tiras de pollo rebozadas.",
@@ -380,7 +411,8 @@
             "fr": "Lanières de poulet panées.",
             "nl": "Gepaneerde kipreepjes.",
             "it": "Striscioline di pollo impanate.",
-            "uk": "Курячі смужки в паніровці."
+            "uk": "Курячі смужки в паніровці.",
+            "ru": "Куриные полоски в панировке."
           }
         },
         {
@@ -395,7 +427,8 @@
             "fr": "Tortilla avec salade",
             "nl": "Tortilla met salade",
             "it": "Tortilla con insalata",
-            "uk": "Тортилья із салатом"
+            "uk": "Тортилья із салатом",
+            "ru": "Тортилья с салатом"
           },
           "d": {
             "es": "Tortilla acompañada de ensalada.",
@@ -404,7 +437,8 @@
             "fr": "Tortilla servie avec salade.",
             "nl": "Tortilla geserveerd met salade.",
             "it": "Tortilla servita con insalata.",
-            "uk": "Тортилья в супроводі салату."
+            "uk": "Тортилья в супроводі салату.",
+            "ru": "Тортилья подаётся с салатом."
           }
         },
         {
@@ -417,7 +451,8 @@
             "fr": "Frites",
             "nl": "Friet",
             "it": "Patatine fritte",
-            "uk": "Картопля фрі"
+            "uk": "Картопля фрі",
+            "ru": "Картофель фри"
           },
           "d": {
             "es": "Ración de patatas fritas.",
@@ -426,7 +461,8 @@
             "fr": "Une portion de frites.",
             "nl": "Een portie friet.",
             "it": "Porzione di patatine fritte.",
-            "uk": "Порція картоплі фрі."
+            "uk": "Порція картоплі фрі.",
+            "ru": "Порция картофеля фри."
           }
         }
       ]
@@ -440,7 +476,8 @@
         "fr": "Spécialités à l'ardoise",
         "nl": "Krijtbord-specials",
         "it": "Specialità alla lavagna",
-        "uk": "Фірмові з дошки"
+        "uk": "Фірмові з дошки",
+        "ru": "Фирменные с доски"
       },
       "note": {
         "es": "Nuestras sugerencias del día.",
@@ -449,7 +486,8 @@
         "fr": "Nos suggestions du jour.",
         "nl": "Onze dagsuggesties.",
         "it": "I nostri consigli del giorno.",
-        "uk": "Наші пропозиції дня."
+        "uk": "Наші пропозиції дня.",
+        "ru": "Наши предложения дня."
       },
       "items": [
         {
@@ -465,7 +503,8 @@
             "fr": "Focaccia chorizo ou gorgonzola",
             "nl": "Focaccia met chorizo of gorgonzola",
             "it": "Focaccia al chorizo o gorgonzola",
-            "uk": "Фокача з чорізо або горгонзолою"
+            "uk": "Фокача з чорізо або горгонзолою",
+            "ru": "Фокачча с чорисо или горгонзолой"
           },
           "d": {
             "es": "Con bebida (caña o vino de casa) 5,50 €.",
@@ -474,7 +513,8 @@
             "fr": "Avec boisson (bière ou vin maison) 5,50 €.",
             "nl": "Met drankje (bier of huiswijn) € 5,50.",
             "it": "Con bevanda (birra o vino della casa) 5,50 €.",
-            "uk": "З напоєм (пиво чи домашнє вино) 5,50 €."
+            "uk": "З напоєм (пиво чи домашнє вино) 5,50 €.",
+            "ru": "С напитком (пиво или домашнее вино) 5,50 €."
           }
         },
         {
@@ -489,7 +529,8 @@
             "fr": "Wrap au poulet",
             "nl": "Kipwrap",
             "it": "Wrap di pollo",
-            "uk": "Ролл з куркою"
+            "uk": "Ролл з куркою",
+            "ru": "Ролл с курицей"
           },
           "d": {
             "es": "Lechuga, tomate, cebolla, queso y salsa. Opción vegetariana 6,50 €.",
@@ -498,7 +539,8 @@
             "fr": "Laitue, tomate, oignon, fromage et sauce. Végé 6,50 €.",
             "nl": "Sla, tomaat, ui, kaas en saus. Vega € 6,50.",
             "it": "Lattuga, pomodoro, cipolla, formaggio e salsa. Opzione vegetariana 6,50 €.",
-            "uk": "Салат, томат, цибуля, сир і соус. Вегетар. 6,50 €."
+            "uk": "Салат, томат, цибуля, сир і соус. Вегетар. 6,50 €.",
+            "ru": "Салат, томат, лук, сыр и соус. Вегетарианский вариант 6,50 €."
           }
         },
         {
@@ -514,7 +556,8 @@
             "fr": "Gambas à l'ail",
             "nl": "Knoflookgarnalen",
             "it": "Gamberi all'aglio",
-            "uk": "Креветки в часнику"
+            "uk": "Креветки в часнику",
+            "ru": "Креветки в чесноке"
           },
           "d": {
             "es": "Con pan tostado.",
@@ -523,7 +566,8 @@
             "fr": "Avec pain grillé.",
             "nl": "Met geroosterd brood.",
             "it": "Con pane tostato.",
-            "uk": "З підсмаженим хлібом."
+            "uk": "З підсмаженим хлібом.",
+            "ru": "С поджаренным хлебом."
           },
           "pop": true
         },
@@ -540,7 +584,8 @@
             "fr": "Fettuccine ou penne aux fruits de mer",
             "nl": "Fettuccine of penne met zeevruchten",
             "it": "Fettuccine o penne ai frutti di mare",
-            "uk": "Феттучіні чи пенне з морепродуктами"
+            "uk": "Феттучіні чи пенне з морепродуктами",
+            "ru": "Феттучини или пенне с морепродуктами"
           },
           "d": {
             "es": "Pasta con frutos del mar.",
@@ -549,7 +594,8 @@
             "fr": "Pâtes aux fruits de mer.",
             "nl": "Pasta met zeevruchten.",
             "it": "Pasta con frutti di mare.",
-            "uk": "Паста з морепродуктами."
+            "uk": "Паста з морепродуктами.",
+            "ru": "Паста с морепродуктами."
           }
         },
         {
@@ -565,7 +611,8 @@
             "fr": "Maxi sandwich de calamars",
             "nl": "Maxi calamaris-broodje",
             "it": "Panino maxi ai calamari",
-            "uk": "Максі-сендвіч з кальмарами"
+            "uk": "Максі-сендвіч з кальмарами",
+            "ru": "Макси-сэндвич с кальмарами"
           },
           "d": {
             "es": "Con mayonesa o alioli. Versión normal 5,50 €.",
@@ -574,7 +621,8 @@
             "fr": "Mayo ou aïoli. Version normale 5,50 €.",
             "nl": "Met mayo of aioli. Normaal € 5,50.",
             "it": "Con maionese o aioli. Versione normale 5,50 €.",
-            "uk": "З майонезом чи айолі. Звичайний 5,50 €."
+            "uk": "З майонезом чи айолі. Звичайний 5,50 €.",
+            "ru": "С майонезом или айоли. Обычная порция 5,50 €."
           }
         },
         {
@@ -590,7 +638,8 @@
             "fr": "Penne bolognaise",
             "nl": "Penne bolognese",
             "it": "Penne alla bolognese",
-            "uk": "Пенне болоньєзе"
+            "uk": "Пенне болоньєзе",
+            "ru": "Пенне болоньезе"
           },
           "d": {
             "es": "Casera, con carne.",
@@ -599,7 +648,8 @@
             "fr": "Maison, à la viande.",
             "nl": "Huisgemaakt, met vlees.",
             "it": "Fatta in casa, con carne.",
-            "uk": "Домашня, з м'ясом."
+            "uk": "Домашня, з м'ясом.",
+            "ru": "Домашняя, с мясом."
           }
         },
         {
@@ -614,7 +664,8 @@
             "fr": "Burger à l'œuf bio",
             "nl": "Burger met bio-ei",
             "it": "Hamburger con uovo biologico",
-            "uk": "Бургер з органічним яйцем"
+            "uk": "Бургер з органічним яйцем",
+            "ru": "Бургер с органическим яйцом"
           },
           "d": {
             "es": "Con patatas o ensalada.",
@@ -623,7 +674,8 @@
             "fr": "Avec frites ou salade.",
             "nl": "Met friet of salade.",
             "it": "Con patatine o insalata.",
-            "uk": "З картоплею або салатом."
+            "uk": "З картоплею або салатом.",
+            "ru": "С картофелем или салатом."
           }
         },
         {
@@ -639,7 +691,8 @@
             "fr": "Empanadas argentines maison",
             "nl": "Huisgemaakte Argentijnse empanadas",
             "it": "Empanadas argentine fatte in casa",
-            "uk": "Домашні аргентинські емпанади"
+            "uk": "Домашні аргентинські емпанади",
+            "ru": "Домашние аргентинские эмпанады"
           },
           "d": {
             "es": "Carne, jamón y queso, o pollo.",
@@ -648,7 +701,8 @@
             "fr": "Bœuf, jambon-fromage ou poulet.",
             "nl": "Rund, ham-kaas of kip.",
             "it": "Carne, prosciutto e formaggio, o pollo.",
-            "uk": "М'ясо, шинка з сиром або курка."
+            "uk": "М'ясо, шинка з сиром або курка.",
+            "ru": "Мясо, ветчина с сыром или курица."
           }
         },
         {
@@ -664,7 +718,8 @@
             "fr": "Marinera",
             "nl": "Marinera",
             "it": "Marinera",
-            "uk": "Марінера"
+            "uk": "Марінера",
+            "ru": "Маринера"
           },
           "d": {
             "es": "Con anchoa o boquerón.",
@@ -673,7 +728,8 @@
             "fr": "À l'anchois.",
             "nl": "Met ansjovis.",
             "it": "Con acciuga o alice marinata.",
-            "uk": "З анчоусом."
+            "uk": "З анчоусом.",
+            "ru": "С анчоусом."
           }
         },
         {
@@ -689,7 +745,8 @@
             "fr": "Matrimonio",
             "nl": "Matrimonio",
             "it": "Matrimonio",
-            "uk": "Матрімоніо"
+            "uk": "Матрімоніо",
+            "ru": "Матримонио"
           },
           "d": {
             "es": "Anchoa y boquerón juntos.",
@@ -698,7 +755,8 @@
             "fr": "Anchois et anchois blanc.",
             "nl": "Ansjovis en witte ansjovis.",
             "it": "Acciuga e alice marinata insieme.",
-            "uk": "Анчоус і білий анчоус разом."
+            "uk": "Анчоус і білий анчоус разом.",
+            "ru": "Анчоус и белый анчоус вместе."
           }
         },
         {
@@ -711,7 +769,8 @@
             "fr": "Patatas bravioli",
             "nl": "Patatas bravioli",
             "it": "Patatas bravioli",
-            "uk": "Пататас бравіолі"
+            "uk": "Пататас бравіолі",
+            "ru": "Пататас бравиоли"
           },
           "d": {
             "es": "Con salsa brava y alioli.",
@@ -720,7 +779,8 @@
             "fr": "Sauce brava et aïoli.",
             "nl": "Met bravasaus en aioli.",
             "it": "Con salsa brava e aioli.",
-            "uk": "З соусом брава та айолі."
+            "uk": "З соусом брава та айолі.",
+            "ru": "С соусом брава и айоли."
           }
         },
         {
@@ -735,7 +795,8 @@
             "fr": "Boîte de sardines Ortiz",
             "nl": "Ortiz-sardienenblik",
             "it": "Sardine Ortiz in scatola",
-            "uk": "Сардини Ortiz"
+            "uk": "Сардини Ortiz",
+            "ru": "Сардины Ortiz в банке"
           },
           "d": {
             "es": "En aceite de oliva, con pan tostado.",
@@ -744,7 +805,8 @@
             "fr": "À l'huile d'olive, pain grillé.",
             "nl": "In olijfolie, met geroosterd brood.",
             "it": "Sott'olio d'oliva, con pane tostato.",
-            "uk": "В оливковій олії, з тостами."
+            "uk": "В оливковій олії, з тостами.",
+            "ru": "В оливковом масле, с поджаренным хлебом."
           }
         },
         {
@@ -759,7 +821,8 @@
             "fr": "Gambas cuites",
             "nl": "Gekookte gamba's",
             "it": "Gamberoni lessati",
-            "uk": "Варені королівські креветки"
+            "uk": "Варені королівські креветки",
+            "ru": "Отварные лангустины"
           },
           "d": {
             "es": "Servido en hielo, con alioli.",
@@ -768,7 +831,8 @@
             "fr": "Servi sur glace, avec aïoli.",
             "nl": "Op ijs geserveerd, met aioli.",
             "it": "Serviti su ghiaccio, con aioli.",
-            "uk": "На льоду, з айолі."
+            "uk": "На льоду, з айолі.",
+            "ru": "Подаются на льду, с айоли."
           }
         },
         {
@@ -783,7 +847,8 @@
             "fr": "Gambas grillées",
             "nl": "Gegrilde gamba's",
             "it": "Gamberoni alla piastra",
-            "uk": "Королівські креветки на грилі"
+            "uk": "Королівські креветки на грилі",
+            "ru": "Креветки гриль"
           },
           "d": {
             "es": "A la plancha, al punto de sal.",
@@ -792,7 +857,8 @@
             "fr": "Grillées, légèrement salées.",
             "nl": "Gegrild, licht gezouten.",
             "it": "Alla piastra, leggermente salati.",
-            "uk": "На грилі, з дрібкою солі."
+            "uk": "На грилі, з дрібкою солі.",
+            "ru": "На гриле, слегка подсоленные."
           },
           "pop": true
         },
@@ -809,7 +875,8 @@
             "fr": "Bruschetta serrano",
             "nl": "Serrano bruschetta",
             "it": "Bruschetta serrano",
-            "uk": "Брускета з серрано"
+            "uk": "Брускета з серрано",
+            "ru": "Брускетта серрано"
           },
           "d": {
             "es": "Mozzarella, jamón serrano y rúcula. Versión mozzarella, tomate y albahaca 7,90 €.",
@@ -818,7 +885,8 @@
             "fr": "Mozzarella, jambon serrano et roquette. Version mozzarella-tomate-basilic 7,90 €.",
             "nl": "Mozzarella, serranoham en rucola. Versie mozzarella-tomaat-basilicum € 7,90.",
             "it": "Mozzarella, prosciutto serrano e rucola. Versione mozzarella, pomodoro e basilico 7,90 €.",
-            "uk": "Моцарела, серрано й рукола. Версія моцарела-томат-базилік 7,90 €."
+            "uk": "Моцарела, серрано й рукола. Версія моцарела-томат-базилік 7,90 €.",
+            "ru": "Моцарелла, хамон серрано и руккола. Вариант моцарелла-томат-базилик 7,90 €."
           }
         },
         {
@@ -835,7 +903,8 @@
             "fr": "Quiche",
             "nl": "Quiche",
             "it": "Quiche",
-            "uk": "Кіш"
+            "uk": "Кіш",
+            "ru": "Киш"
           },
           "d": {
             "es": "Con ensalada.",
@@ -844,7 +913,8 @@
             "fr": "Avec salade.",
             "nl": "Met salade.",
             "it": "Con insalata.",
-            "uk": "Із салатом."
+            "uk": "Із салатом.",
+            "ru": "С салатом."
           }
         }
       ]
@@ -858,7 +928,8 @@
         "fr": "Salades",
         "nl": "Salades",
         "it": "Insalate",
-        "uk": "Салати"
+        "uk": "Салати",
+        "ru": "Салаты"
       },
       "note": {
         "es": "",
@@ -867,7 +938,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -880,7 +952,8 @@
             "fr": "Salade verte",
             "nl": "Groene salade",
             "it": "Verde",
-            "uk": "Зелений салат"
+            "uk": "Зелений салат",
+            "ru": "Зелёный"
           },
           "d": {
             "es": "Lechuga y cebolla.",
@@ -889,7 +962,8 @@
             "fr": "Laitue et oignon.",
             "nl": "Sla en ui.",
             "it": "Lattuga e cipolla.",
-            "uk": "Салат і цибуля."
+            "uk": "Салат і цибуля.",
+            "ru": "Салат и лук."
           }
         },
         {
@@ -902,7 +976,8 @@
             "fr": "Salade de tomates",
             "nl": "Tomatensalade",
             "it": "Pomodoro",
-            "uk": "Салат з томатів"
+            "uk": "Салат з томатів",
+            "ru": "Томатный"
           },
           "d": {
             "es": "Tomate y cebolla.",
@@ -911,7 +986,8 @@
             "fr": "Tomate et oignon.",
             "nl": "Tomaat en ui.",
             "it": "Pomodoro e cipolla.",
-            "uk": "Томат і цибуля."
+            "uk": "Томат і цибуля.",
+            "ru": "Томат и лук."
           }
         },
         {
@@ -926,7 +1002,8 @@
             "fr": "Salade mixte",
             "nl": "Gemengde salade",
             "it": "Mista",
-            "uk": "Мішаний салат"
+            "uk": "Мішаний салат",
+            "ru": "Смешанный"
           },
           "d": {
             "es": "Lechuga, tomate y atún.",
@@ -935,7 +1012,8 @@
             "fr": "Laitue, tomate et thon.",
             "nl": "Sla, tomaat en tonijn.",
             "it": "Lattuga, pomodoro e tonno.",
-            "uk": "Салат, томат і тунець."
+            "uk": "Салат, томат і тунець.",
+            "ru": "Салат, томат и тунец."
           }
         },
         {
@@ -950,7 +1028,8 @@
             "fr": "Salade de poulet",
             "nl": "Kipsalade",
             "it": "Pollo",
-            "uk": "Салат з куркою"
+            "uk": "Салат з куркою",
+            "ru": "С курицей"
           },
           "d": {
             "es": "Lechuga, pollo en salsa de nata, setas y cebolla.",
@@ -959,7 +1038,8 @@
             "fr": "Laitue, poulet sauce crème, champignons et oignon.",
             "nl": "Sla, kip in roomsaus, champignons en ui.",
             "it": "Lattuga, pollo in salsa di panna, funghi e cipolla.",
-            "uk": "Салат, курка у вершковому соусі, гриби, цибуля."
+            "uk": "Салат, курка у вершковому соусі, гриби, цибуля.",
+            "ru": "Салат, курица в сливочном соусе, грибы, лук."
           }
         },
         {
@@ -974,7 +1054,8 @@
             "fr": "Salade de saumon",
             "nl": "Zalmsalade",
             "it": "Salmone",
-            "uk": "Салат з лососем"
+            "uk": "Салат з лососем",
+            "ru": "С лососем"
           },
           "d": {
             "es": "Lechuga, aguacate, tomate, cebolla y brotes.",
@@ -983,7 +1064,8 @@
             "fr": "Laitue, avocat, tomate, oignon et pousses.",
             "nl": "Sla, avocado, tomaat, ui en scheuten.",
             "it": "Lattuga, avocado, pomodoro, cipolla e germogli.",
-            "uk": "Салат, авокадо, томат, цибуля, паростки."
+            "uk": "Салат, авокадо, томат, цибуля, паростки.",
+            "ru": "Салат, авокадо, томат, лук, ростки."
           }
         },
         {
@@ -999,7 +1081,8 @@
             "fr": "Salade de chèvre",
             "nl": "Geitenkaassalade",
             "it": "Formaggio di capra",
-            "uk": "Салат з козячим сиром"
+            "uk": "Салат з козячим сиром",
+            "ru": "С козьим сыром"
           },
           "d": {
             "es": "Lechuga, tomate y tostas de queso de cabra fundido.",
@@ -1008,7 +1091,8 @@
             "fr": "Laitue, tomate et toasts de chèvre fondu.",
             "nl": "Sla, tomaat en toast met gesmolten geitenkaas.",
             "it": "Lattuga, pomodoro e crostini di formaggio di capra fuso.",
-            "uk": "Салат, томат і тости з плавленим козячим сиром."
+            "uk": "Салат, томат і тости з плавленим козячим сиром.",
+            "ru": "Салат, томат и тосты с расплавленным козьим сыром."
           }
         },
         {
@@ -1023,7 +1107,8 @@
             "fr": "Salade méditerranéenne",
             "nl": "Mediterrane salade",
             "it": "Mediterranea",
-            "uk": "Середземноморський салат"
+            "uk": "Середземноморський салат",
+            "ru": "Средиземноморский"
           },
           "d": {
             "es": "Lechuga, tomate, mozzarella, serrano y albahaca.",
@@ -1032,7 +1117,8 @@
             "fr": "Laitue, tomate, mozzarella, serrano et basilic.",
             "nl": "Sla, tomaat, mozzarella, serrano en basilicum.",
             "it": "Lattuga, pomodoro, mozzarella, prosciutto serrano e basilico.",
-            "uk": "Салат, томат, моцарела, серрано, базилік."
+            "uk": "Салат, томат, моцарела, серрано, базилік.",
+            "ru": "Салат, томат, моцарелла, серрано и базилик."
           }
         },
         {
@@ -1047,7 +1133,8 @@
             "fr": "Salade Popeye",
             "nl": "Popeye-salade",
             "it": "Popeye",
-            "uk": "Салат Попай"
+            "uk": "Салат Попай",
+            "ru": "Попай"
           },
           "d": {
             "es": "Espinaca, setas, tomate, bacon, huevo revuelto y vinagreta cremosa.",
@@ -1056,7 +1143,8 @@
             "fr": "Épinards, champignons, tomate, bacon, œuf brouillé et vinaigrette crémeuse.",
             "nl": "Spinazie, champignons, tomaat, bacon, roerei en romige vinaigrette.",
             "it": "Spinaci, funghi, pomodoro, bacon, uova strapazzate e vinaigrette cremosa.",
-            "uk": "Шпинат, гриби, томат, бекон, яєчня та кремовий вінегрет."
+            "uk": "Шпинат, гриби, томат, бекон, яєчня та кремовий вінегрет.",
+            "ru": "Шпинат, грибы, томат, бекон, яичница-болтунья и кремовый винегрет."
           }
         }
       ]
@@ -1070,7 +1158,8 @@
         "fr": "Tartines pan cristal",
         "nl": "Pan cristal toasts",
         "it": "Tartine di pane cristal",
-        "uk": "Тости на пан-крісталь"
+        "uk": "Тости на пан-крісталь",
+        "ru": "Тосты на хрустящем хлебе"
       },
       "note": {
         "es": "Acompañadas de ensalada de verdura.",
@@ -1079,7 +1168,8 @@
         "fr": "Servies avec salade verte.",
         "nl": "Geserveerd met groene salade.",
         "it": "Servite con insalata verde.",
-        "uk": "У супроводі овочевого салату."
+        "uk": "У супроводі овочевого салату.",
+        "ru": "Подаются с овощным салатом."
       },
       "items": [
         {
@@ -1096,7 +1186,8 @@
             "fr": "Tartine saumon",
             "nl": "Zalmtoast",
             "it": "Salmone",
-            "uk": "Тост з лососем"
+            "uk": "Тост з лососем",
+            "ru": "С лососем"
           },
           "d": {
             "es": "Salmón, aguacate, queso fresco y guacamole.",
@@ -1105,7 +1196,8 @@
             "fr": "Saumon, avocat, fromage frais et guacamole.",
             "nl": "Zalm, avocado, verse kaas en guacamole.",
             "it": "Salmone, avocado, formaggio fresco e guacamole.",
-            "uk": "Лосось, авокадо, свіжий сир і гуакамоле."
+            "uk": "Лосось, авокадо, свіжий сир і гуакамоле.",
+            "ru": "Лосось, авокадо, свежий сыр и гуакамоле."
           }
         },
         {
@@ -1121,7 +1213,8 @@
             "fr": "Tartine poulet",
             "nl": "Kiptoast",
             "it": "Pollo",
-            "uk": "Тост з куркою"
+            "uk": "Тост з куркою",
+            "ru": "С курицей"
           },
           "d": {
             "es": "Pollo, salsa de nata, setas y cebolla.",
@@ -1130,7 +1223,8 @@
             "fr": "Poulet, sauce crème, champignons et oignon.",
             "nl": "Kip, roomsaus, champignons en ui.",
             "it": "Pollo, salsa di panna, funghi e cipolla.",
-            "uk": "Курка, вершковий соус, гриби, цибуля."
+            "uk": "Курка, вершковий соус, гриби, цибуля.",
+            "ru": "Курица, сливочный соус, грибы и лук."
           }
         },
         {
@@ -1146,7 +1240,8 @@
             "fr": "Tartine ibérique",
             "nl": "Iberische toast",
             "it": "Iberica",
-            "uk": "Іберійський тост"
+            "uk": "Іберійський тост",
+            "ru": "Иберийский"
           },
           "d": {
             "es": "Tomate rallado, jamón serrano y manchego.",
@@ -1155,7 +1250,8 @@
             "fr": "Tomate râpée, jambon serrano et manchego.",
             "nl": "Geraspte tomaat, serranoham en manchego.",
             "it": "Pomodoro grattugiato, prosciutto serrano e manchego.",
-            "uk": "Терті томати, серрано й манчего."
+            "uk": "Терті томати, серрано й манчего.",
+            "ru": "Тёртый томат, хамон серрано и манчего."
           }
         }
       ]
@@ -1169,7 +1265,8 @@
         "fr": "Pâtes",
         "nl": "Pasta",
         "it": "Pasta",
-        "uk": "Паста"
+        "uk": "Паста",
+        "ru": "Паста"
       },
       "note": {
         "es": "",
@@ -1178,7 +1275,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -1194,7 +1292,8 @@
             "fr": "Penne gorgonzola",
             "nl": "Penne gorgonzola",
             "it": "Penne al gorgonzola",
-            "uk": "Пенне горгонзола"
+            "uk": "Пенне горгонзола",
+            "ru": "Пенне горгонзола"
           },
           "d": {
             "es": "En salsa cremosa de queso gorgonzola y champiñones.",
@@ -1203,7 +1302,8 @@
             "fr": "Sauce crémeuse gorgonzola et champignons.",
             "nl": "In romige gorgonzola-champignonsaus.",
             "it": "In salsa cremosa di gorgonzola e funghi champignon.",
-            "uk": "У вершковому соусі з горгонзолою та печерицями."
+            "uk": "У вершковому соусі з горгонзолою та печерицями.",
+            "ru": "В сливочном соусе из сыра горгонзола и шампиньонов."
           }
         },
         {
@@ -1219,7 +1319,8 @@
             "fr": "Penne au poulet",
             "nl": "Penne met kip",
             "it": "Penne al pollo",
-            "uk": "Пенне з куркою"
+            "uk": "Пенне з куркою",
+            "ru": "Пенне с курицей"
           },
           "d": {
             "es": "Pollo, champiñones y cebolla en salsa cremosa de nata.",
@@ -1228,7 +1329,8 @@
             "fr": "Poulet, champignons et oignon, sauce crème.",
             "nl": "Kip, champignons en ui in roomsaus.",
             "it": "Pollo, funghi champignon e cipolla in salsa cremosa di panna.",
-            "uk": "Курка, печериці й цибуля у вершковому соусі."
+            "uk": "Курка, печериці й цибуля у вершковому соусі.",
+            "ru": "Курица, шампиньоны и лук в сливочном соусе."
           }
         }
       ]
@@ -1242,7 +1344,8 @@
         "fr": "Planches",
         "nl": "Plankjes",
         "it": "Taglieri",
-        "uk": "Дошки для компанії"
+        "uk": "Дошки для компанії",
+        "ru": "Доски для компании"
       },
       "note": {
         "es": "Para compartir.",
@@ -1251,7 +1354,8 @@
         "fr": "À partager.",
         "nl": "Om te delen.",
         "it": "Da condividere.",
-        "uk": "Щоб ділитися."
+        "uk": "Щоб ділитися.",
+        "ru": "Чтобы делиться."
       },
       "items": [
         {
@@ -1267,7 +1371,8 @@
             "fr": "Planche de fromages",
             "nl": "Kaasplank",
             "it": "Tagliere di formaggi",
-            "uk": "Сирна дошка"
+            "uk": "Сирна дошка",
+            "ru": "Сырная доска"
           },
           "d": {
             "es": "Manchego, brie, gorgonzola, mozzarella y pan.",
@@ -1276,7 +1381,8 @@
             "fr": "Manchego, brie, gorgonzola, mozzarella et pain.",
             "nl": "Manchego, brie, gorgonzola, mozzarella en brood.",
             "it": "Manchego, brie, gorgonzola, mozzarella e pane.",
-            "uk": "Манчего, брі, горгонзола, моцарела і хліб."
+            "uk": "Манчего, брі, горгонзола, моцарела і хліб.",
+            "ru": "Манчего, бри, горгонзола, моцарелла и хлеб."
           }
         },
         {
@@ -1291,7 +1397,8 @@
             "fr": "Planche de charcuterie",
             "nl": "Vleeswarenplank",
             "it": "Tagliere di salumi",
-            "uk": "М'ясна дошка"
+            "uk": "М'ясна дошка",
+            "ru": "Мясная доска"
           },
           "d": {
             "es": "Jamón, chorizo ibérico, lomo y pan.",
@@ -1300,7 +1407,8 @@
             "fr": "Jambon, chorizo ibérique, longe et pain.",
             "nl": "Ham, Iberische chorizo, lende en brood.",
             "it": "Prosciutto, chorizo iberico, lonza e pane.",
-            "uk": "Шинка, іберійське чорізо, філе й хліб."
+            "uk": "Шинка, іберійське чорізо, філе й хліб.",
+            "ru": "Хамон, иберийское чорисо, ломо и хлеб."
           }
         },
         {
@@ -1315,7 +1423,8 @@
             "fr": "Jambon serrano",
             "nl": "Serranoham",
             "it": "Prosciutto serrano",
-            "uk": "Серрано"
+            "uk": "Серрано",
+            "ru": "Хамон серрано"
           },
           "d": {
             "es": "Queso curado y pan.",
@@ -1324,7 +1433,8 @@
             "fr": "Fromage affiné et pain.",
             "nl": "Belegen kaas en brood.",
             "it": "Formaggio stagionato e pane.",
-            "uk": "Витриманий сир і хліб."
+            "uk": "Витриманий сир і хліб.",
+            "ru": "Выдержанный сыр и хлеб."
           }
         },
         {
@@ -1337,7 +1447,8 @@
             "fr": "Melon au jambon",
             "nl": "Meloen met ham",
             "it": "Melone con prosciutto",
-            "uk": "Диня з шинкою"
+            "uk": "Диня з шинкою",
+            "ru": "Дыня с хамоном"
           },
           "d": {
             "es": "Melón con jamón serrano.",
@@ -1346,7 +1457,8 @@
             "fr": "Melon au jambon serrano.",
             "nl": "Meloen met serranoham.",
             "it": "Melone con prosciutto serrano.",
-            "uk": "Диня з шинкою серрано."
+            "uk": "Диня з шинкою серрано.",
+            "ru": "Дыня с хамоном серрано."
           }
         },
         {
@@ -1364,7 +1476,8 @@
             "fr": "Planche XL",
             "nl": "XL-plank",
             "it": "Tagliere XL",
-            "uk": "Дошка XL"
+            "uk": "Дошка XL",
+            "ru": "Доска XL"
           },
           "d": {
             "es": "Charcutería, queso, queso fresco, salmón, ensaladilla, aguacate y pan.",
@@ -1373,7 +1486,8 @@
             "fr": "Charcuterie, fromage, fromage frais, saumon, salade russe, avocat et pain.",
             "nl": "Vleeswaren, kaas, verse kaas, zalm, Russische salade, avocado en brood.",
             "it": "Salumi, formaggio, formaggio fresco, salmone, insalata russa, avocado e pane.",
-            "uk": "Ковбаси, сир, свіжий сир, лосось, олів'є, авокадо і хліб."
+            "uk": "Ковбаси, сир, свіжий сир, лосось, олів'є, авокадо і хліб.",
+            "ru": "Колбасы, сыр, свежий сыр, лосось, оливье, авокадо и хлеб."
           },
           "pop": true
         }
@@ -1388,7 +1502,8 @@
         "fr": "Sandwichs",
         "nl": "Broodjes",
         "it": "Panini",
-        "uk": "Сендвічі"
+        "uk": "Сендвічі",
+        "ru": "Сэндвичи"
       },
       "note": {
         "es": "",
@@ -1397,7 +1512,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -1413,7 +1529,8 @@
             "fr": "Italien",
             "nl": "Italiaans",
             "it": "Italiano",
-            "uk": "Італійський"
+            "uk": "Італійський",
+            "ru": "Итальянский"
           },
           "d": {
             "es": "Tomate, mozzarella y albahaca.",
@@ -1422,7 +1539,8 @@
             "fr": "Tomate, mozzarella et basilic.",
             "nl": "Tomaat, mozzarella en basilicum.",
             "it": "Pomodoro, mozzarella e basilico.",
-            "uk": "Томат, моцарела і базилік."
+            "uk": "Томат, моцарела і базилік.",
+            "ru": "Томат, моцарелла и базилик."
           }
         },
         {
@@ -1439,7 +1557,8 @@
             "fr": "Thon",
             "nl": "Tonijn",
             "it": "Tonno",
-            "uk": "Тунець"
+            "uk": "Тунець",
+            "ru": "Тунец"
           },
           "d": {
             "es": "Mayonesa, tomate y cebolla.",
@@ -1448,7 +1567,8 @@
             "fr": "Mayo, tomate et oignon.",
             "nl": "Mayo, tomaat en ui.",
             "it": "Maionese, pomodoro e cipolla.",
-            "uk": "Майонез, томат і цибуля."
+            "uk": "Майонез, томат і цибуля.",
+            "ru": "Майонез, томат и лук."
           }
         },
         {
@@ -1464,7 +1584,8 @@
             "fr": "Jambon serrano",
             "nl": "Serranoham",
             "it": "Prosciutto serrano",
-            "uk": "Серрано"
+            "uk": "Серрано",
+            "ru": "Хамон серрано"
           },
           "d": {
             "es": "Tomate rallado y queso.",
@@ -1473,7 +1594,8 @@
             "fr": "Tomate râpée et fromage.",
             "nl": "Geraspte tomaat en kaas.",
             "it": "Pomodoro grattugiato e formaggio.",
-            "uk": "Терті томати і сир."
+            "uk": "Терті томати і сир.",
+            "ru": "Тёртый томат и сыр."
           }
         },
         {
@@ -1489,7 +1611,8 @@
             "fr": "Poulet",
             "nl": "Kip",
             "it": "Pollo",
-            "uk": "Курка"
+            "uk": "Курка",
+            "ru": "Курица"
           },
           "d": {
             "es": "Champiñones, cebolla y salsa de nata.",
@@ -1498,7 +1621,8 @@
             "fr": "Champignons, oignon et sauce crème.",
             "nl": "Champignons, ui en roomsaus.",
             "it": "Funghi champignon, cipolla e salsa di panna.",
-            "uk": "Печериці, цибуля і вершковий соус."
+            "uk": "Печериці, цибуля і вершковий соус.",
+            "ru": "Шампиньоны, лук и сливочный соус."
           }
         },
         {
@@ -1514,7 +1638,8 @@
             "fr": "Tortilla",
             "nl": "Tortilla",
             "it": "Tortilla",
-            "uk": "Тортилья"
+            "uk": "Тортилья",
+            "ru": "Тортилья"
           },
           "d": {
             "es": "Con tomate rallado.",
@@ -1523,7 +1648,8 @@
             "fr": "Avec tomate râpée.",
             "nl": "Met geraspte tomaat.",
             "it": "Con pomodoro grattugiato.",
-            "uk": "З тертим томатом."
+            "uk": "З тертим томатом.",
+            "ru": "С тёртым томатом."
           }
         },
         {
@@ -1538,7 +1664,8 @@
             "fr": "Américain",
             "nl": "Amerikaans",
             "it": "Americano",
-            "uk": "Американський"
+            "uk": "Американський",
+            "ru": "Американский"
           },
           "d": {
             "es": "Hamburguesa, patatas fritas y ketchup.",
@@ -1547,7 +1674,8 @@
             "fr": "Burger, frites et ketchup.",
             "nl": "Burger, friet en ketchup.",
             "it": "Hamburger, patatine fritte e ketchup.",
-            "uk": "Бургер, картопля фрі й кетчуп."
+            "uk": "Бургер, картопля фрі й кетчуп.",
+            "ru": "Бургер, картофель фри и кетчуп."
           }
         },
         {
@@ -1564,7 +1692,8 @@
             "fr": "Saumon",
             "nl": "Zalm",
             "it": "Salmone",
-            "uk": "Лосось"
+            "uk": "Лосось",
+            "ru": "Лосось"
           },
           "d": {
             "es": "Pan integral, aguacate, guacamole y queso fresco.",
@@ -1573,7 +1702,8 @@
             "fr": "Pain complet, avocat, guacamole et fromage frais.",
             "nl": "Volkorenbrood, avocado, guacamole en verse kaas.",
             "it": "Pane integrale, avocado, guacamole e formaggio fresco.",
-            "uk": "Цільнозерновий хліб, авокадо, гуакамоле, свіжий сир."
+            "uk": "Цільнозерновий хліб, авокадо, гуакамоле, свіжий сир.",
+            "ru": "Цельнозерновой хлеб, авокадо, гуакамоле, свежий сыр."
           }
         }
       ]
@@ -1587,7 +1717,8 @@
         "fr": "Burgers",
         "nl": "Burgers",
         "it": "Hamburger",
-        "uk": "Бургери"
+        "uk": "Бургери",
+        "ru": "Бургеры"
       },
       "note": {
         "es": "",
@@ -1596,7 +1727,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -1611,7 +1743,8 @@
             "fr": "Burger végétarien",
             "nl": "Vegaburger",
             "it": "Hamburger vegetariano",
-            "uk": "Вегетаріанський бургер"
+            "uk": "Вегетаріанський бургер",
+            "ru": "Вегетарианский бургер"
           },
           "d": {
             "es": "Hamburguesa vegetal.",
@@ -1620,7 +1753,8 @@
             "fr": "Burger végétal.",
             "nl": "Plantaardige burger.",
             "it": "Hamburger vegetale.",
-            "uk": "Рослинний бургер."
+            "uk": "Рослинний бургер.",
+            "ru": "Растительный бургер."
           }
         },
         {
@@ -1635,7 +1769,8 @@
             "fr": "Burger végé avec frites",
             "nl": "Vegaburger met friet",
             "it": "Hamburger vegetariano con patatine",
-            "uk": "Вегетаріанський бургер з фрі"
+            "uk": "Вегетаріанський бургер з фрі",
+            "ru": "Вегетарианский бургер с картофелем"
           },
           "d": {
             "es": "Con patatas fritas.",
@@ -1644,7 +1779,8 @@
             "fr": "Avec frites.",
             "nl": "Met friet.",
             "it": "Con patatine fritte.",
-            "uk": "З картоплею фрі."
+            "uk": "З картоплею фрі.",
+            "ru": "С картофелем фри."
           }
         },
         {
@@ -1659,7 +1795,8 @@
             "fr": "Burger de bœuf",
             "nl": "Runderburger",
             "it": "Hamburger di manzo",
-            "uk": "Яловичий бургер"
+            "uk": "Яловичий бургер",
+            "ru": "Говяжий бургер"
           },
           "d": {
             "es": "Carne de vacuno.",
@@ -1668,7 +1805,8 @@
             "fr": "Steak haché de bœuf.",
             "nl": "Rundvleesburger.",
             "it": "Polpetta di manzo.",
-            "uk": "Котлета з яловичини."
+            "uk": "Котлета з яловичини.",
+            "ru": "Говяжья котлета."
           },
           "pop": true
         },
@@ -1684,7 +1822,8 @@
             "fr": "Burger de bœuf avec frites",
             "nl": "Runderburger met friet",
             "it": "Hamburger di manzo con patatine",
-            "uk": "Яловичий бургер з фрі"
+            "uk": "Яловичий бургер з фрі",
+            "ru": "Говяжий бургер с картофелем"
           },
           "d": {
             "es": "Con patatas fritas.",
@@ -1693,7 +1832,8 @@
             "fr": "Avec frites.",
             "nl": "Met friet.",
             "it": "Con patatine fritte.",
-            "uk": "З картоплею фрі."
+            "uk": "З картоплею фрі.",
+            "ru": "С картофелем фри."
           }
         }
       ]
@@ -1707,7 +1847,8 @@
         "fr": "Crêpes",
         "nl": "Crêpes",
         "it": "Crêpes",
-        "uk": "Млинці"
+        "uk": "Млинці",
+        "ru": "Блины"
       },
       "note": {
         "es": "",
@@ -1716,7 +1857,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -1733,7 +1875,8 @@
             "fr": "La completa",
             "nl": "La completa",
             "it": "«La completa»",
-            "uk": "Ла комплета"
+            "uk": "Ла комплета",
+            "ru": "«Ла комплета»"
           },
           "d": {
             "es": "Jamón york, huevo y queso.",
@@ -1742,7 +1885,8 @@
             "fr": "Jambon, œuf et fromage.",
             "nl": "Ham, ei en kaas.",
             "it": "Prosciutto cotto, uovo e formaggio.",
-            "uk": "Шинка, яйце і сир."
+            "uk": "Шинка, яйце і сир.",
+            "ru": "Варёная ветчина, яйцо и сыр."
           }
         },
         {
@@ -1760,7 +1904,8 @@
             "fr": "La saumon",
             "nl": "La zalm",
             "it": "«La salmone»",
-            "uk": "Ла лосось"
+            "uk": "Ла лосось",
+            "ru": "«Ла лосось»"
           },
           "d": {
             "es": "Salmón ahumado, guacamole, queso fresco y aguacate.",
@@ -1769,7 +1914,8 @@
             "fr": "Saumon fumé, guacamole, fromage frais et avocat.",
             "nl": "Gerookte zalm, guacamole, verse kaas en avocado.",
             "it": "Salmone affumicato, guacamole, formaggio fresco e avocado.",
-            "uk": "Копчений лосось, гуакамоле, свіжий сир, авокадо."
+            "uk": "Копчений лосось, гуакамоле, свіжий сир, авокадо.",
+            "ru": "Копчёный лосось, гуакамоле, свежий сыр и авокадо."
           }
         },
         {
@@ -1786,7 +1932,8 @@
             "fr": "La campagnarde",
             "nl": "La campesina",
             "it": "«La campesina»",
-            "uk": "Ла кампесіна"
+            "uk": "Ла кампесіна",
+            "ru": "«Ла кампесина»"
           },
           "d": {
             "es": "Pollo, setas, nata y cebolla.",
@@ -1795,7 +1942,8 @@
             "fr": "Poulet, champignons, crème et oignon.",
             "nl": "Kip, champignons, room en ui.",
             "it": "Pollo, funghi, panna e cipolla.",
-            "uk": "Курка, гриби, вершки й цибуля."
+            "uk": "Курка, гриби, вершки й цибуля.",
+            "ru": "Курица, грибы, сливки и лук."
           }
         },
         {
@@ -1812,7 +1960,8 @@
             "fr": "La carlitos",
             "nl": "La carlitos",
             "it": "«La carlitos»",
-            "uk": "Ла карлітос"
+            "uk": "Ла карлітос",
+            "ru": "«Ла карлитос»"
           },
           "d": {
             "es": "Mozzarella, tomate y aceite de albahaca.",
@@ -1821,7 +1970,8 @@
             "fr": "Mozzarella, tomate et huile de basilic.",
             "nl": "Mozzarella, tomaat en basilicumolie.",
             "it": "Mozzarella, pomodoro e olio al basilico.",
-            "uk": "Моцарела, томат і базилікова олія."
+            "uk": "Моцарела, томат і базилікова олія.",
+            "ru": "Моцарелла, томат и базиликовое масло."
           }
         },
         {
@@ -1837,7 +1987,8 @@
             "fr": "Crêpe au sucre",
             "nl": "Suikercrêpe",
             "it": "Crêpe allo zucchero",
-            "uk": "Млинець із цукром"
+            "uk": "Млинець із цукром",
+            "ru": "Блин с сахаром"
           },
           "d": {
             "es": "Sencilla, con azúcar.",
@@ -1846,7 +1997,8 @@
             "fr": "Simple, au sucre.",
             "nl": "Eenvoudig, met suiker.",
             "it": "Semplice, con zucchero.",
-            "uk": "Простий, із цукром."
+            "uk": "Простий, із цукром.",
+            "ru": "Простой, с сахаром."
           }
         },
         {
@@ -1864,7 +2016,8 @@
             "fr": "Crêpe Nutella",
             "nl": "Nutella-crêpe",
             "it": "Crêpe alla Nutella",
-            "uk": "Млинець з Нутеллою"
+            "uk": "Млинець з Нутеллою",
+            "ru": "Блин с Nutella"
           },
           "d": {
             "es": "Con crema de avellanas y cacao.",
@@ -1873,7 +2026,8 @@
             "fr": "À la pâte noisette-cacao.",
             "nl": "Met hazelnoot-cacaopasta.",
             "it": "Con crema di nocciole e cacao.",
-            "uk": "З горіхово-какао пастою."
+            "uk": "З горіхово-какао пастою.",
+            "ru": "С ореховым какао-кремом."
           }
         },
         {
@@ -1890,7 +2044,8 @@
             "fr": "Crêpe dulce de leche",
             "nl": "Dulce de leche-crêpe",
             "it": "Crêpe al dulce de leche",
-            "uk": "Млинець з дульсе де лече"
+            "uk": "Млинець з дульсе де лече",
+            "ru": "Блин с дульсе де лече"
           },
           "d": {
             "es": "Con dulce de leche.",
@@ -1899,7 +2054,8 @@
             "fr": "Au dulce de leche.",
             "nl": "Met dulce de leche.",
             "it": "Con dulce de leche.",
-            "uk": "З вареним згущеним молоком."
+            "uk": "З вареним згущеним молоком.",
+            "ru": "С варёным сгущённым молоком."
           }
         },
         {
@@ -1916,7 +2072,8 @@
             "fr": "Crêpe chocolat-banane",
             "nl": "Chocolade-banaan-crêpe",
             "it": "Crêpe al cioccolato e banana",
-            "uk": "Млинець з шоколадом і бананом"
+            "uk": "Млинець з шоколадом і бананом",
+            "ru": "Блин с шоколадом и бананом"
           },
           "d": {
             "es": "Chocolate y plátano.",
@@ -1925,7 +2082,8 @@
             "fr": "Chocolat et banane.",
             "nl": "Chocolade en banaan.",
             "it": "Cioccolato e banana.",
-            "uk": "Шоколад і банан."
+            "uk": "Шоколад і банан.",
+            "ru": "Шоколад и банан."
           }
         },
         {
@@ -1942,7 +2100,8 @@
             "fr": "Crêpe glace et chantilly",
             "nl": "Crêpe met ijs en slagroom",
             "it": "Crêpe con gelato e panna",
-            "uk": "Млинець з морозивом і вершками"
+            "uk": "Млинець з морозивом і вершками",
+            "ru": "Блин с мороженым и сливками"
           },
           "d": {
             "es": "Helado con nata.",
@@ -1951,7 +2110,8 @@
             "fr": "Glace et chantilly.",
             "nl": "IJs met slagroom.",
             "it": "Gelato con panna.",
-            "uk": "Морозиво з вершками."
+            "uk": "Морозиво з вершками.",
+            "ru": "Мороженое со сливками."
           }
         }
       ]
@@ -1965,7 +2125,8 @@
         "fr": "Desserts & glaces",
         "nl": "Desserts & ijs",
         "it": "Dessert e gelati",
-        "uk": "Десерти й морозиво"
+        "uk": "Десерти й морозиво",
+        "ru": "Десерты и мороженое"
       },
       "note": {
         "es": "",
@@ -1974,7 +2135,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -1987,7 +2149,8 @@
             "fr": "Assiette de fruits frais",
             "nl": "Vers fruitbord",
             "it": "Piatto di frutta fresca",
-            "uk": "Тарілка свіжих фруктів"
+            "uk": "Тарілка свіжих фруктів",
+            "ru": "Тарелка свежих фруктов"
           },
           "d": {
             "es": "Selección de fruta de temporada.",
@@ -1996,7 +2159,8 @@
             "fr": "Sélection de fruits de saison.",
             "nl": "Selectie van seizoensfruit.",
             "it": "Selezione di frutta di stagione.",
-            "uk": "Добірка сезонних фруктів."
+            "uk": "Добірка сезонних фруктів.",
+            "ru": "Подборка сезонных фруктов."
           }
         },
         {
@@ -2013,7 +2177,8 @@
             "fr": "Banana split",
             "nl": "Bananasplit",
             "it": "Banana split",
-            "uk": "Банана спліт"
+            "uk": "Банана спліт",
+            "ru": "Банана сплит"
           },
           "d": {
             "es": "Plátano, helado y nata.",
@@ -2022,7 +2187,8 @@
             "fr": "Banane, glace et chantilly.",
             "nl": "Banaan, ijs en slagroom.",
             "it": "Banana, gelato e panna.",
-            "uk": "Банан, морозиво і вершки."
+            "uk": "Банан, морозиво і вершки.",
+            "ru": "Банан, мороженое и сливки."
           }
         },
         {
@@ -2038,7 +2204,8 @@
             "fr": "Café liégeois",
             "nl": "Café liégeois",
             "it": "Café liégeois",
-            "uk": "Кава ліжуа"
+            "uk": "Кава ліжуа",
+            "ru": "Кафе льежуа"
           },
           "d": {
             "es": "Café, helado de café y nata.",
@@ -2047,7 +2214,8 @@
             "fr": "Café, glace café et chantilly.",
             "nl": "Koffie, koffie-ijs en slagroom.",
             "it": "Caffè, gelato al caffè e panna.",
-            "uk": "Кава, кавове морозиво і вершки."
+            "uk": "Кава, кавове морозиво і вершки.",
+            "ru": "Кофе, кофейное мороженое и сливки."
           }
         },
         {
@@ -2063,7 +2231,8 @@
             "fr": "Chocolat liégeois",
             "nl": "Chocolat liégeois",
             "it": "Chocolat liégeois",
-            "uk": "Шоколад ліжуа"
+            "uk": "Шоколад ліжуа",
+            "ru": "Шоколад льежуа"
           },
           "d": {
             "es": "Chocolate, helado y nata.",
@@ -2072,7 +2241,8 @@
             "fr": "Chocolat, glace et chantilly.",
             "nl": "Chocolade, ijs en slagroom.",
             "it": "Cioccolato, gelato e panna.",
-            "uk": "Шоколад, морозиво і вершки."
+            "uk": "Шоколад, морозиво і вершки.",
+            "ru": "Шоколад, мороженое и сливки."
           }
         },
         {
@@ -2088,7 +2258,8 @@
             "fr": "Dame blanche",
             "nl": "Dame blanche",
             "it": "Dame blanche",
-            "uk": "Дам бланш"
+            "uk": "Дам бланш",
+            "ru": "Дам бланш"
           },
           "d": {
             "es": "Helado de vainilla con chocolate caliente y nata.",
@@ -2097,7 +2268,8 @@
             "fr": "Glace vanille, chocolat chaud et chantilly.",
             "nl": "Vanille-ijs met warme chocolade en slagroom.",
             "it": "Gelato alla vaniglia con cioccolato caldo e panna.",
-            "uk": "Ванільне морозиво з гарячим шоколадом і вершками."
+            "uk": "Ванільне морозиво з гарячим шоколадом і вершками.",
+            "ru": "Ванильное мороженое с горячим шоколадом и сливками."
           }
         },
         {
@@ -2113,7 +2285,8 @@
             "fr": "Glace (1 boule)",
             "nl": "IJs (1 bol)",
             "it": "Gelato (1 pallina)",
-            "uk": "Морозиво (1 кулька)"
+            "uk": "Морозиво (1 кулька)",
+            "ru": "Мороженое (1 шарик)"
           },
           "d": {
             "es": "Ver sabores. 2 bolas 3,50 € · 3 bolas 4,50 €.",
@@ -2122,7 +2295,8 @@
             "fr": "Voir parfums. 2 boules 3,50 € · 3 boules 4,50 €.",
             "nl": "Zie smaken. 2 bollen € 3,50 · 3 bollen € 4,50.",
             "it": "Vedi i gusti. 2 palline 3,50 € · 3 palline 4,50 €.",
-            "uk": "Смаки на дошці. 2 кульки 3,50 € · 3 кульки 4,50 €."
+            "uk": "Смаки на дошці. 2 кульки 3,50 € · 3 кульки 4,50 €.",
+            "ru": "Вкусы на доске. 2 шарика 3,50 € · 3 шарика 4,50 €."
           }
         }
       ]
@@ -2136,7 +2310,8 @@
         "fr": "Milkshakes, granités & jus",
         "nl": "Shakes, slush & sappen",
         "it": "Frullati, granite e succhi",
-        "uk": "Шейки, гранізадо й соки"
+        "uk": "Шейки, гранізадо й соки",
+        "ru": "Шейки, гранизадо и соки"
       },
       "note": {
         "es": "",
@@ -2145,7 +2320,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -2158,7 +2334,8 @@
             "fr": "Granité",
             "nl": "Granita",
             "it": "Granita",
-            "uk": "Гранізадо"
+            "uk": "Гранізадо",
+            "ru": "Гранизадо"
           },
           "d": {
             "es": "Limón, fresa, mango o café.",
@@ -2167,7 +2344,8 @@
             "fr": "Citron, fraise, mangue ou café.",
             "nl": "Citroen, aardbei, mango of koffie.",
             "it": "Limone, fragola, mango o caffè.",
-            "uk": "Лимон, полуниця, манго чи кава."
+            "uk": "Лимон, полуниця, манго чи кава.",
+            "ru": "Лимон, клубника, манго или кофе."
           }
         },
         {
@@ -2182,7 +2360,8 @@
             "fr": "Blanco y negro",
             "nl": "Blanco y negro",
             "it": "«Blanco y negro»",
-            "uk": "Бланко і неґро"
+            "uk": "Бланко і неґро",
+            "ru": "«Бланко и негро»"
           },
           "d": {
             "es": "Granizado de café con una bola de helado.",
@@ -2191,7 +2370,8 @@
             "fr": "Granité de café avec une boule de glace.",
             "nl": "Koffieslush met een bol ijs.",
             "it": "Granita di caffè con una pallina di gelato.",
-            "uk": "Кавове гранізадо з кулькою морозива."
+            "uk": "Кавове гранізадо з кулькою морозива.",
+            "ru": "Кофейное гранизадо с шариком мороженого."
           }
         },
         {
@@ -2204,7 +2384,8 @@
             "fr": "Smoothie",
             "nl": "Smoothie",
             "it": "Smoothie",
-            "uk": "Смузі"
+            "uk": "Смузі",
+            "ru": "Смузи"
           },
           "d": {
             "es": "Fresa, frutos rojos, mango o arándanos.",
@@ -2213,7 +2394,8 @@
             "fr": "Fraise, fruits rouges, mangue ou myrtille.",
             "nl": "Aardbei, rode vruchten, mango of bosbes.",
             "it": "Fragola, frutti di bosco, mango o mirtilli.",
-            "uk": "Полуниця, червоні ягоди, манго чи чорниця."
+            "uk": "Полуниця, червоні ягоди, манго чи чорниця.",
+            "ru": "Клубника, красные ягоды, манго или черника."
           }
         },
         {
@@ -2226,7 +2408,8 @@
             "fr": "Jus multivitaminé",
             "nl": "Multivitaminesap",
             "it": "Succo multivitaminico",
-            "uk": "Мультивітамінний сік"
+            "uk": "Мультивітамінний сік",
+            "ru": "Мультивитаминный сок"
           },
           "d": {
             "es": "Zumo natural de frutas.",
@@ -2235,7 +2418,8 @@
             "fr": "Jus de fruits naturel.",
             "nl": "Natuurlijk vruchtensap.",
             "it": "Succo di frutta naturale.",
-            "uk": "Натуральний фруктовий сік."
+            "uk": "Натуральний фруктовий сік.",
+            "ru": "Натуральный фруктовый сок."
           }
         },
         {
@@ -2250,7 +2434,8 @@
             "fr": "Milkshake",
             "nl": "Milkshake",
             "it": "Milkshake",
-            "uk": "Мілкшейк"
+            "uk": "Мілкшейк",
+            "ru": "Милкшейк"
           },
           "d": {
             "es": "Fresa, chocolate, vainilla, cookies, turrón o dulce de leche. Leche animal o vegetal.",
@@ -2259,7 +2444,8 @@
             "fr": "Fraise, chocolat, vanille, cookies, turrón ou dulce de leche. Lait animal ou végétal.",
             "nl": "Aardbei, chocolade, vanille, koekjes, turrón of dulce de leche. Dierlijke of plantaardige melk.",
             "it": "Fragola, cioccolato, vaniglia, biscotti, torrone o dulce de leche. Latte animale o vegetale.",
-            "uk": "Полуниця, шоколад, ваніль, печиво, туррон чи дульсе де лече. Тваринне або рослинне молоко."
+            "uk": "Полуниця, шоколад, ваніль, печиво, туррон чи дульсе де лече. Тваринне або рослинне молоко.",
+            "ru": "Клубника, шоколад, ваниль, печенье, туррон или дульсе де лече. Молоко животное или растительное."
           }
         },
         {
@@ -2272,7 +2458,8 @@
             "fr": "Horchata",
             "nl": "Horchata",
             "it": "Horchata",
-            "uk": "Орчата"
+            "uk": "Орчата",
+            "ru": "Орчата"
           },
           "d": {
             "es": "Bebida de chufa, bien fría.",
@@ -2281,7 +2468,8 @@
             "fr": "Boisson de souchet, bien fraîche.",
             "nl": "Verfrissende chufadrank.",
             "it": "Bevanda di chufa, ben fredda.",
-            "uk": "Прохолодний напій із чуфи."
+            "uk": "Прохолодний напій із чуфи.",
+            "ru": "Напиток из чуфы, хорошо охлаждённый."
           }
         }
       ]
@@ -2295,7 +2483,8 @@
         "fr": "Boissons",
         "nl": "Dranken",
         "it": "Bevande",
-        "uk": "Напої"
+        "uk": "Напої",
+        "ru": "Напитки"
       },
       "note": {
         "es": "",
@@ -2304,7 +2493,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -2317,7 +2507,8 @@
             "fr": "Eau",
             "nl": "Water",
             "it": "Acqua",
-            "uk": "Вода"
+            "uk": "Вода",
+            "ru": "Вода"
           },
           "d": {
             "es": "Pequeña 1,70 € · grande 2,50 € · con gas 2,30 €.",
@@ -2326,7 +2517,8 @@
             "fr": "Petite 1,70 € · grande 2,50 € · gazeuse 2,30 €.",
             "nl": "Klein € 1,70 · groot € 2,50 · bruisend € 2,30.",
             "it": "Piccola 1,70 € · grande 2,50 € · frizzante 2,30 €.",
-            "uk": "Мала 1,70 € · велика 2,50 € · газована 2,30 €."
+            "uk": "Мала 1,70 € · велика 2,50 € · газована 2,30 €.",
+            "ru": "Маленькая 1,70 € · большая 2,50 € · газированная 2,30 €."
           }
         },
         {
@@ -2339,7 +2531,8 @@
             "fr": "Sodas",
             "nl": "Frisdranken",
             "it": "Bibite",
-            "uk": "Безалкогольні"
+            "uk": "Безалкогольні",
+            "ru": "Безалкогольные напитки"
           },
           "d": {
             "es": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tónica.",
@@ -2348,7 +2541,8 @@
             "fr": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tonic.",
             "nl": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tonic.",
             "it": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tonica.",
-            "uk": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, тонік."
+            "uk": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, тонік.",
+            "ru": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, тоник."
           }
         },
         {
@@ -2361,7 +2555,8 @@
             "fr": "Red Bull",
             "nl": "Red Bull",
             "it": "Red Bull",
-            "uk": "Red Bull"
+            "uk": "Red Bull",
+            "ru": "Red Bull"
           },
           "d": {
             "es": "Bebida energética.",
@@ -2370,7 +2565,8 @@
             "fr": "Boisson énergisante.",
             "nl": "Energiedrank.",
             "it": "Bevanda energetica.",
-            "uk": "Енергетик."
+            "uk": "Енергетик.",
+            "ru": "Энергетический напиток."
           }
         },
         {
@@ -2385,7 +2581,8 @@
             "fr": "Demi",
             "nl": "Klein bier",
             "it": "Birra piccola",
-            "uk": "Мале пиво"
+            "uk": "Мале пиво",
+            "ru": "Малое пиво"
           },
           "d": {
             "es": "Cerveza de barril. Pinta 4,40 €.",
@@ -2394,7 +2591,8 @@
             "fr": "Bière pression. Pinte 4,40 €.",
             "nl": "Bier van het vat. Pint € 4,40.",
             "it": "Birra alla spina. Pinta 4,40 €.",
-            "uk": "Розливне пиво. Пінта 4,40 €."
+            "uk": "Розливне пиво. Пінта 4,40 €.",
+            "ru": "Разливное пиво. Пинта 4,40 €."
           }
         },
         {
@@ -2409,7 +2607,8 @@
             "fr": "Bière bouteille",
             "nl": "Flesbier",
             "it": "Birra in bottiglia",
-            "uk": "Пиво пляшкове"
+            "uk": "Пиво пляшкове",
+            "ru": "Пиво в бутылке"
           },
           "d": {
             "es": "Mahou, sin alcohol, tostada o sin gluten. Alhambra, Corona, IPA, Paulaner o Leffe hasta 4,50 €.",
@@ -2418,7 +2617,8 @@
             "fr": "Mahou, sans alcool, tostada ou sans gluten. Alhambra, Corona, IPA, Paulaner ou Leffe jusqu'à 4,50 €.",
             "nl": "Mahou, alcoholvrij, tostada of glutenvrij. Alhambra, Corona, IPA, Paulaner of Leffe tot € 4,50.",
             "it": "Mahou, analcolica, tostada o senza glutine. Alhambra, Corona, IPA, Paulaner o Leffe fino a 4,50 €.",
-            "uk": "Mahou, безалкогольне, тостада чи безглютенове. Alhambra, Corona, IPA, Paulaner чи Leffe до 4,50 €."
+            "uk": "Mahou, безалкогольне, тостада чи безглютенове. Alhambra, Corona, IPA, Paulaner чи Leffe до 4,50 €.",
+            "ru": "Mahou, безалкогольное, тостада или безглютеновое. Alhambra, Corona, IPA, Paulaner или Leffe до 4,50 €."
           }
         },
         {
@@ -2433,7 +2633,8 @@
             "fr": "Vin maison",
             "nl": "Huiswijn",
             "it": "Vino della casa",
-            "uk": "Домашнє вино"
+            "uk": "Домашнє вино",
+            "ru": "Домашнее вино"
           },
           "d": {
             "es": "Tinto, blanco o rosado. Copa 3,00 € · botella desde 15,00 €.",
@@ -2442,7 +2643,8 @@
             "fr": "Rouge, blanc ou rosé. Verre 3,00 € · bouteille dès 15,00 €.",
             "nl": "Rood, wit of rosé. Glas € 3,00 · fles vanaf € 15,00.",
             "it": "Rosso, bianco o rosato. Calice 3,00 € · bottiglia da 15,00 €.",
-            "uk": "Червоне, біле чи рожеве. Келих 3,00 € · пляшка від 15,00 €."
+            "uk": "Червоне, біле чи рожеве. Келих 3,00 € · пляшка від 15,00 €.",
+            "ru": "Красное, белое или розовое. Бокал 3,00 € · бутылка от 15,00 €."
           }
         },
         {
@@ -2457,7 +2659,8 @@
             "fr": "Tinto de verano",
             "nl": "Tinto de verano",
             "it": "Tinto de verano",
-            "uk": "Тінто де верано"
+            "uk": "Тінто де верано",
+            "ru": "Тинто де верано"
           },
           "d": {
             "es": "Vino tinto con gaseosa.",
@@ -2466,7 +2669,8 @@
             "fr": "Vin rouge et limonade.",
             "nl": "Rode wijn met limonade.",
             "it": "Vino rosso con gassosa.",
-            "uk": "Червоне вино з лимонадом."
+            "uk": "Червоне вино з лимонадом.",
+            "ru": "Красное вино с газировкой."
           }
         },
         {
@@ -2481,7 +2685,8 @@
             "fr": "Sangria",
             "nl": "Sangria",
             "it": "Sangria",
-            "uk": "Сангрія"
+            "uk": "Сангрія",
+            "ru": "Сангрия"
           },
           "d": {
             "es": "La de siempre, por copa o jarra.",
@@ -2490,7 +2695,8 @@
             "fr": "La classique, au verre ou en pichet.",
             "nl": "De klassieker, per glas of kan.",
             "it": "La classica, al calice o in caraffa.",
-            "uk": "Класика, келих або глек."
+            "uk": "Класика, келих або глек.",
+            "ru": "Классика, бокал или кувшин."
           }
         },
         {
@@ -2503,7 +2709,8 @@
             "fr": "Gin",
             "nl": "Gin",
             "it": "Gin",
-            "uk": "Джин"
+            "uk": "Джин",
+            "ru": "Джин"
           },
           "d": {
             "es": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias o Martin Miller's.",
@@ -2512,7 +2719,8 @@
             "fr": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias ou Martin Miller's.",
             "nl": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias of Martin Miller's.",
             "it": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias o Martin Miller's.",
-            "uk": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias чи Martin Miller's."
+            "uk": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias чи Martin Miller's.",
+            "ru": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias или Martin Miller's."
           }
         },
         {
@@ -2525,7 +2733,8 @@
             "fr": "Rhum",
             "nl": "Rum",
             "it": "Rum",
-            "uk": "Ром"
+            "uk": "Ром",
+            "ru": "Ром"
           },
           "d": {
             "es": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem o Zacapa.",
@@ -2534,7 +2743,8 @@
             "fr": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem ou Zacapa.",
             "nl": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem of Zacapa.",
             "it": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem o Zacapa.",
-            "uk": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem чи Zacapa."
+            "uk": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem чи Zacapa.",
+            "ru": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem или Zacapa."
           }
         },
         {
@@ -2547,7 +2757,8 @@
             "fr": "Whisky",
             "nl": "Whisky",
             "it": "Whisky",
-            "uk": "Віскі"
+            "uk": "Віскі",
+            "ru": "Виски"
           },
           "d": {
             "es": "J&B, Jameson, Johnnie Walker, Ballantine's o Cardhu.",
@@ -2556,7 +2767,8 @@
             "fr": "J&B, Jameson, Johnnie Walker, Ballantine's ou Cardhu.",
             "nl": "J&B, Jameson, Johnnie Walker, Ballantine's of Cardhu.",
             "it": "J&B, Jameson, Johnnie Walker, Ballantine's o Cardhu.",
-            "uk": "J&B, Jameson, Johnnie Walker, Ballantine's чи Cardhu."
+            "uk": "J&B, Jameson, Johnnie Walker, Ballantine's чи Cardhu.",
+            "ru": "J&B, Jameson, Johnnie Walker, Ballantine's или Cardhu."
           }
         },
         {
@@ -2569,7 +2781,8 @@
             "fr": "Liqueurs",
             "nl": "Likeuren",
             "it": "Liquori",
-            "uk": "Лікери"
+            "uk": "Лікери",
+            "ru": "Ликёры"
           },
           "d": {
             "es": "Martini, brandy, Bailey's, Ricard, orujo, limoncello o chupito.",
@@ -2578,7 +2791,8 @@
             "fr": "Martini, brandy, Bailey's, Ricard, orujo, limoncello ou shot.",
             "nl": "Martini, brandy, Bailey's, Ricard, orujo, limoncello of shotje.",
             "it": "Martini, brandy, Bailey's, Ricard, orujo, limoncello o shottino.",
-            "uk": "Martini, бренді, Bailey's, Ricard, орухо, лімончело чи чарка."
+            "uk": "Martini, бренді, Bailey's, Ricard, орухо, лімончело чи чарка.",
+            "ru": "Martini, бренди, Bailey's, Ricard, оруху, лимончелло или рюмка на выбор."
           }
         }
       ]
@@ -2592,7 +2806,8 @@
         "fr": "Cocktails",
         "nl": "Cocktails",
         "it": "Cocktail",
-        "uk": "Коктейлі"
+        "uk": "Коктейлі",
+        "ru": "Коктейли"
       },
       "note": {
         "es": "",
@@ -2601,7 +2816,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -2614,7 +2830,8 @@
             "fr": "Sex on the Beach",
             "nl": "Sex on the Beach",
             "it": "Sex on the Beach",
-            "uk": "Sex on the Beach"
+            "uk": "Sex on the Beach",
+            "ru": "Sex on the Beach"
           },
           "d": {
             "es": "Vodka, melocotón y frutas.",
@@ -2623,7 +2840,8 @@
             "fr": "Vodka, pêche et fruits.",
             "nl": "Wodka, perzik en fruit.",
             "it": "Vodka, pesca e frutta.",
-            "uk": "Горілка, персик і фрукти."
+            "uk": "Горілка, персик і фрукти.",
+            "ru": "Водка, персик и фрукты."
           }
         },
         {
@@ -2636,7 +2854,8 @@
             "fr": "Mojito",
             "nl": "Mojito",
             "it": "Mojito",
-            "uk": "Мохіто"
+            "uk": "Мохіто",
+            "ru": "Мохито"
           },
           "d": {
             "es": "Con ron, lima y menta. Sin alcohol 3,80 €.",
@@ -2645,7 +2864,8 @@
             "fr": "Rhum, citron vert et menthe. Sans alcool 3,80 €.",
             "nl": "Met rum, limoen en munt. Alcoholvrij € 3,80.",
             "it": "Con rum, lime e menta. Analcolico 3,80 €.",
-            "uk": "З ромом, лаймом і м'ятою. Безалкогольний 3,80 €."
+            "uk": "З ромом, лаймом і м'ятою. Безалкогольний 3,80 €.",
+            "ru": "С ромом, лаймом и мятой. Безалкогольный 3,80 €."
           },
           "pop": true
         },
@@ -2659,7 +2879,8 @@
             "fr": "Aperol Spritz",
             "nl": "Aperol Spritz",
             "it": "Aperol Spritz",
-            "uk": "Апероль Шпріц"
+            "uk": "Апероль Шпріц",
+            "ru": "Апероль Шприц"
           },
           "d": {
             "es": "Aperol, cava y soda.",
@@ -2668,7 +2889,8 @@
             "fr": "Aperol, cava et soda.",
             "nl": "Aperol, cava en soda.",
             "it": "Aperol, cava e soda.",
-            "uk": "Апероль, кава і сода."
+            "uk": "Апероль, кава і сода.",
+            "ru": "Апероль, кава и содовая."
           }
         },
         {
@@ -2684,7 +2906,8 @@
             "fr": "Piña colada",
             "nl": "Piña colada",
             "it": "Piña colada",
-            "uk": "Піна колада"
+            "uk": "Піна колада",
+            "ru": "Пина колада"
           },
           "d": {
             "es": "Ron, piña y coco.",
@@ -2693,7 +2916,8 @@
             "fr": "Rhum, ananas et coco.",
             "nl": "Rum, ananas en kokos.",
             "it": "Rum, ananas e cocco.",
-            "uk": "Ром, ананас і кокос."
+            "uk": "Ром, ананас і кокос.",
+            "ru": "Ром, ананас и кокос."
           }
         },
         {
@@ -2706,7 +2930,8 @@
             "fr": "Negroni",
             "nl": "Negroni",
             "it": "Negroni",
-            "uk": "Негроні"
+            "uk": "Негроні",
+            "ru": "Негрони"
           },
           "d": {
             "es": "Ginebra, Campari y vermut.",
@@ -2715,7 +2940,8 @@
             "fr": "Gin, Campari et vermouth.",
             "nl": "Gin, Campari en vermout.",
             "it": "Gin, Campari e vermouth.",
-            "uk": "Джин, Кампарі й вермут."
+            "uk": "Джин, Кампарі й вермут.",
+            "ru": "Джин, Кампари и вермут."
           }
         },
         {
@@ -2728,7 +2954,8 @@
             "fr": "Caïpirinha",
             "nl": "Caipirinha",
             "it": "Caipirinha",
-            "uk": "Кайпіринья"
+            "uk": "Кайпіринья",
+            "ru": "Кайпиринья"
           },
           "d": {
             "es": "Cachaça, lima y azúcar.",
@@ -2737,7 +2964,8 @@
             "fr": "Cachaça, citron vert et sucre.",
             "nl": "Cachaça, limoen en suiker.",
             "it": "Cachaça, lime e zucchero.",
-            "uk": "Кашаса, лайм і цукор."
+            "uk": "Кашаса, лайм і цукор.",
+            "ru": "Кашаса, лайм и сахар."
           }
         }
       ]
@@ -2751,7 +2979,8 @@
         "fr": "Cafés",
         "nl": "Koffie",
         "it": "Caffè",
-        "uk": "Кава"
+        "uk": "Кава",
+        "ru": "Кофе"
       },
       "note": {
         "es": "",
@@ -2760,7 +2989,8 @@
         "fr": "",
         "nl": "",
         "it": "",
-        "uk": ""
+        "uk": "",
+        "ru": ""
       },
       "items": [
         {
@@ -2775,7 +3005,8 @@
             "fr": "Café glacé",
             "nl": "IJskoffie",
             "it": "Caffè freddo",
-            "uk": "Айс-кава"
+            "uk": "Айс-кава",
+            "ru": "Айс-кофе"
           },
           "d": {
             "es": "Café frío con hielo.",
@@ -2784,7 +3015,8 @@
             "fr": "Café froid sur glace.",
             "nl": "Koude koffie op ijs.",
             "it": "Caffè freddo con ghiaccio.",
-            "uk": "Холодна кава з льодом."
+            "uk": "Холодна кава з льодом.",
+            "ru": "Холодный кофе со льдом."
           }
         },
         {
@@ -2799,7 +3031,8 @@
             "fr": "Frappuccino",
             "nl": "Frappuccino",
             "it": "Frappuccino",
-            "uk": "Фрапучино"
+            "uk": "Фрапучино",
+            "ru": "Фраппучино"
           },
           "d": {
             "es": "Vainilla o chocolate.",
@@ -2808,7 +3041,8 @@
             "fr": "Vanille ou chocolat.",
             "nl": "Vanille of chocolade.",
             "it": "Vaniglia o cioccolato.",
-            "uk": "Ваніль або шоколад."
+            "uk": "Ваніль або шоколад.",
+            "ru": "Ваниль или шоколад."
           }
         },
         {
@@ -2823,7 +3057,8 @@
             "fr": "Cappuccino chantilly",
             "nl": "Cappuccino met slagroom",
             "it": "Cappuccino con panna",
-            "uk": "Капучино з вершками"
+            "uk": "Капучино з вершками",
+            "ru": "Капучино со сливками"
           },
           "d": {
             "es": "Con nata montada.",
@@ -2832,7 +3067,8 @@
             "fr": "Avec chantilly.",
             "nl": "Met slagroom.",
             "it": "Con panna montata.",
-            "uk": "Зі збитими вершками."
+            "uk": "Зі збитими вершками.",
+            "ru": "Со взбитыми сливками."
           }
         }
       ]
