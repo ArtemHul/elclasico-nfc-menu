@@ -35,7 +35,7 @@ for s in data["sections"]:
         # переклади
         for field in ("n","d"):
             es = i[field].get("es","")
-            for lng in ("en","de","fr","nl","uk"):
+            for lng in ("en","de","fr","nl","it","uk"):
                 if es and not i[field].get(lng):
                     print(f"⚠ пропущено переклад {field}.{lng}: {es}"); warn += 1
         # дублікати назв (es)

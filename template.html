@@ -224,6 +224,7 @@ main{padding-top:16px}
     <button data-lang="de" aria-pressed="false">Deutsch</button>
     <button data-lang="fr" aria-pressed="false">Français</button>
     <button data-lang="nl" aria-pressed="false">Nederlands</button>
+    <button data-lang="it" aria-pressed="false">Italiano</button>
     <button data-lang="uk" aria-pressed="false">Українська</button>
   </nav>
 
@@ -2894,20 +2895,21 @@ const UI = {
   de:{tagline:"Tapas, Cocktails & Live-Fußball",reviews:"Bewertungen bei Google",filterLabel:"Gerichte ausblenden mit",aGluten:"Gluten",aLact:"Milch",aNuts:"Nüsse",aEgg:"Ei",aFish:"Fisch",aCrust:"Krebstiere",aSulf:"Sulfite",legal:"Allergenangaben gemäß Verordnung (EU) 1169/2011. Bitte informieren Sie unser Personal vor der Bestellung über Allergien oder Unverträglichkeiten.",hours:"Öffnungszeiten",hoursVal:"Täglich geöffnet · Spielplan beachten",where:"Adresse",book:"Reservierung",sign:"Schau das Spiel bei uns.",navCall:"Reservieren",navMap:"Route",navRev:"Bewerten",pop:"Beliebt"},
   fr:{tagline:"Tapas, cocktails & foot en direct",reviews:"Avis sur Google",filterLabel:"Masquer les plats avec",aGluten:"Gluten",aLact:"Lait",aNuts:"Fruits à coque",aEgg:"Œuf",aFish:"Poisson",aCrust:"Crustacés",aSulf:"Sulfites",legal:"Informations sur les allergènes selon le règlement (UE) 1169/2011. Signalez toute allergie ou intolérance à notre équipe avant de commander.",hours:"Horaires",hoursVal:"Ouvert tous les jours · voir calendrier des matchs",where:"Adresse",book:"Réservations",sign:"Venez voir le match chez nous.",navCall:"Réserver",navMap:"Itinéraire",navRev:"Avis",pop:"Populaire"},
   nl:{tagline:"Tapas, cocktails & live voetbal",reviews:"Recensies op Google",filterLabel:"Verberg gerechten met",aGluten:"Gluten",aLact:"Zuivel",aNuts:"Noten",aEgg:"Ei",aFish:"Vis",aCrust:"Schaaldieren",aSulf:"Sulfieten",legal:"Allergeneninformatie volgens Verordening (EU) 1169/2011. Meld allergieën of intoleranties aan ons personeel voordat u bestelt.",hours:"Openingstijden",hoursVal:"Dagelijks open · bekijk wedstrijdschema",where:"Adres",book:"Reserveren",sign:"Kom de wedstrijd bij ons kijken.",navCall:"Reserveren",navMap:"Route",navRev:"Recensie",pop:"Populair"},
+  it:{tagline:"Tapas, cocktail e buon calcio",reviews:"Recensioni su Google",filterLabel:"Nascondi piatti con",aGluten:"Glutine",aLact:"Latticini",aNuts:"Frutta a guscio",aEgg:"Uovo",aFish:"Pesce",aCrust:"Crostacei",aSulf:"Solfiti",legal:"Informazioni sugli allergeni secondo il Regolamento (UE) 1169/2011. Informi il personale di eventuali allergie o intolleranze prima di ordinare.",hours:"Orario",hoursVal:"Aperto tutti i giorni · consulta il calendario delle partite",where:"Dove",book:"Prenotazioni",sign:"Vieni a vedere la partita con noi.",navCall:"Prenota",navMap:"Come arrivare",navRev:"Recensione",pop:"Popolare"},
   uk:{tagline:"Тапас, коктейлі та футбол",reviews:"Відгуки в Google",filterLabel:"Сховати страви з",aGluten:"Глютен",aLact:"Молочне",aNuts:"Горіхи",aEgg:"Яйце",aFish:"Риба",aCrust:"Ракоподібні",aSulf:"Сульфіти",legal:"Інформація про алергени згідно з Регламентом (ЄС) 1169/2011. Повідомте персонал про алергію чи непереносимість перед замовленням.",hours:"Години роботи",hoursVal:"Щодня · дивись розклад матчів",where:"Адреса",book:"Бронювання",sign:"Приходь дивитися матч до нас.",navCall:"Бронювати",navMap:"Маршрут",navRev:"Відгук",pop:"Популярне"},
 };
 
 const ALG_NAMES = {
-  gluten:{es:"Gluten",en:"Gluten",de:"Gluten",fr:"Gluten",nl:"Gluten",uk:"Глютен"},
-  lacteos:{es:"Lácteos",en:"Dairy",de:"Milch",fr:"Lait",nl:"Zuivel",uk:"Молочне"},
-  frutos:{es:"Frutos secos",en:"Nuts",de:"Nüsse",fr:"Fruits à coque",nl:"Noten",uk:"Горіхи"},
-  huevo:{es:"Huevo",en:"Egg",de:"Ei",fr:"Œuf",nl:"Ei",uk:"Яйце"},
-  pescado:{es:"Pescado",en:"Fish",de:"Fisch",fr:"Poisson",nl:"Vis",uk:"Риба"},
-  crustaceos:{es:"Crustáceos",en:"Shellfish",de:"Krebstiere",fr:"Crustacés",nl:"Schaaldieren",uk:"Ракоподібні"},
-  sulfitos:{es:"Sulfitos",en:"Sulphites",de:"Sulfite",fr:"Sulfites",nl:"Sulfieten",uk:"Сульфіти"},
+  gluten:{es:"Gluten",en:"Gluten",de:"Gluten",fr:"Gluten",nl:"Gluten",it:"Glutine",uk:"Глютен"},
+  lacteos:{es:"Lácteos",en:"Dairy",de:"Milch",fr:"Lait",nl:"Zuivel",it:"Latticini",uk:"Молочне"},
+  frutos:{es:"Frutos secos",en:"Nuts",de:"Nüsse",fr:"Fruits à coque",nl:"Noten",it:"Frutta a guscio",uk:"Горіхи"},
+  huevo:{es:"Huevo",en:"Egg",de:"Ei",fr:"Œuf",nl:"Ei",it:"Uovo",uk:"Яйце"},
+  pescado:{es:"Pescado",en:"Fish",de:"Fisch",fr:"Poisson",nl:"Vis",it:"Pesce",uk:"Риба"},
+  crustaceos:{es:"Crustáceos",en:"Shellfish",de:"Krebstiere",fr:"Crustacés",nl:"Schaaldieren",it:"Crostacei",uk:"Ракоподібні"},
+  sulfitos:{es:"Sulfitos",en:"Sulphites",de:"Sulfite",fr:"Sulfites",nl:"Sulfieten",it:"Solfiti",uk:"Сульфіти"},
 };
 
-const SUPPORTED = ["es","en","de","fr","nl","uk"];
+const SUPPORTED = ["es","en","de","fr","nl","it","uk"];
 let lang = "es";
 let hidden = new Set();
 
