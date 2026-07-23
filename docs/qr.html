@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR для столів · El Clásico</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--ink:#0E0B0C;--red:#C6273A;--deep:#7E1622;--cream:#F4ECE2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:var(--ink);font-family:system-ui,sans-serif;padding:24px}
+.panel{max-width:680px;margin:0 auto 28px;padding:20px;border:1px solid #ddd;border-radius:6px}
+h1{font-size:20px;margin-bottom:6px}
+.hint{font-size:13px;color:#666;line-height:1.5;margin-bottom:16px}
+label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#666;margin:12px 0 4px}
+input{width:100%;padding:9px 11px;border:1px solid #ccc;border-radius:4px;font-size:14px;font-family:inherit}
+button{margin-top:16px;padding:10px 18px;background:var(--red);color:#fff;border:0;border-radius:4px;font-size:14px;cursor:pointer;font-weight:600}
+button:hover{background:var(--deep)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;max-width:680px;margin:0 auto}
+.card{
+  border:2px solid var(--ink);border-radius:8px;padding:14px 10px;text-align:center;
+  page-break-inside:avoid;background:#fff
+}
+.card .brand{font-size:15px;font-weight:800;letter-spacing:.1em;margin-bottom:1px;color:var(--ink)}
+.card .sub{font-size:7px;letter-spacing:.18em;color:var(--red);text-transform:uppercase;margin-bottom:9px;font-weight:700}
+.card .qbox{display:flex;justify-content:center}
+.card .qbox img,.card .qbox canvas{width:112px!important;height:112px!important}
+.card .mesa{margin-top:9px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#555;font-weight:600}
+.card .cta{margin-top:3px;font-size:8px;color:#999;letter-spacing:.05em}
+
+@media print{
+  body{padding:0}
+  .panel{display:none}
+  .cards{grid-template-columns:repeat(3,1fr);gap:8mm;max-width:none}
+  .card{border-color:#000}
+}
+</style>
+</head>
+<body>
+
+<div class="panel">
+  <h1>QR-коди для столів · El Clásico</h1>
+  <p class="hint">
+    Встав адресу свого меню, вкажи кількість столів і натисни «Зробити».
+    Далі Ctrl+P → друк. Панель налаштувань на друк не потрапляє.<br>
+    Мінімальний розмір при друці — 25 мм. Менше телефони ввечері не ловлять.
+  </p>
+
+  <label for="url">Адреса меню</label>
+  <input id="url" placeholder="https://НІК.github.io/elclasico-nfc-menu/">
+
+  <label for="count">Кількість столів</label>
+  <input id="count" type="number" value="12" min="1" max="60">
+
+  <button id="go">Зробити</button>
+</div>
+
+<div class="cards" id="cards"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+
+if (location.protocol.startsWith("http")) {
+  $("#url").value = location.href.replace(/qr\.html.*$/, "");
+}
+
+function build(){
+  const base = $("#url").value.trim();
+  const n = Math.min(parseInt($("#count").value) || 1, 60);
+  const box = $("#cards");
+  box.innerHTML = "";
+
+  if(!base){ alert("Спочатку встав адресу меню."); return; }
+
+  const list = [{label:"General", url:base}];
+  for(let i=1;i<=n;i++) list.push({label:"Mesa "+String(i).padStart(2,"0"), url:base+"?t="+i});
+
+  list.forEach(item=>{
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `<div class="brand">EL CLÁSICO</div>
+      <div class="sub">Football Bar</div>
+      <div class="qbox"></div>
+      <div class="mesa">${item.label}</div>
+      <div class="cta">Carta · Menu · Speisekarte</div>`;
+    box.appendChild(card);
+    new QRCode(card.querySelector(".qbox"), {
+      text:item.url, width:224, height:224,
+      colorDark:"#0E0B0C", colorLight:"#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  });
+}
+
+$("#go").addEventListener("click", build);
+</script>
+</body>
+</html>

@@ -1,0 +1,2991 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Clásico · Football Bar · Alicante</title>
+<meta name="description" content="Brasa, pizza de leña y pasta. Calle del Dr. Bergez 59, Alicante.">
+<meta name="theme-color" content="#0E0B0C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#F4ECE2;        /* світлий крем — фон карток-текст */
+  --oat:#211A1B;         /* картка: майже чорний з бордовим підтоном */
+  --ink:#F4ECE2;         /* основний текст — кремовий */
+  --ink-dim:#E0D2CC;     /* другорядний текст — освітлено для читабельності */
+  --moss:#C6273A;        /* акцент — клубно-червоний (ціни, назви розділів) */
+  --moss-deep:#7E1622;   /* глибокий бордовий */
+  --clay:#C6273A;        /* банер / бейдж */
+  --sage:#6E3038;        /* рамка тегів алергенів */
+  --bg:#0E0B0C;          /* фон сторінки — вугільний */
+  --line:rgba(198,39,58,.30);
+  --display:"Oswald",Georgia,serif;
+  --body:"Epilogue",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  background-image:radial-gradient(120% 60% at 50% -10%, rgba(126,22,34,.55) 0%, rgba(14,11,12,0) 60%);
+  background-attachment:fixed;
+  color:var(--ink);
+  font-family:var(--body);
+  font-weight:400;
+  line-height:1.5;
+  padding-bottom:112px;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+.wrap{position:relative;z-index:2;max-width:620px;margin:0 auto;padding:0 22px}
+
+/* ---------- demo banner ---------- */
+.demo-flag{
+  position:relative;z-index:2;text-align:center;font-size:11px;
+  letter-spacing:.03em;line-height:1.5;padding:9px 14px;
+  background:var(--clay);color:var(--sand);font-weight:500;
+}
+
+/* ---------- hero ---------- */
+header{padding:46px 0 28px;text-align:center}
+.mark{width:44px;height:44px;margin:0 auto 18px}
+.mark svg{width:100%;height:100%}
+.eyebrow{
+  font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--moss);font-weight:600;margin-bottom:10px
+}
+h1{
+  font-family:var(--display);font-weight:500;font-size:clamp(40px,12vw,60px);
+  letter-spacing:0;line-height:1.02;margin-bottom:14px;color:var(--ink)
+}
+.tag{
+  font-size:15px;color:var(--ink-dim);font-weight:400;
+  font-style:italic;font-family:var(--display)
+}
+.stars{
+  margin-top:20px;font-size:13px;color:var(--ink-dim);
+  display:flex;gap:7px;justify-content:center;align-items:center;flex-wrap:wrap
+}
+.stars b{color:var(--ink);font-weight:600}
+
+/* ---------- language ---------- */
+.langs{
+  display:flex;gap:7px;justify-content:center;flex-wrap:wrap;
+  margin:28px 0 10px
+}
+.langs button{
+  background:var(--sand);border:1px solid var(--sage);color:var(--ink-dim);
+  font-family:var(--body);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;
+  padding:9px 14px;border-radius:999px;cursor:pointer;transition:.22s ease
+}
+.langs button:hover{border-color:var(--moss);color:var(--ink)}
+.langs button[aria-pressed="true"]{
+  border-color:var(--moss);color:var(--sand);background:var(--moss);font-weight:600
+}
+.langs button:focus-visible,.filter button:focus-visible,.bar a:focus-visible{
+  outline:2px solid var(--moss);outline-offset:2px
+}
+
+/* ---------- allergen filter ---------- */
+.filter{
+  display:flex;gap:7px;justify-content:center;flex-wrap:wrap;
+  padding:18px 0 6px;border-top:1px solid var(--line);margin-top:24px
+}
+.filter-label{
+  width:100%;text-align:center;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-dim);margin-bottom:12px
+}
+.filter button{
+  background:transparent;border:1px solid rgba(240,205,210,.5);color:#F2E6E4;
+  font-family:var(--body);font-size:14px;font-weight:500;padding:9px 15px;border-radius:999px;
+  cursor:pointer;transition:.22s ease
+}
+.filter button[aria-pressed="true"]{
+  border-color:var(--clay);color:var(--sand);background:var(--clay);font-weight:600
+}
+
+/* ---------- menu ---------- */
+main{padding-top:16px}
+.sec{margin-top:44px}
+.sec-head{
+  display:flex;align-items:baseline;gap:16px;margin-bottom:6px
+}
+.sec-head h2{
+  font-family:var(--display);font-weight:500;font-size:28px;letter-spacing:0;
+  white-space:nowrap;color:var(--ink)
+}
+.sec-head .rule{
+  flex:1;height:8px;align-self:center;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='8'><path d='M1 4 Q7 0 13 4 T25 4' stroke='%235B6B31' stroke-width='1.4' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:repeat-x;background-position:left center;opacity:.7
+}
+.sec-note{
+  font-size:12px;letter-spacing:.06em;font-style:italic;font-family:var(--display);
+  color:var(--moss);margin-bottom:18px
+}
+.item{
+  padding:16px 16px;margin-bottom:10px;border-radius:18px;
+  background:var(--oat);border:1px solid rgba(198,39,58,.18);
+  transition:opacity .45s cubic-bezier(.33,1.15,.6,1),transform .45s cubic-bezier(.33,1.15,.6,1),filter .45s ease;
+  transform-origin:left top;
+}
+.item.wilt{opacity:.4;transform:rotate(-2.5deg) translateY(3px);filter:saturate(.55)}
+.item-top{display:flex;align-items:baseline;gap:10px}
+.item-name{
+  font-family:var(--display);font-size:18.5px;font-weight:500;line-height:1.25;color:var(--ink)
+}
+.dots{flex:1;border-bottom:1px dotted rgba(198,39,58,.4);transform:translateY(-4px)}
+.price{
+  font-family:var(--display);font-size:17px;color:var(--moss);font-weight:600;
+  font-variant-numeric:tabular-nums;white-space:nowrap
+}
+.desc{
+  font-size:15px;color:var(--ink-dim);margin-top:7px;
+  max-width:44ch;line-height:1.55
+}
+.alg{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.alg span{
+  font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;
+  border:1px solid rgba(240,205,210,.55);
+  color:#F6E3E6;background:rgba(198,39,58,.22);
+  padding:5px 11px;border-radius:999px;font-weight:600
+}
+.badge{
+  font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:#FFF;background:var(--clay);padding:5px 11px;border-radius:999px;
+  font-weight:700;align-self:center
+}
+
+/* ---------- legal ---------- */
+.legal{
+  margin-top:46px;padding:20px 0;border-top:1px solid var(--line);
+  font-size:11.5px;color:var(--ink-dim);line-height:1.6;text-align:center
+}
+
+/* ---------- footer info ---------- */
+.info{margin-top:32px;text-align:center}
+.info dl{display:grid;gap:16px;margin-bottom:28px}
+.info dt{
+  font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--moss);font-weight:600
+}
+.info dd{font-size:14.5px;color:var(--ink);margin-top:4px}
+.sign{
+  font-family:var(--display);font-style:italic;font-size:14px;
+  color:var(--moss-deep);margin:36px 0 14px;text-align:center
+}
+
+/* ---------- floating dock ---------- */
+.bar{
+  position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));
+  transform:translateX(-50%);z-index:10;
+  display:flex;gap:2px;background:var(--oat);
+  border:1px solid rgba(91,107,49,.2);border-radius:999px;padding:6px;
+  box-shadow:0 14px 34px -14px rgba(46,42,32,.4);
+}
+.bar a{
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:9px 15px;text-decoration:none;color:var(--ink-dim);border-radius:999px;
+  font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;transition:.2s ease
+}
+.bar a:hover{background:rgba(91,107,49,.12);color:var(--ink)}
+.bar a svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5}
+.bar a.primary{background:var(--moss);color:var(--sand)}
+.bar a.primary:hover{background:var(--moss-deep);color:var(--sand)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<p class="demo-flag">DEMO · carta digitalizada de las fotos, pendiente de confirmar con el propietario &nbsp;—&nbsp; демо-версія, оцифровано з фото, дані треба підтвердити з власником</p>
+
+<div class="wrap">
+<header>
+  <div class="mark" aria-hidden="true">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="47" fill="#0E0B0C" stroke="#C6273A" stroke-width="2.5"/>
+      <circle cx="50" cy="50" r="38" fill="none" stroke="#F4ECE2" stroke-width="1.5"/>
+      <path d="M50 14a36 36 0 0 1 0 72z" fill="#7E1622"/>
+      <text x="50" y="63" text-anchor="middle" font-family="Oswald,sans-serif" font-weight="700" font-size="34" fill="#F4ECE2" letter-spacing="-2">EC</text>
+    </svg>
+  </div>
+  <p class="eyebrow">Football Bar</p>
+  <h1>El Clásico</h1>
+  <p class="tag" data-i="tagline">Tapas, cócteles y buen fútbol</p>
+  <p class="stars">★★★★★ <b>4,6</b> · <span data-i="reviews">Reseñas en Google</span></p>
+
+  <nav class="langs" aria-label="Idioma">
+    <button data-lang="es" aria-pressed="true">Español</button>
+    <button data-lang="en" aria-pressed="false">English</button>
+    <button data-lang="de" aria-pressed="false">Deutsch</button>
+    <button data-lang="fr" aria-pressed="false">Français</button>
+    <button data-lang="nl" aria-pressed="false">Nederlands</button>
+    <button data-lang="uk" aria-pressed="false">Українська</button>
+  </nav>
+
+  <div class="filter" role="group" aria-label="Filtro">
+    <p class="filter-label" data-i="filterLabel">Ocultar platos con</p>
+    <button data-alg="gluten" aria-pressed="false" data-i="aGluten">Gluten</button>
+    <button data-alg="lacteos" aria-pressed="false" data-i="aLact">Lácteos</button>
+    <button data-alg="frutos" aria-pressed="false" data-i="aNuts">Frutos secos</button>
+    <button data-alg="huevo" aria-pressed="false" data-i="aEgg">Huevo</button>
+    <button data-alg="pescado" aria-pressed="false" data-i="aFish">Pescado</button>
+    <button data-alg="crustaceos" aria-pressed="false" data-i="aCrust">Crustáceos</button>
+    <button data-alg="sulfitos" aria-pressed="false" data-i="aSulf">Sulfitos</button>
+  </div>
+</header>
+
+<main id="menu"></main>
+
+<p class="legal" data-i="legal">
+  Información de alérgenos según el Reglamento (UE) 1169/2011. Consulte al personal
+  antes de pedir si tiene alguna alergia o intolerancia.
+</p>
+
+<section class="info">
+  <dl>
+    <div><dt data-i="hours">Horario</dt><dd data-i="hoursVal">Todos los días, 13:00–16:30 y 19:00–00:00 · Lunes hasta las 23:30</dd></div>
+    <div><dt data-i="where">Dónde</dt><dd>C. de la Virgen del Socorro, 39 · 03002 Alicante</dd></div>
+    <div><dt data-i="book">Reservas</dt><dd>—</dd></div>
+  </dl>
+  <p class="sign" data-i="sign">Te esperamos en la terraza.</p>
+</section>
+</div>
+
+<nav class="bar" aria-label="Acciones">
+  <a href="tel:+34000000000" class="primary" data-track="call">
+    <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg>
+    <span data-i="navCall">Reservar</span>
+  </a>
+  <a href="https://www.google.com/maps/search/?api=1&query=El+Clasico+Football+Bar+Virgen+del+Socorro+39+Alicante" target="_blank" rel="noopener" data-track="map">
+    <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    <span data-i="navMap">Cómo llegar</span>
+  </a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener" data-track="ig">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+    <span>Instagram</span>
+  </a>
+  <a href="https://www.google.com/maps/search/?api=1&query=El+Clasico+Football+Bar+Virgen+del+Socorro+39+Alicante" target="_blank" rel="noopener" data-track="review">
+    <svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8L3.5 9.7l5.9-.9z"/></svg>
+    <span data-i="navRev">Reseña</span>
+  </a>
+</nav>
+
+<script>
+/* ============================================================
+   The Garden Alicante — прототип онлайн-меню
+   Дані відокремлені від верстки: цей блок згодом
+   генерується з CSV / Google Sheets.
+   ============================================================ */
+
+const DATA = {
+  "sections": [
+    {
+      "id": "tapas",
+      "name": {
+        "es": "Tapas",
+        "en": "Tapas",
+        "de": "Tapas",
+        "fr": "Tapas",
+        "nl": "Tapas",
+        "uk": "Тапас"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "2,00",
+          "alg": [],
+          "n": {
+            "es": "Aceitunas o patatas chips",
+            "en": "Olives or crisps",
+            "de": "Oliven oder Chips",
+            "fr": "Olives ou chips",
+            "nl": "Olijven of chips",
+            "uk": "Оливки або чипси"
+          },
+          "d": {
+            "es": "Para picar mientras llega el resto.",
+            "en": "To nibble while the rest arrives.",
+            "de": "Zum Knabbern, bis der Rest kommt.",
+            "fr": "À grignoter en attendant.",
+            "nl": "Om te knabbelen terwijl de rest komt.",
+            "uk": "Поки готується решта."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Pan con alioli y tomate",
+            "en": "Bread with aioli & tomato",
+            "de": "Brot mit Aioli und Tomate",
+            "fr": "Pain à l'aïoli et tomate",
+            "nl": "Brood met aioli en tomaat",
+            "uk": "Хліб з айолі та томатом"
+          },
+          "d": {
+            "es": "Pan tostado, alioli casero y tomate.",
+            "en": "Toasted bread, house aioli and tomato.",
+            "de": "Geröstetes Brot, hausgemachtes Aioli und Tomate.",
+            "fr": "Pain grillé, aïoli maison et tomate.",
+            "nl": "Geroosterd brood, huisgemaakte aioli en tomaat.",
+            "uk": "Тости, домашнє айолі й томат."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [
+            "huevo",
+            "pescado"
+          ],
+          "n": {
+            "es": "Ensaladilla rusa",
+            "en": "Russian salad",
+            "de": "Russischer Salat",
+            "fr": "Salade russe",
+            "nl": "Russische salade",
+            "uk": "Олів'є"
+          },
+          "d": {
+            "es": "La clásica, con atún y mayonesa.",
+            "en": "The classic, with tuna and mayo.",
+            "de": "Der Klassiker, mit Thunfisch und Mayo.",
+            "fr": "La classique, thon et mayonnaise.",
+            "nl": "De klassieker, met tonijn en mayo.",
+            "uk": "Класика — з тунцем і майонезом."
+          }
+        },
+        {
+          "p": "5,80",
+          "alg": [],
+          "n": {
+            "es": "Setas al ajillo",
+            "en": "Garlic mushrooms",
+            "de": "Pilze in Knoblauch",
+            "fr": "Champignons à l'ail",
+            "nl": "Knoflookchampignons",
+            "uk": "Гриби в часнику"
+          },
+          "d": {
+            "es": "Salteadas con ajo y aceite de oliva.",
+            "en": "Sautéed with garlic and olive oil.",
+            "de": "In Knoblauch und Olivenöl gebraten.",
+            "fr": "Sautées à l'ail et huile d'olive.",
+            "nl": "Gebakken met knoflook en olijfolie.",
+            "uk": "Смажені з часником та оливковою олією."
+          }
+        },
+        {
+          "p": "6,80",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Nachos con guacamole",
+            "en": "Nachos with guacamole",
+            "de": "Nachos mit Guacamole",
+            "fr": "Nachos au guacamole",
+            "nl": "Nacho's met guacamole",
+            "uk": "Начос з гуакамоле"
+          },
+          "d": {
+            "es": "Con guacamole, tomate y cheddar.",
+            "en": "With guacamole, tomato and cheddar.",
+            "de": "Mit Guacamole, Tomate und Cheddar.",
+            "fr": "Guacamole, tomate et cheddar.",
+            "nl": "Met guacamole, tomaat en cheddar.",
+            "uk": "З гуакамоле, томатом і чедером."
+          },
+          "pop": true
+        },
+        {
+          "p": "6,80",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Hummus con picos",
+            "en": "Hummus with breadsticks",
+            "de": "Hummus mit Brotsticks",
+            "fr": "Houmous et gressins",
+            "nl": "Hummus met broodstengels",
+            "uk": "Хумус із паличками"
+          },
+          "d": {
+            "es": "Hummus de garbanzo con picos de pan.",
+            "en": "Chickpea hummus with bread sticks.",
+            "de": "Kichererbsen-Hummus mit Brotsticks.",
+            "fr": "Houmous de pois chiches et gressins.",
+            "nl": "Kikkererwtenhummus met broodstengels.",
+            "uk": "Хумус із нуту з хлібними паличками."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [
+            "huevo"
+          ],
+          "n": {
+            "es": "Tortilla",
+            "en": "Spanish omelette",
+            "de": "Tortilla",
+            "fr": "Tortilla",
+            "nl": "Tortilla",
+            "uk": "Тортилья"
+          },
+          "d": {
+            "es": "Tortilla de patata tradicional.",
+            "en": "Traditional potato omelette.",
+            "de": "Traditionelle Kartoffel-Tortilla.",
+            "fr": "Tortilla de pommes de terre.",
+            "nl": "Traditionele aardappelomelet.",
+            "uk": "Традиційна картопляна тортилья."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [
+            "gluten",
+            "pescado",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Croquetas de bacalao (3 u.)",
+            "en": "Cod croquettes (3 pcs)",
+            "de": "Kabeljau-Kroketten (3 St.)",
+            "fr": "Croquettes de morue (3 pc)",
+            "nl": "Kabeljauwkroketten (3 st.)",
+            "uk": "Крокети з тріски (3 шт.)"
+          },
+          "d": {
+            "es": "Cremosas, rebozadas y fritas.",
+            "en": "Creamy, breaded and fried.",
+            "de": "Cremig, paniert und frittiert.",
+            "fr": "Crémeuses, panées et frites.",
+            "nl": "Romig, gepaneerd en gebakken.",
+            "uk": "Кремові, в паніровці, смажені."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Croquetas de jamón ibérico (3 u.)",
+            "en": "Iberian ham croquettes (3 pcs)",
+            "de": "Iberico-Schinken-Kroketten (3 St.)",
+            "fr": "Croquettes de jambon ibérique (3 pc)",
+            "nl": "Iberische ham kroketten (3 st.)",
+            "uk": "Крокети з іберійською шинкою (3 шт.)"
+          },
+          "d": {
+            "es": "El clásico del bar, cremosas por dentro.",
+            "en": "The bar classic, creamy inside.",
+            "de": "Der Bar-Klassiker, innen cremig.",
+            "fr": "Le classique du bar, crémeuses.",
+            "nl": "De barklassieker, romig vanbinnen.",
+            "uk": "Класика бару, кремові всередині."
+          },
+          "pop": true
+        },
+        {
+          "p": "9,50",
+          "alg": [
+            "huevo",
+            "crustaceos"
+          ],
+          "n": {
+            "es": "Revuelto mar y tierra",
+            "en": "Surf & turf scramble",
+            "de": "Rührei „Meer & Land\"",
+            "fr": "Œufs brouillés mer et terre",
+            "nl": "Roerei zee en land",
+            "uk": "Яєчня 'море й суша'"
+          },
+          "d": {
+            "es": "Champiñones, setas, gambas, ajetes y espárragos.",
+            "en": "Mushrooms, shrimp, garlic shoots and asparagus.",
+            "de": "Champignons, Garnelen, Knoblauchsprossen und Spargel.",
+            "fr": "Champignons, crevettes, aillets et asperges.",
+            "nl": "Champignons, garnalen, knoflookscheuten en asperges.",
+            "uk": "Гриби, креветки, часникові паростки, спаржа."
+          }
+        },
+        {
+          "p": "7,80",
+          "alg": [
+            "huevo"
+          ],
+          "n": {
+            "es": "Revuelto de setas al ajillo",
+            "en": "Garlic mushroom scramble",
+            "de": "Rührei mit Knoblauchpilzen",
+            "fr": "Œufs brouillés champignons à l'ail",
+            "nl": "Roerei met knoflookchampignons",
+            "uk": "Яєчня з грибами в часнику"
+          },
+          "d": {
+            "es": "Huevos revueltos con setas y ajo.",
+            "en": "Scrambled eggs with mushrooms and garlic.",
+            "de": "Rührei mit Pilzen und Knoblauch.",
+            "fr": "Œufs brouillés aux champignons et ail.",
+            "nl": "Roerei met champignons en knoflook.",
+            "uk": "Яєчня-бовтанка з грибами й часником."
+          }
+        },
+        {
+          "p": "7,80",
+          "alg": [
+            "huevo"
+          ],
+          "n": {
+            "es": "Huevos rotos con jamón",
+            "en": "Broken eggs with ham",
+            "de": "Bauernfrühstück mit Schinken",
+            "fr": "Œufs cassés au jambon",
+            "nl": "Gebroken eieren met ham",
+            "uk": "Яйця з шинкою"
+          },
+          "d": {
+            "es": "Con jamón y patatas fritas.",
+            "en": "With ham and fries.",
+            "de": "Mit Schinken und Pommes.",
+            "fr": "Avec jambon et frites.",
+            "nl": "Met ham en friet.",
+            "uk": "З шинкою та картоплею фрі."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [],
+          "n": {
+            "es": "Patatas bravas",
+            "en": "Patatas bravas",
+            "de": "Patatas bravas",
+            "fr": "Patatas bravas",
+            "nl": "Patatas bravas",
+            "uk": "Пататас бравас"
+          },
+          "d": {
+            "es": "Con salsa brava picante.",
+            "en": "With spicy brava sauce.",
+            "de": "Mit scharfer Brava-Soße.",
+            "fr": "Sauce brava épicée.",
+            "nl": "Met pittige bravasaus.",
+            "uk": "З гострим соусом брава."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [
+            "pescado"
+          ],
+          "n": {
+            "es": "Patatas chips con boquerones",
+            "en": "Crisps with anchovies",
+            "de": "Chips mit Sardellen",
+            "fr": "Chips aux anchois",
+            "nl": "Chips met ansjovis",
+            "uk": "Чипси з анчоусами"
+          },
+          "d": {
+            "es": "Boquerones en vinagre sobre patatas.",
+            "en": "Vinegar anchovies over crisps.",
+            "de": "Sardellen in Essig auf Chips.",
+            "fr": "Anchois au vinaigre sur chips.",
+            "nl": "Ansjovis in azijn op chips.",
+            "uk": "Анчоуси в оцті на чипсах."
+          }
+        },
+        {
+          "p": "6,00",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Lágrimas de pollo",
+            "en": "Chicken tenders",
+            "de": "Hähnchen-Tender",
+            "fr": "Aiguillettes de poulet",
+            "nl": "Kiptenders",
+            "uk": "Курячі смужки"
+          },
+          "d": {
+            "es": "Tiras de pollo rebozadas.",
+            "en": "Breaded chicken strips.",
+            "de": "Panierte Hähnchenstreifen.",
+            "fr": "Lanières de poulet panées.",
+            "nl": "Gepaneerde kipreepjes.",
+            "uk": "Курячі смужки в паніровці."
+          }
+        },
+        {
+          "p": "6,50",
+          "alg": [
+            "huevo"
+          ],
+          "n": {
+            "es": "Tortilla con ensalada y verdura",
+            "en": "Omelette with salad",
+            "de": "Tortilla mit Salat",
+            "fr": "Tortilla avec salade",
+            "nl": "Tortilla met salade",
+            "uk": "Тортилья із салатом"
+          },
+          "d": {
+            "es": "Tortilla acompañada de ensalada.",
+            "en": "Omelette served with salad.",
+            "de": "Tortilla mit Salat serviert.",
+            "fr": "Tortilla servie avec salade.",
+            "nl": "Tortilla geserveerd met salade.",
+            "uk": "Тортилья в супроводі салату."
+          }
+        },
+        {
+          "p": "3,80",
+          "alg": [],
+          "n": {
+            "es": "Patatas fritas",
+            "en": "Fries",
+            "de": "Pommes frites",
+            "fr": "Frites",
+            "nl": "Friet",
+            "uk": "Картопля фрі"
+          },
+          "d": {
+            "es": "Ración de patatas fritas.",
+            "en": "A portion of fries.",
+            "de": "Eine Portion Pommes.",
+            "fr": "Une portion de frites.",
+            "nl": "Een portie friet.",
+            "uk": "Порція картоплі фрі."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pizarra",
+      "name": {
+        "es": "Especiales de pizarra",
+        "en": "Chalkboard specials",
+        "de": "Tafel-Spezialitäten",
+        "fr": "Spécialités à l'ardoise",
+        "nl": "Krijtbord-specials",
+        "uk": "Фірмові з дошки"
+      },
+      "note": {
+        "es": "Nuestras sugerencias del día.",
+        "en": "Our daily suggestions.",
+        "de": "Unsere Tagesempfehlungen.",
+        "fr": "Nos suggestions du jour.",
+        "nl": "Onze dagsuggesties.",
+        "uk": "Наші пропозиції дня."
+      },
+      "items": [
+        {
+          "p": "3,50",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Focaccia de chorizo o gorgonzola",
+            "en": "Focaccia, chorizo or gorgonzola",
+            "de": "Focaccia mit Chorizo oder Gorgonzola",
+            "fr": "Focaccia chorizo ou gorgonzola",
+            "nl": "Focaccia met chorizo of gorgonzola",
+            "uk": "Фокача з чорізо або горгонзолою"
+          },
+          "d": {
+            "es": "Con bebida (caña o vino de casa) 5,50 €.",
+            "en": "With a drink (beer or house wine) €5.50.",
+            "de": "Mit Getränk (Bier oder Hauswein) 5,50 €.",
+            "fr": "Avec boisson (bière ou vin maison) 5,50 €.",
+            "nl": "Met drankje (bier of huiswijn) € 5,50.",
+            "uk": "З напоєм (пиво чи домашнє вино) 5,50 €."
+          }
+        },
+        {
+          "p": "6,80",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Wrap de pollo",
+            "en": "Chicken wrap",
+            "de": "Hähnchen-Wrap",
+            "fr": "Wrap au poulet",
+            "nl": "Kipwrap",
+            "uk": "Ролл з куркою"
+          },
+          "d": {
+            "es": "Lechuga, tomate, cebolla, queso y salsa. Opción vegetariana 6,50 €.",
+            "en": "Lettuce, tomato, onion, cheese and sauce. Veggie option €6.50.",
+            "de": "Salat, Tomate, Zwiebel, Käse und Soße. Vegetarisch 6,50 €.",
+            "fr": "Laitue, tomate, oignon, fromage et sauce. Végé 6,50 €.",
+            "nl": "Sla, tomaat, ui, kaas en saus. Vega € 6,50.",
+            "uk": "Салат, томат, цибуля, сир і соус. Вегетар. 6,50 €."
+          }
+        },
+        {
+          "p": "7,50",
+          "alg": [
+            "crustaceos",
+            "gluten"
+          ],
+          "n": {
+            "es": "Gambas al ajillo",
+            "en": "Garlic prawns",
+            "de": "Knoblauchgarnelen",
+            "fr": "Gambas à l'ail",
+            "nl": "Knoflookgarnalen",
+            "uk": "Креветки в часнику"
+          },
+          "d": {
+            "es": "Con pan tostado.",
+            "en": "With toasted bread.",
+            "de": "Mit geröstetem Brot.",
+            "fr": "Avec pain grillé.",
+            "nl": "Met geroosterd brood.",
+            "uk": "З підсмаженим хлібом."
+          },
+          "pop": true
+        },
+        {
+          "p": "13,80",
+          "alg": [
+            "gluten",
+            "crustaceos"
+          ],
+          "n": {
+            "es": "Fettuccine o penne frutos del mar",
+            "en": "Seafood fettuccine or penne",
+            "de": "Fettuccine oder Penne mit Meeresfrüchten",
+            "fr": "Fettuccine ou penne aux fruits de mer",
+            "nl": "Fettuccine of penne met zeevruchten",
+            "uk": "Феттучіні чи пенне з морепродуктами"
+          },
+          "d": {
+            "es": "Pasta con frutos del mar.",
+            "en": "Pasta with mixed seafood.",
+            "de": "Pasta mit Meeresfrüchten.",
+            "fr": "Pâtes aux fruits de mer.",
+            "nl": "Pasta met zeevruchten.",
+            "uk": "Паста з морепродуктами."
+          }
+        },
+        {
+          "p": "8,00",
+          "alg": [
+            "gluten",
+            "huevo"
+          ],
+          "n": {
+            "es": "Bocadillo de calamares maxi",
+            "en": "Maxi calamari sandwich",
+            "de": "Maxi-Tintenfisch-Sandwich",
+            "fr": "Maxi sandwich de calamars",
+            "nl": "Maxi calamaris-broodje",
+            "uk": "Максі-сендвіч з кальмарами"
+          },
+          "d": {
+            "es": "Con mayonesa o alioli. Versión normal 5,50 €.",
+            "en": "With mayo or aioli. Regular €5.50.",
+            "de": "Mit Mayo oder Aioli. Normal 5,50 €.",
+            "fr": "Mayo ou aïoli. Version normale 5,50 €.",
+            "nl": "Met mayo of aioli. Normaal € 5,50.",
+            "uk": "З майонезом чи айолі. Звичайний 5,50 €."
+          }
+        },
+        {
+          "p": "9,80",
+          "alg": [
+            "gluten",
+            "huevo"
+          ],
+          "n": {
+            "es": "Pasta penne boloñesa",
+            "en": "Penne bolognese",
+            "de": "Penne Bolognese",
+            "fr": "Penne bolognaise",
+            "nl": "Penne bolognese",
+            "uk": "Пенне болоньєзе"
+          },
+          "d": {
+            "es": "Casera, con carne.",
+            "en": "Homemade, with meat.",
+            "de": "Hausgemacht, mit Fleisch.",
+            "fr": "Maison, à la viande.",
+            "nl": "Huisgemaakt, met vlees.",
+            "uk": "Домашня, з м'ясом."
+          }
+        },
+        {
+          "p": "13,80",
+          "alg": [
+            "huevo"
+          ],
+          "n": {
+            "es": "Hamburguesa con huevo ecológico",
+            "en": "Burger with organic egg",
+            "de": "Burger mit Bio-Ei",
+            "fr": "Burger à l'œuf bio",
+            "nl": "Burger met bio-ei",
+            "uk": "Бургер з органічним яйцем"
+          },
+          "d": {
+            "es": "Con patatas o ensalada.",
+            "en": "With fries or salad.",
+            "de": "Mit Pommes oder Salat.",
+            "fr": "Avec frites ou salade.",
+            "nl": "Met friet of salade.",
+            "uk": "З картоплею або салатом."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [
+            "gluten",
+            "huevo"
+          ],
+          "n": {
+            "es": "Empanadas argentinas caseras",
+            "en": "Homemade Argentine empanadas",
+            "de": "Hausgemachte argentinische Empanadas",
+            "fr": "Empanadas argentines maison",
+            "nl": "Huisgemaakte Argentijnse empanadas",
+            "uk": "Домашні аргентинські емпанади"
+          },
+          "d": {
+            "es": "Carne, jamón y queso, o pollo.",
+            "en": "Beef, ham & cheese, or chicken.",
+            "de": "Rind, Schinken-Käse oder Hähnchen.",
+            "fr": "Bœuf, jambon-fromage ou poulet.",
+            "nl": "Rund, ham-kaas of kip.",
+            "uk": "М'ясо, шинка з сиром або курка."
+          }
+        },
+        {
+          "p": "3,00",
+          "alg": [
+            "pescado",
+            "gluten"
+          ],
+          "n": {
+            "es": "Marinera",
+            "en": "Marinera roll",
+            "de": "Marinera",
+            "fr": "Marinera",
+            "nl": "Marinera",
+            "uk": "Марінера"
+          },
+          "d": {
+            "es": "Con anchoa o boquerón.",
+            "en": "With anchovy.",
+            "de": "Mit Sardelle.",
+            "fr": "À l'anchois.",
+            "nl": "Met ansjovis.",
+            "uk": "З анчоусом."
+          }
+        },
+        {
+          "p": "5,00",
+          "alg": [
+            "pescado",
+            "gluten"
+          ],
+          "n": {
+            "es": "Matrimonio",
+            "en": "„Matrimonio\"",
+            "de": "„Matrimonio\"",
+            "fr": "Matrimonio",
+            "nl": "Matrimonio",
+            "uk": "Матрімоніо"
+          },
+          "d": {
+            "es": "Anchoa y boquerón juntos.",
+            "en": "Anchovy and white anchovy together.",
+            "de": "Sardelle und Anchovis zusammen.",
+            "fr": "Anchois et anchois blanc.",
+            "nl": "Ansjovis en witte ansjovis.",
+            "uk": "Анчоус і білий анчоус разом."
+          }
+        },
+        {
+          "p": "5,80",
+          "alg": [],
+          "n": {
+            "es": "Patatas bravioli",
+            "en": "Patatas bravioli",
+            "de": "Patatas bravioli",
+            "fr": "Patatas bravioli",
+            "nl": "Patatas bravioli",
+            "uk": "Пататас бравіолі"
+          },
+          "d": {
+            "es": "Con salsa brava y alioli.",
+            "en": "With brava sauce and aioli.",
+            "de": "Mit Brava-Soße und Aioli.",
+            "fr": "Sauce brava et aïoli.",
+            "nl": "Met bravasaus en aioli.",
+            "uk": "З соусом брава та айолі."
+          }
+        },
+        {
+          "p": "7,20",
+          "alg": [
+            "pescado"
+          ],
+          "n": {
+            "es": "Lata de sardina Ortiz",
+            "en": "Ortiz sardine tin",
+            "de": "Ortiz-Sardinendose",
+            "fr": "Boîte de sardines Ortiz",
+            "nl": "Ortiz-sardienenblik",
+            "uk": "Сардини Ortiz"
+          },
+          "d": {
+            "es": "En aceite de oliva, con pan tostado.",
+            "en": "In olive oil, with toasted bread.",
+            "de": "In Olivenöl, mit geröstetem Brot.",
+            "fr": "À l'huile d'olive, pain grillé.",
+            "nl": "In olijfolie, met geroosterd brood.",
+            "uk": "В оливковій олії, з тостами."
+          }
+        },
+        {
+          "p": "9,50",
+          "alg": [
+            "crustaceos"
+          ],
+          "n": {
+            "es": "Langostino cocido",
+            "en": "Cooked king prawns",
+            "de": "Gekochte Riesengarnelen",
+            "fr": "Gambas cuites",
+            "nl": "Gekookte gamba's",
+            "uk": "Варені королівські креветки"
+          },
+          "d": {
+            "es": "Servido en hielo, con alioli.",
+            "en": "Served on ice, with aioli.",
+            "de": "Auf Eis serviert, mit Aioli.",
+            "fr": "Servi sur glace, avec aïoli.",
+            "nl": "Op ijs geserveerd, met aioli.",
+            "uk": "На льоду, з айолі."
+          }
+        },
+        {
+          "p": "11,00",
+          "alg": [
+            "crustaceos"
+          ],
+          "n": {
+            "es": "Gambón a la plancha",
+            "en": "Grilled king prawns",
+            "de": "Gegrillte Riesengarnelen",
+            "fr": "Gambas grillées",
+            "nl": "Gegrilde gamba's",
+            "uk": "Королівські креветки на грилі"
+          },
+          "d": {
+            "es": "A la plancha, al punto de sal.",
+            "en": "Grilled, lightly salted.",
+            "de": "Vom Grill, leicht gesalzen.",
+            "fr": "Grillées, légèrement salées.",
+            "nl": "Gegrild, licht gezouten.",
+            "uk": "На грилі, з дрібкою солі."
+          },
+          "pop": true
+        },
+        {
+          "p": "8,90",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Bruschetta serrano",
+            "en": "Serrano bruschetta",
+            "de": "Serrano-Bruschetta",
+            "fr": "Bruschetta serrano",
+            "nl": "Serrano bruschetta",
+            "uk": "Брускета з серрано"
+          },
+          "d": {
+            "es": "Mozzarella, jamón serrano y rúcula. Versión mozzarella, tomate y albahaca 7,90 €.",
+            "en": "Mozzarella, serrano ham and rocket. Mozzarella-tomato-basil version €7.90.",
+            "de": "Mozzarella, Serrano-Schinken und Rucola. Variante Mozzarella-Tomate-Basilikum 7,90 €.",
+            "fr": "Mozzarella, jambon serrano et roquette. Version mozzarella-tomate-basilic 7,90 €.",
+            "nl": "Mozzarella, serranoham en rucola. Versie mozzarella-tomaat-basilicum € 7,90.",
+            "uk": "Моцарела, серрано й рукола. Версія моцарела-томат-базилік 7,90 €."
+          }
+        },
+        {
+          "p": "6,50",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Tarta quiche",
+            "en": "Quiche",
+            "de": "Quiche",
+            "fr": "Quiche",
+            "nl": "Quiche",
+            "uk": "Кіш"
+          },
+          "d": {
+            "es": "Con ensalada.",
+            "en": "With salad.",
+            "de": "Mit Salat.",
+            "fr": "Avec salade.",
+            "nl": "Met salade.",
+            "uk": "Із салатом."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ensaladas",
+      "name": {
+        "es": "Ensaladas",
+        "en": "Salads",
+        "de": "Salate",
+        "fr": "Salades",
+        "nl": "Salades",
+        "uk": "Салати"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "3,00",
+          "alg": [],
+          "n": {
+            "es": "Verde",
+            "en": "Green salad",
+            "de": "Grüner Salat",
+            "fr": "Salade verte",
+            "nl": "Groene salade",
+            "uk": "Зелений салат"
+          },
+          "d": {
+            "es": "Lechuga y cebolla.",
+            "en": "Lettuce and onion.",
+            "de": "Salat und Zwiebel.",
+            "fr": "Laitue et oignon.",
+            "nl": "Sla en ui.",
+            "uk": "Салат і цибуля."
+          }
+        },
+        {
+          "p": "4,00",
+          "alg": [],
+          "n": {
+            "es": "Tomate",
+            "en": "Tomato salad",
+            "de": "Tomatensalat",
+            "fr": "Salade de tomates",
+            "nl": "Tomatensalade",
+            "uk": "Салат з томатів"
+          },
+          "d": {
+            "es": "Tomate y cebolla.",
+            "en": "Tomato and onion.",
+            "de": "Tomate und Zwiebel.",
+            "fr": "Tomate et oignon.",
+            "nl": "Tomaat en ui.",
+            "uk": "Томат і цибуля."
+          }
+        },
+        {
+          "p": "7,50",
+          "alg": [
+            "pescado"
+          ],
+          "n": {
+            "es": "Mixta",
+            "en": "Mixed salad",
+            "de": "Gemischter Salat",
+            "fr": "Salade mixte",
+            "nl": "Gemengde salade",
+            "uk": "Мішаний салат"
+          },
+          "d": {
+            "es": "Lechuga, tomate y atún.",
+            "en": "Lettuce, tomato and tuna.",
+            "de": "Salat, Tomate und Thunfisch.",
+            "fr": "Laitue, tomate et thon.",
+            "nl": "Sla, tomaat en tonijn.",
+            "uk": "Салат, томат і тунець."
+          }
+        },
+        {
+          "p": "9,00",
+          "alg": [
+            "lacteos"
+          ],
+          "n": {
+            "es": "Pollo",
+            "en": "Chicken salad",
+            "de": "Hähnchensalat",
+            "fr": "Salade de poulet",
+            "nl": "Kipsalade",
+            "uk": "Салат з куркою"
+          },
+          "d": {
+            "es": "Lechuga, pollo en salsa de nata, setas y cebolla.",
+            "en": "Lettuce, chicken in cream sauce, mushrooms and onion.",
+            "de": "Salat, Hähnchen in Sahnesoße, Pilze und Zwiebel.",
+            "fr": "Laitue, poulet sauce crème, champignons et oignon.",
+            "nl": "Sla, kip in roomsaus, champignons en ui.",
+            "uk": "Салат, курка у вершковому соусі, гриби, цибуля."
+          }
+        },
+        {
+          "p": "9,50",
+          "alg": [
+            "pescado"
+          ],
+          "n": {
+            "es": "Salmón",
+            "en": "Salmon salad",
+            "de": "Lachssalat",
+            "fr": "Salade de saumon",
+            "nl": "Zalmsalade",
+            "uk": "Салат з лососем"
+          },
+          "d": {
+            "es": "Lechuga, aguacate, tomate, cebolla y brotes.",
+            "en": "Lettuce, avocado, tomato, onion and sprouts.",
+            "de": "Salat, Avocado, Tomate, Zwiebel und Sprossen.",
+            "fr": "Laitue, avocat, tomate, oignon et pousses.",
+            "nl": "Sla, avocado, tomaat, ui en scheuten.",
+            "uk": "Салат, авокадо, томат, цибуля, паростки."
+          }
+        },
+        {
+          "p": "8,00",
+          "alg": [
+            "lacteos",
+            "gluten"
+          ],
+          "n": {
+            "es": "Queso de cabra",
+            "en": "Goat cheese salad",
+            "de": "Ziegenkäse-Salat",
+            "fr": "Salade de chèvre",
+            "nl": "Geitenkaassalade",
+            "uk": "Салат з козячим сиром"
+          },
+          "d": {
+            "es": "Lechuga, tomate y tostas de queso de cabra fundido.",
+            "en": "Lettuce, tomato and melted goat cheese toasts.",
+            "de": "Salat, Tomate und Toasts mit geschmolzenem Ziegenkäse.",
+            "fr": "Laitue, tomate et toasts de chèvre fondu.",
+            "nl": "Sla, tomaat en toast met gesmolten geitenkaas.",
+            "uk": "Салат, томат і тости з плавленим козячим сиром."
+          }
+        },
+        {
+          "p": "11,00",
+          "alg": [
+            "lacteos"
+          ],
+          "n": {
+            "es": "Mediterránea",
+            "en": "Mediterranean salad",
+            "de": "Mediterraner Salat",
+            "fr": "Salade méditerranéenne",
+            "nl": "Mediterrane salade",
+            "uk": "Середземноморський салат"
+          },
+          "d": {
+            "es": "Lechuga, tomate, mozzarella, serrano y albahaca.",
+            "en": "Lettuce, tomato, mozzarella, serrano and basil.",
+            "de": "Salat, Tomate, Mozzarella, Serrano und Basilikum.",
+            "fr": "Laitue, tomate, mozzarella, serrano et basilic.",
+            "nl": "Sla, tomaat, mozzarella, serrano en basilicum.",
+            "uk": "Салат, томат, моцарела, серрано, базилік."
+          }
+        },
+        {
+          "p": "11,00",
+          "alg": [
+            "huevo"
+          ],
+          "n": {
+            "es": "Popeye",
+            "en": "Popeye salad",
+            "de": "Popeye-Salat",
+            "fr": "Salade Popeye",
+            "nl": "Popeye-salade",
+            "uk": "Салат Попай"
+          },
+          "d": {
+            "es": "Espinaca, setas, tomate, bacon, huevo revuelto y vinagreta cremosa.",
+            "en": "Spinach, mushrooms, tomato, bacon, scrambled egg and creamy vinaigrette.",
+            "de": "Spinat, Pilze, Tomate, Speck, Rührei und cremige Vinaigrette.",
+            "fr": "Épinards, champignons, tomate, bacon, œuf brouillé et vinaigrette crémeuse.",
+            "nl": "Spinazie, champignons, tomaat, bacon, roerei en romige vinaigrette.",
+            "uk": "Шпинат, гриби, томат, бекон, яєчня та кремовий вінегрет."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tostas",
+      "name": {
+        "es": "Tostas de pan cristal",
+        "en": "Crystal bread toasts",
+        "de": "Cristal-Brot-Toasts",
+        "fr": "Tartines pan cristal",
+        "nl": "Pan cristal toasts",
+        "uk": "Тости на пан-крісталь"
+      },
+      "note": {
+        "es": "Acompañadas de ensalada de verdura.",
+        "en": "Served with a green salad.",
+        "de": "Mit grünem Salat serviert.",
+        "fr": "Servies avec salade verte.",
+        "nl": "Geserveerd met groene salade.",
+        "uk": "У супроводі овочевого салату."
+      },
+      "items": [
+        {
+          "p": "9,80",
+          "alg": [
+            "gluten",
+            "pescado",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Salmón",
+            "en": "Salmon toast",
+            "de": "Lachs-Toast",
+            "fr": "Tartine saumon",
+            "nl": "Zalmtoast",
+            "uk": "Тост з лососем"
+          },
+          "d": {
+            "es": "Salmón, aguacate, queso fresco y guacamole.",
+            "en": "Salmon, avocado, fresh cheese and guacamole.",
+            "de": "Lachs, Avocado, Frischkäse und Guacamole.",
+            "fr": "Saumon, avocat, fromage frais et guacamole.",
+            "nl": "Zalm, avocado, verse kaas en guacamole.",
+            "uk": "Лосось, авокадо, свіжий сир і гуакамоле."
+          }
+        },
+        {
+          "p": "9,80",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Pollo",
+            "en": "Chicken toast",
+            "de": "Hähnchen-Toast",
+            "fr": "Tartine poulet",
+            "nl": "Kiptoast",
+            "uk": "Тост з куркою"
+          },
+          "d": {
+            "es": "Pollo, salsa de nata, setas y cebolla.",
+            "en": "Chicken, cream sauce, mushrooms and onion.",
+            "de": "Hähnchen, Sahnesoße, Pilze und Zwiebel.",
+            "fr": "Poulet, sauce crème, champignons et oignon.",
+            "nl": "Kip, roomsaus, champignons en ui.",
+            "uk": "Курка, вершковий соус, гриби, цибуля."
+          }
+        },
+        {
+          "p": "8,50",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Ibérica",
+            "en": "Iberian toast",
+            "de": "Iberischer Toast",
+            "fr": "Tartine ibérique",
+            "nl": "Iberische toast",
+            "uk": "Іберійський тост"
+          },
+          "d": {
+            "es": "Tomate rallado, jamón serrano y manchego.",
+            "en": "Grated tomato, serrano ham and manchego.",
+            "de": "Geriebene Tomate, Serrano-Schinken und Manchego.",
+            "fr": "Tomate râpée, jambon serrano et manchego.",
+            "nl": "Geraspte tomaat, serranoham en manchego.",
+            "uk": "Терті томати, серрано й манчего."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": {
+        "es": "Pasta",
+        "en": "Pasta",
+        "de": "Pasta",
+        "fr": "Pâtes",
+        "nl": "Pasta",
+        "uk": "Паста"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "10,90",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Penne gorgonzola",
+            "en": "Penne gorgonzola",
+            "de": "Penne Gorgonzola",
+            "fr": "Penne gorgonzola",
+            "nl": "Penne gorgonzola",
+            "uk": "Пенне горгонзола"
+          },
+          "d": {
+            "es": "En salsa cremosa de queso gorgonzola y champiñones.",
+            "en": "In a creamy gorgonzola and mushroom sauce.",
+            "de": "In cremiger Gorgonzola-Pilz-Soße.",
+            "fr": "Sauce crémeuse gorgonzola et champignons.",
+            "nl": "In romige gorgonzola-champignonsaus.",
+            "uk": "У вершковому соусі з горгонзолою та печерицями."
+          }
+        },
+        {
+          "p": "11,90",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Penne pollo",
+            "en": "Chicken penne",
+            "de": "Penne mit Hähnchen",
+            "fr": "Penne au poulet",
+            "nl": "Penne met kip",
+            "uk": "Пенне з куркою"
+          },
+          "d": {
+            "es": "Pollo, champiñones y cebolla en salsa cremosa de nata.",
+            "en": "Chicken, mushrooms and onion in a creamy sauce.",
+            "de": "Hähnchen, Champignons und Zwiebel in Sahnesoße.",
+            "fr": "Poulet, champignons et oignon, sauce crème.",
+            "nl": "Kip, champignons en ui in roomsaus.",
+            "uk": "Курка, печериці й цибуля у вершковому соусі."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tablas",
+      "name": {
+        "es": "Tablas",
+        "en": "Sharing boards",
+        "de": "Platten",
+        "fr": "Planches",
+        "nl": "Plankjes",
+        "uk": "Дошки для компанії"
+      },
+      "note": {
+        "es": "Para compartir.",
+        "en": "To share.",
+        "de": "Zum Teilen.",
+        "fr": "À partager.",
+        "nl": "Om te delen.",
+        "uk": "Щоб ділитися."
+      },
+      "items": [
+        {
+          "p": "12,00",
+          "alg": [
+            "lacteos",
+            "gluten"
+          ],
+          "n": {
+            "es": "Tabla de quesos",
+            "en": "Cheese board",
+            "de": "Käseplatte",
+            "fr": "Planche de fromages",
+            "nl": "Kaasplank",
+            "uk": "Сирна дошка"
+          },
+          "d": {
+            "es": "Manchego, brie, gorgonzola, mozzarella y pan.",
+            "en": "Manchego, brie, gorgonzola, mozzarella and bread.",
+            "de": "Manchego, Brie, Gorgonzola, Mozzarella und Brot.",
+            "fr": "Manchego, brie, gorgonzola, mozzarella et pain.",
+            "nl": "Manchego, brie, gorgonzola, mozzarella en brood.",
+            "uk": "Манчего, брі, горгонзола, моцарела і хліб."
+          }
+        },
+        {
+          "p": "14,00",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Tabla de charcutería",
+            "en": "Charcuterie board",
+            "de": "Wurstplatte",
+            "fr": "Planche de charcuterie",
+            "nl": "Vleeswarenplank",
+            "uk": "М'ясна дошка"
+          },
+          "d": {
+            "es": "Jamón, chorizo ibérico, lomo y pan.",
+            "en": "Ham, Iberian chorizo, loin and bread.",
+            "de": "Schinken, iberische Chorizo, Lende und Brot.",
+            "fr": "Jambon, chorizo ibérique, longe et pain.",
+            "nl": "Ham, Iberische chorizo, lende en brood.",
+            "uk": "Шинка, іберійське чорізо, філе й хліб."
+          }
+        },
+        {
+          "p": "8,80",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Jamón serrano",
+            "en": "Serrano ham board",
+            "de": "Serrano-Schinken",
+            "fr": "Jambon serrano",
+            "nl": "Serranoham",
+            "uk": "Серрано"
+          },
+          "d": {
+            "es": "Queso curado y pan.",
+            "en": "Cured cheese and bread.",
+            "de": "Gereifter Käse und Brot.",
+            "fr": "Fromage affiné et pain.",
+            "nl": "Belegen kaas en brood.",
+            "uk": "Витриманий сир і хліб."
+          }
+        },
+        {
+          "p": "8,80",
+          "alg": [],
+          "n": {
+            "es": "Melón con jamón",
+            "en": "Melon with ham",
+            "de": "Melone mit Schinken",
+            "fr": "Melon au jambon",
+            "nl": "Meloen met ham",
+            "uk": "Диня з шинкою"
+          },
+          "d": {
+            "es": "Melón con jamón serrano.",
+            "en": "Melon with serrano ham.",
+            "de": "Melone mit Serrano-Schinken.",
+            "fr": "Melon au jambon serrano.",
+            "nl": "Meloen met serranoham.",
+            "uk": "Диня з шинкою серрано."
+          }
+        },
+        {
+          "p": "19,00",
+          "alg": [
+            "gluten",
+            "lacteos",
+            "pescado",
+            "huevo"
+          ],
+          "n": {
+            "es": "Tabla XL",
+            "en": "XL board",
+            "de": "XL-Platte",
+            "fr": "Planche XL",
+            "nl": "XL-plank",
+            "uk": "Дошка XL"
+          },
+          "d": {
+            "es": "Charcutería, queso, queso fresco, salmón, ensaladilla, aguacate y pan.",
+            "en": "Charcuterie, cheese, fresh cheese, salmon, Russian salad, avocado and bread.",
+            "de": "Wurst, Käse, Frischkäse, Lachs, russischer Salat, Avocado und Brot.",
+            "fr": "Charcuterie, fromage, fromage frais, saumon, salade russe, avocat et pain.",
+            "nl": "Vleeswaren, kaas, verse kaas, zalm, Russische salade, avocado en brood.",
+            "uk": "Ковбаси, сир, свіжий сир, лосось, олів'є, авокадо і хліб."
+          },
+          "pop": true
+        }
+      ]
+    },
+    {
+      "id": "bocadillos",
+      "name": {
+        "es": "Bocadillos",
+        "en": "Sandwiches",
+        "de": "Sandwiches",
+        "fr": "Sandwichs",
+        "nl": "Broodjes",
+        "uk": "Сендвічі"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "4,80",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Italiano",
+            "en": "Italian",
+            "de": "Italiano",
+            "fr": "Italien",
+            "nl": "Italiaans",
+            "uk": "Італійський"
+          },
+          "d": {
+            "es": "Tomate, mozzarella y albahaca.",
+            "en": "Tomato, mozzarella and basil.",
+            "de": "Tomate, Mozzarella und Basilikum.",
+            "fr": "Tomate, mozzarella et basilic.",
+            "nl": "Tomaat, mozzarella en basilicum.",
+            "uk": "Томат, моцарела і базилік."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [
+            "gluten",
+            "huevo",
+            "pescado"
+          ],
+          "n": {
+            "es": "Atún",
+            "en": "Tuna",
+            "de": "Thunfisch",
+            "fr": "Thon",
+            "nl": "Tonijn",
+            "uk": "Тунець"
+          },
+          "d": {
+            "es": "Mayonesa, tomate y cebolla.",
+            "en": "Mayo, tomato and onion.",
+            "de": "Mayo, Tomate und Zwiebel.",
+            "fr": "Mayo, tomate et oignon.",
+            "nl": "Mayo, tomaat en ui.",
+            "uk": "Майонез, томат і цибуля."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Jamón serrano",
+            "en": "Serrano ham",
+            "de": "Serrano-Schinken",
+            "fr": "Jambon serrano",
+            "nl": "Serranoham",
+            "uk": "Серрано"
+          },
+          "d": {
+            "es": "Tomate rallado y queso.",
+            "en": "Grated tomato and cheese.",
+            "de": "Geriebene Tomate und Käse.",
+            "fr": "Tomate râpée et fromage.",
+            "nl": "Geraspte tomaat en kaas.",
+            "uk": "Терті томати і сир."
+          }
+        },
+        {
+          "p": "4,80",
+          "alg": [
+            "gluten",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Pollo",
+            "en": "Chicken",
+            "de": "Hähnchen",
+            "fr": "Poulet",
+            "nl": "Kip",
+            "uk": "Курка"
+          },
+          "d": {
+            "es": "Champiñones, cebolla y salsa de nata.",
+            "en": "Mushrooms, onion and cream sauce.",
+            "de": "Champignons, Zwiebel und Sahnesoße.",
+            "fr": "Champignons, oignon et sauce crème.",
+            "nl": "Champignons, ui en roomsaus.",
+            "uk": "Печериці, цибуля і вершковий соус."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [
+            "gluten",
+            "huevo"
+          ],
+          "n": {
+            "es": "Tortilla",
+            "en": "Omelette",
+            "de": "Tortilla",
+            "fr": "Tortilla",
+            "nl": "Tortilla",
+            "uk": "Тортилья"
+          },
+          "d": {
+            "es": "Con tomate rallado.",
+            "en": "With grated tomato.",
+            "de": "Mit geriebener Tomate.",
+            "fr": "Avec tomate râpée.",
+            "nl": "Met geraspte tomaat.",
+            "uk": "З тертим томатом."
+          }
+        },
+        {
+          "p": "7,80",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Americano",
+            "en": "American",
+            "de": "Americano",
+            "fr": "Américain",
+            "nl": "Amerikaans",
+            "uk": "Американський"
+          },
+          "d": {
+            "es": "Hamburguesa, patatas fritas y ketchup.",
+            "en": "Burger, fries and ketchup.",
+            "de": "Burger, Pommes und Ketchup.",
+            "fr": "Burger, frites et ketchup.",
+            "nl": "Burger, friet en ketchup.",
+            "uk": "Бургер, картопля фрі й кетчуп."
+          }
+        },
+        {
+          "p": "6,80",
+          "alg": [
+            "gluten",
+            "pescado",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Salmón",
+            "en": "Salmon",
+            "de": "Lachs",
+            "fr": "Saumon",
+            "nl": "Zalm",
+            "uk": "Лосось"
+          },
+          "d": {
+            "es": "Pan integral, aguacate, guacamole y queso fresco.",
+            "en": "Wholemeal bread, avocado, guacamole and fresh cheese.",
+            "de": "Vollkornbrot, Avocado, Guacamole und Frischkäse.",
+            "fr": "Pain complet, avocat, guacamole et fromage frais.",
+            "nl": "Volkorenbrood, avocado, guacamole en verse kaas.",
+            "uk": "Цільнозерновий хліб, авокадо, гуакамоле, свіжий сир."
+          }
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "name": {
+        "es": "Hamburguesas",
+        "en": "Burgers",
+        "de": "Burger",
+        "fr": "Burgers",
+        "nl": "Burgers",
+        "uk": "Бургери"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "10,00",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Burger vegetariana",
+            "en": "Veggie burger",
+            "de": "Veggie-Burger",
+            "fr": "Burger végétarien",
+            "nl": "Vegaburger",
+            "uk": "Вегетаріанський бургер"
+          },
+          "d": {
+            "es": "Hamburguesa vegetal.",
+            "en": "Plant-based burger.",
+            "de": "Pflanzlicher Burger.",
+            "fr": "Burger végétal.",
+            "nl": "Plantaardige burger.",
+            "uk": "Рослинний бургер."
+          }
+        },
+        {
+          "p": "12,00",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Burger vegetariana con patatas",
+            "en": "Veggie burger with fries",
+            "de": "Veggie-Burger mit Pommes",
+            "fr": "Burger végé avec frites",
+            "nl": "Vegaburger met friet",
+            "uk": "Вегетаріанський бургер з фрі"
+          },
+          "d": {
+            "es": "Con patatas fritas.",
+            "en": "With fries.",
+            "de": "Mit Pommes.",
+            "fr": "Avec frites.",
+            "nl": "Met friet.",
+            "uk": "З картоплею фрі."
+          }
+        },
+        {
+          "p": "10,50",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Burger de vacuno",
+            "en": "Beef burger",
+            "de": "Rindfleisch-Burger",
+            "fr": "Burger de bœuf",
+            "nl": "Runderburger",
+            "uk": "Яловичий бургер"
+          },
+          "d": {
+            "es": "Carne de vacuno.",
+            "en": "Beef patty.",
+            "de": "Rindfleisch-Patty.",
+            "fr": "Steak haché de bœuf.",
+            "nl": "Rundvleesburger.",
+            "uk": "Котлета з яловичини."
+          },
+          "pop": true
+        },
+        {
+          "p": "12,50",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Burger de vacuno con patatas",
+            "en": "Beef burger with fries",
+            "de": "Rindfleisch-Burger mit Pommes",
+            "fr": "Burger de bœuf avec frites",
+            "nl": "Runderburger met friet",
+            "uk": "Яловичий бургер з фрі"
+          },
+          "d": {
+            "es": "Con patatas fritas.",
+            "en": "With fries.",
+            "de": "Mit Pommes.",
+            "fr": "Avec frites.",
+            "nl": "Met friet.",
+            "uk": "З картоплею фрі."
+          }
+        }
+      ]
+    },
+    {
+      "id": "crepes",
+      "name": {
+        "es": "Crepes",
+        "en": "Crêpes",
+        "de": "Crêpes",
+        "fr": "Crêpes",
+        "nl": "Crêpes",
+        "uk": "Млинці"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "7,80",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos"
+          ],
+          "n": {
+            "es": "La completa",
+            "en": "„La completa\"",
+            "de": "La completa",
+            "fr": "La completa",
+            "nl": "La completa",
+            "uk": "Ла комплета"
+          },
+          "d": {
+            "es": "Jamón york, huevo y queso.",
+            "en": "Cooked ham, egg and cheese.",
+            "de": "Kochschinken, Ei und Käse.",
+            "fr": "Jambon, œuf et fromage.",
+            "nl": "Ham, ei en kaas.",
+            "uk": "Шинка, яйце і сир."
+          }
+        },
+        {
+          "p": "10,00",
+          "alg": [
+            "gluten",
+            "huevo",
+            "pescado",
+            "lacteos"
+          ],
+          "n": {
+            "es": "La salmón",
+            "en": "„La salmón\"",
+            "de": "La salmón",
+            "fr": "La saumon",
+            "nl": "La zalm",
+            "uk": "Ла лосось"
+          },
+          "d": {
+            "es": "Salmón ahumado, guacamole, queso fresco y aguacate.",
+            "en": "Smoked salmon, guacamole, fresh cheese and avocado.",
+            "de": "Räucherlachs, Guacamole, Frischkäse und Avocado.",
+            "fr": "Saumon fumé, guacamole, fromage frais et avocat.",
+            "nl": "Gerookte zalm, guacamole, verse kaas en avocado.",
+            "uk": "Копчений лосось, гуакамоле, свіжий сир, авокадо."
+          }
+        },
+        {
+          "p": "9,00",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos"
+          ],
+          "n": {
+            "es": "La campesina",
+            "en": "„La campesina\"",
+            "de": "La campesina",
+            "fr": "La campagnarde",
+            "nl": "La campesina",
+            "uk": "Ла кампесіна"
+          },
+          "d": {
+            "es": "Pollo, setas, nata y cebolla.",
+            "en": "Chicken, mushrooms, cream and onion.",
+            "de": "Hähnchen, Pilze, Sahne und Zwiebel.",
+            "fr": "Poulet, champignons, crème et oignon.",
+            "nl": "Kip, champignons, room en ui.",
+            "uk": "Курка, гриби, вершки й цибуля."
+          }
+        },
+        {
+          "p": "8,50",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos"
+          ],
+          "n": {
+            "es": "La carlitos",
+            "en": "„La carlitos\"",
+            "de": "La carlitos",
+            "fr": "La carlitos",
+            "nl": "La carlitos",
+            "uk": "Ла карлітос"
+          },
+          "d": {
+            "es": "Mozzarella, tomate y aceite de albahaca.",
+            "en": "Mozzarella, tomato and basil oil.",
+            "de": "Mozzarella, Tomate und Basilikumöl.",
+            "fr": "Mozzarella, tomate et huile de basilic.",
+            "nl": "Mozzarella, tomaat en basilicumolie.",
+            "uk": "Моцарела, томат і базилікова олія."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [
+            "gluten",
+            "huevo"
+          ],
+          "n": {
+            "es": "Crepe de azúcar",
+            "en": "Sugar crêpe",
+            "de": "Zucker-Crêpe",
+            "fr": "Crêpe au sucre",
+            "nl": "Suikercrêpe",
+            "uk": "Млинець із цукром"
+          },
+          "d": {
+            "es": "Sencilla, con azúcar.",
+            "en": "Simple, with sugar.",
+            "de": "Einfach, mit Zucker.",
+            "fr": "Simple, au sucre.",
+            "nl": "Eenvoudig, met suiker.",
+            "uk": "Простий, із цукром."
+          }
+        },
+        {
+          "p": "4,00",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos",
+            "frutos"
+          ],
+          "n": {
+            "es": "Crepe de Nutella",
+            "en": "Nutella crêpe",
+            "de": "Nutella-Crêpe",
+            "fr": "Crêpe Nutella",
+            "nl": "Nutella-crêpe",
+            "uk": "Млинець з Нутеллою"
+          },
+          "d": {
+            "es": "Con crema de avellanas y cacao.",
+            "en": "With hazelnut-cocoa spread.",
+            "de": "Mit Haselnuss-Kakao-Creme.",
+            "fr": "À la pâte noisette-cacao.",
+            "nl": "Met hazelnoot-cacaopasta.",
+            "uk": "З горіхово-какао пастою."
+          }
+        },
+        {
+          "p": "4,00",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Crepe de dulce de leche",
+            "en": "Dulce de leche crêpe",
+            "de": "Dulce-de-Leche-Crêpe",
+            "fr": "Crêpe dulce de leche",
+            "nl": "Dulce de leche-crêpe",
+            "uk": "Млинець з дульсе де лече"
+          },
+          "d": {
+            "es": "Con dulce de leche.",
+            "en": "With dulce de leche.",
+            "de": "Mit Dulce de Leche.",
+            "fr": "Au dulce de leche.",
+            "nl": "Met dulce de leche.",
+            "uk": "З вареним згущеним молоком."
+          }
+        },
+        {
+          "p": "5,50",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Crepe de chocolate y plátano",
+            "en": "Chocolate-banana crêpe",
+            "de": "Schoko-Bananen-Crêpe",
+            "fr": "Crêpe chocolat-banane",
+            "nl": "Chocolade-banaan-crêpe",
+            "uk": "Млинець з шоколадом і бананом"
+          },
+          "d": {
+            "es": "Chocolate y plátano.",
+            "en": "Chocolate and banana.",
+            "de": "Schokolade und Banane.",
+            "fr": "Chocolat et banane.",
+            "nl": "Chocolade en banaan.",
+            "uk": "Шоколад і банан."
+          }
+        },
+        {
+          "p": "5,50",
+          "alg": [
+            "gluten",
+            "huevo",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Crepe con helado y nata",
+            "en": "Crêpe with ice cream & cream",
+            "de": "Crêpe mit Eis und Sahne",
+            "fr": "Crêpe glace et chantilly",
+            "nl": "Crêpe met ijs en slagroom",
+            "uk": "Млинець з морозивом і вершками"
+          },
+          "d": {
+            "es": "Helado con nata.",
+            "en": "Ice cream with cream.",
+            "de": "Eis mit Sahne.",
+            "fr": "Glace et chantilly.",
+            "nl": "IJs met slagroom.",
+            "uk": "Морозиво з вершками."
+          }
+        }
+      ]
+    },
+    {
+      "id": "postres",
+      "name": {
+        "es": "Postres y helados",
+        "en": "Desserts & ice cream",
+        "de": "Desserts & Eis",
+        "fr": "Desserts & glaces",
+        "nl": "Desserts & ijs",
+        "uk": "Десерти й морозиво"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "6,00",
+          "alg": [],
+          "n": {
+            "es": "Plato de fruta fresca",
+            "en": "Fresh fruit plate",
+            "de": "Frischer Obstteller",
+            "fr": "Assiette de fruits frais",
+            "nl": "Vers fruitbord",
+            "uk": "Тарілка свіжих фруктів"
+          },
+          "d": {
+            "es": "Selección de fruta de temporada.",
+            "en": "A selection of seasonal fruit.",
+            "de": "Auswahl an Saisonobst.",
+            "fr": "Sélection de fruits de saison.",
+            "nl": "Selectie van seizoensfruit.",
+            "uk": "Добірка сезонних фруктів."
+          }
+        },
+        {
+          "p": "5,80",
+          "alg": [
+            "lacteos",
+            "huevo",
+            "frutos"
+          ],
+          "n": {
+            "es": "Banana split",
+            "en": "Banana split",
+            "de": "Banana Split",
+            "fr": "Banana split",
+            "nl": "Bananasplit",
+            "uk": "Банана спліт"
+          },
+          "d": {
+            "es": "Plátano, helado y nata.",
+            "en": "Banana, ice cream and cream.",
+            "de": "Banane, Eis und Sahne.",
+            "fr": "Banane, glace et chantilly.",
+            "nl": "Banaan, ijs en slagroom.",
+            "uk": "Банан, морозиво і вершки."
+          }
+        },
+        {
+          "p": "4,90",
+          "alg": [
+            "lacteos",
+            "huevo"
+          ],
+          "n": {
+            "es": "Café liégeois",
+            "en": "Café liégeois",
+            "de": "Café Liégeois",
+            "fr": "Café liégeois",
+            "nl": "Café liégeois",
+            "uk": "Кава ліжуа"
+          },
+          "d": {
+            "es": "Café, helado de café y nata.",
+            "en": "Coffee, coffee ice cream and cream.",
+            "de": "Kaffee, Kaffee-Eis und Sahne.",
+            "fr": "Café, glace café et chantilly.",
+            "nl": "Koffie, koffie-ijs en slagroom.",
+            "uk": "Кава, кавове морозиво і вершки."
+          }
+        },
+        {
+          "p": "4,90",
+          "alg": [
+            "lacteos",
+            "huevo"
+          ],
+          "n": {
+            "es": "Chocolat liégeois",
+            "en": "Chocolat liégeois",
+            "de": "Schokoladen-Liégeois",
+            "fr": "Chocolat liégeois",
+            "nl": "Chocolat liégeois",
+            "uk": "Шоколад ліжуа"
+          },
+          "d": {
+            "es": "Chocolate, helado y nata.",
+            "en": "Chocolate, ice cream and cream.",
+            "de": "Schokolade, Eis und Sahne.",
+            "fr": "Chocolat, glace et chantilly.",
+            "nl": "Chocolade, ijs en slagroom.",
+            "uk": "Шоколад, морозиво і вершки."
+          }
+        },
+        {
+          "p": "4,90",
+          "alg": [
+            "lacteos",
+            "huevo"
+          ],
+          "n": {
+            "es": "Dame blanche",
+            "en": "Dame blanche",
+            "de": "Dame Blanche",
+            "fr": "Dame blanche",
+            "nl": "Dame blanche",
+            "uk": "Дам бланш"
+          },
+          "d": {
+            "es": "Helado de vainilla con chocolate caliente y nata.",
+            "en": "Vanilla ice cream with hot chocolate and cream.",
+            "de": "Vanilleeis mit heißer Schokolade und Sahne.",
+            "fr": "Glace vanille, chocolat chaud et chantilly.",
+            "nl": "Vanille-ijs met warme chocolade en slagroom.",
+            "uk": "Ванільне морозиво з гарячим шоколадом і вершками."
+          }
+        },
+        {
+          "p": "2,50",
+          "alg": [
+            "lacteos",
+            "huevo"
+          ],
+          "n": {
+            "es": "Helado (1 bola)",
+            "en": "Ice cream (1 scoop)",
+            "de": "Eis (1 Kugel)",
+            "fr": "Glace (1 boule)",
+            "nl": "IJs (1 bol)",
+            "uk": "Морозиво (1 кулька)"
+          },
+          "d": {
+            "es": "Ver sabores. 2 bolas 3,50 € · 3 bolas 4,50 €.",
+            "en": "See flavours. 2 scoops €3.50 · 3 scoops €4.50.",
+            "de": "Sorten siehe Tafel. 2 Kugeln 3,50 € · 3 Kugeln 4,50 €.",
+            "fr": "Voir parfums. 2 boules 3,50 € · 3 boules 4,50 €.",
+            "nl": "Zie smaken. 2 bollen € 3,50 · 3 bollen € 4,50.",
+            "uk": "Смаки на дошці. 2 кульки 3,50 € · 3 кульки 4,50 €."
+          }
+        }
+      ]
+    },
+    {
+      "id": "batidos",
+      "name": {
+        "es": "Batidos, granizados y zumos",
+        "en": "Shakes, slushies & juices",
+        "de": "Shakes, Slush & Säfte",
+        "fr": "Milkshakes, granités & jus",
+        "nl": "Shakes, slush & sappen",
+        "uk": "Шейки, гранізадо й соки"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "3,50",
+          "alg": [],
+          "n": {
+            "es": "Granizado",
+            "en": "Slushie",
+            "de": "Slush",
+            "fr": "Granité",
+            "nl": "Granita",
+            "uk": "Гранізадо"
+          },
+          "d": {
+            "es": "Limón, fresa, mango o café.",
+            "en": "Lemon, strawberry, mango or coffee.",
+            "de": "Zitrone, Erdbeere, Mango oder Kaffee.",
+            "fr": "Citron, fraise, mangue ou café.",
+            "nl": "Citroen, aardbei, mango of koffie.",
+            "uk": "Лимон, полуниця, манго чи кава."
+          }
+        },
+        {
+          "p": "5,50",
+          "alg": [
+            "lacteos"
+          ],
+          "n": {
+            "es": "Blanco y negro",
+            "en": "„Blanco y negro\"",
+            "de": "Blanco y Negro",
+            "fr": "Blanco y negro",
+            "nl": "Blanco y negro",
+            "uk": "Бланко і неґро"
+          },
+          "d": {
+            "es": "Granizado de café con una bola de helado.",
+            "en": "Coffee slushie with a scoop of ice cream.",
+            "de": "Kaffee-Slush mit einer Kugel Eis.",
+            "fr": "Granité de café avec une boule de glace.",
+            "nl": "Koffieslush met een bol ijs.",
+            "uk": "Кавове гранізадо з кулькою морозива."
+          }
+        },
+        {
+          "p": "3,80",
+          "alg": [],
+          "n": {
+            "es": "Smoothie",
+            "en": "Smoothie",
+            "de": "Smoothie",
+            "fr": "Smoothie",
+            "nl": "Smoothie",
+            "uk": "Смузі"
+          },
+          "d": {
+            "es": "Fresa, frutos rojos, mango o arándanos.",
+            "en": "Strawberry, red berries, mango or blueberry.",
+            "de": "Erdbeere, rote Beeren, Mango oder Heidelbeere.",
+            "fr": "Fraise, fruits rouges, mangue ou myrtille.",
+            "nl": "Aardbei, rode vruchten, mango of bosbes.",
+            "uk": "Полуниця, червоні ягоди, манго чи чорниця."
+          }
+        },
+        {
+          "p": "3,80",
+          "alg": [],
+          "n": {
+            "es": "Zumo multivitamina",
+            "en": "Multivitamin juice",
+            "de": "Multivitaminsaft",
+            "fr": "Jus multivitaminé",
+            "nl": "Multivitaminesap",
+            "uk": "Мультивітамінний сік"
+          },
+          "d": {
+            "es": "Zumo natural de frutas.",
+            "en": "Natural fruit juice.",
+            "de": "Natürlicher Fruchtsaft.",
+            "fr": "Jus de fruits naturel.",
+            "nl": "Natuurlijk vruchtensap.",
+            "uk": "Натуральний фруктовий сік."
+          }
+        },
+        {
+          "p": "4,00",
+          "alg": [
+            "lacteos"
+          ],
+          "n": {
+            "es": "Milkshake",
+            "en": "Milkshake",
+            "de": "Milchshake",
+            "fr": "Milkshake",
+            "nl": "Milkshake",
+            "uk": "Мілкшейк"
+          },
+          "d": {
+            "es": "Fresa, chocolate, vainilla, cookies, turrón o dulce de leche. Leche animal o vegetal.",
+            "en": "Strawberry, chocolate, vanilla, cookies, turrón or dulce de leche. Dairy or plant milk.",
+            "de": "Erdbeere, Schoko, Vanille, Cookies, Turrón oder Dulce de Leche. Tier- oder Pflanzenmilch.",
+            "fr": "Fraise, chocolat, vanille, cookies, turrón ou dulce de leche. Lait animal ou végétal.",
+            "nl": "Aardbei, chocolade, vanille, koekjes, turrón of dulce de leche. Dierlijke of plantaardige melk.",
+            "uk": "Полуниця, шоколад, ваніль, печиво, туррон чи дульсе де лече. Тваринне або рослинне молоко."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [],
+          "n": {
+            "es": "Horchata",
+            "en": "Horchata",
+            "de": "Horchata",
+            "fr": "Horchata",
+            "nl": "Horchata",
+            "uk": "Орчата"
+          },
+          "d": {
+            "es": "Bebida de chufa, bien fría.",
+            "en": "Chilled tiger nut drink.",
+            "de": "Erfrischendes Erdmandelgetränk.",
+            "fr": "Boisson de souchet, bien fraîche.",
+            "nl": "Verfrissende chufadrank.",
+            "uk": "Прохолодний напій із чуфи."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "name": {
+        "es": "Bebidas",
+        "en": "Drinks",
+        "de": "Getränke",
+        "fr": "Boissons",
+        "nl": "Dranken",
+        "uk": "Напої"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "1,70",
+          "alg": [],
+          "n": {
+            "es": "Agua",
+            "en": "Water",
+            "de": "Wasser",
+            "fr": "Eau",
+            "nl": "Water",
+            "uk": "Вода"
+          },
+          "d": {
+            "es": "Pequeña 1,70 € · grande 2,50 € · con gas 2,30 €.",
+            "en": "Small €1.70 · large €2.50 · sparkling €2.30.",
+            "de": "Klein 1,70 € · groß 2,50 € · mit Kohlensäure 2,30 €.",
+            "fr": "Petite 1,70 € · grande 2,50 € · gazeuse 2,30 €.",
+            "nl": "Klein € 1,70 · groot € 2,50 · bruisend € 2,30.",
+            "uk": "Мала 1,70 € · велика 2,50 € · газована 2,30 €."
+          }
+        },
+        {
+          "p": "2,30",
+          "alg": [],
+          "n": {
+            "es": "Refrescos",
+            "en": "Soft drinks",
+            "de": "Erfrischungsgetränke",
+            "fr": "Sodas",
+            "nl": "Frisdranken",
+            "uk": "Безалкогольні"
+          },
+          "d": {
+            "es": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tónica.",
+            "en": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tonic.",
+            "de": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, Tonic.",
+            "fr": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tonic.",
+            "nl": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, tonic.",
+            "uk": "Coca-Cola, Fanta, Sprite, Nestea, Aquarius, тонік."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [],
+          "n": {
+            "es": "Red Bull",
+            "en": "Red Bull",
+            "de": "Red Bull",
+            "fr": "Red Bull",
+            "nl": "Red Bull",
+            "uk": "Red Bull"
+          },
+          "d": {
+            "es": "Bebida energética.",
+            "en": "Energy drink.",
+            "de": "Energydrink.",
+            "fr": "Boisson énergisante.",
+            "nl": "Energiedrank.",
+            "uk": "Енергетик."
+          }
+        },
+        {
+          "p": "2,40",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Caña o clara",
+            "en": "Small beer",
+            "de": "Kleines Bier",
+            "fr": "Demi",
+            "nl": "Klein bier",
+            "uk": "Мале пиво"
+          },
+          "d": {
+            "es": "Cerveza de barril. Pinta 4,40 €.",
+            "en": "Draft beer. Pint €4.40.",
+            "de": "Bier vom Fass. Pint 4,40 €.",
+            "fr": "Bière pression. Pinte 4,40 €.",
+            "nl": "Bier van het vat. Pint € 4,40.",
+            "uk": "Розливне пиво. Пінта 4,40 €."
+          }
+        },
+        {
+          "p": "2,90",
+          "alg": [
+            "gluten"
+          ],
+          "n": {
+            "es": "Cerveza botella",
+            "en": "Bottled beer",
+            "de": "Flaschenbier",
+            "fr": "Bière bouteille",
+            "nl": "Flesbier",
+            "uk": "Пиво пляшкове"
+          },
+          "d": {
+            "es": "Mahou, sin alcohol, tostada o sin gluten. Alhambra, Corona, IPA, Paulaner o Leffe hasta 4,50 €.",
+            "en": "Mahou, alcohol-free, toasted or gluten-free. Alhambra, Corona, IPA, Paulaner or Leffe up to €4.50.",
+            "de": "Mahou, alkoholfrei, Tostada oder glutenfrei. Alhambra, Corona, IPA, Paulaner oder Leffe bis 4,50 €.",
+            "fr": "Mahou, sans alcool, tostada ou sans gluten. Alhambra, Corona, IPA, Paulaner ou Leffe jusqu'à 4,50 €.",
+            "nl": "Mahou, alcoholvrij, tostada of glutenvrij. Alhambra, Corona, IPA, Paulaner of Leffe tot € 4,50.",
+            "uk": "Mahou, безалкогольне, тостада чи безглютенове. Alhambra, Corona, IPA, Paulaner чи Leffe до 4,50 €."
+          }
+        },
+        {
+          "p": "3,00",
+          "alg": [
+            "sulfitos"
+          ],
+          "n": {
+            "es": "Vino de la casa",
+            "en": "House wine",
+            "de": "Hauswein",
+            "fr": "Vin maison",
+            "nl": "Huiswijn",
+            "uk": "Домашнє вино"
+          },
+          "d": {
+            "es": "Tinto, blanco o rosado. Copa 3,00 € · botella desde 15,00 €.",
+            "en": "Red, white or rosé. Glass €3.00 · bottle from €15.00.",
+            "de": "Rot, weiß oder rosé. Glas 3,00 € · Flasche ab 15,00 €.",
+            "fr": "Rouge, blanc ou rosé. Verre 3,00 € · bouteille dès 15,00 €.",
+            "nl": "Rood, wit of rosé. Glas € 3,00 · fles vanaf € 15,00.",
+            "uk": "Червоне, біле чи рожеве. Келих 3,00 € · пляшка від 15,00 €."
+          }
+        },
+        {
+          "p": "3,20",
+          "alg": [
+            "sulfitos"
+          ],
+          "n": {
+            "es": "Tinto de verano",
+            "en": "Tinto de verano",
+            "de": "Tinto de Verano",
+            "fr": "Tinto de verano",
+            "nl": "Tinto de verano",
+            "uk": "Тінто де верано"
+          },
+          "d": {
+            "es": "Vino tinto con gaseosa.",
+            "en": "Red wine with lemon soda.",
+            "de": "Rotwein mit Limonade.",
+            "fr": "Vin rouge et limonade.",
+            "nl": "Rode wijn met limonade.",
+            "uk": "Червоне вино з лимонадом."
+          }
+        },
+        {
+          "p": "4,40",
+          "alg": [
+            "sulfitos"
+          ],
+          "n": {
+            "es": "Sangría",
+            "en": "Sangria",
+            "de": "Sangria",
+            "fr": "Sangria",
+            "nl": "Sangria",
+            "uk": "Сангрія"
+          },
+          "d": {
+            "es": "La de siempre, por copa o jarra.",
+            "en": "The classic, by glass or jug.",
+            "de": "Der Klassiker, Glas oder Karaffe.",
+            "fr": "La classique, au verre ou en pichet.",
+            "nl": "De klassieker, per glas of kan.",
+            "uk": "Класика, келих або глек."
+          }
+        },
+        {
+          "p": "6,50",
+          "alg": [],
+          "n": {
+            "es": "Ginebra",
+            "en": "Gin",
+            "de": "Gin",
+            "fr": "Gin",
+            "nl": "Gin",
+            "uk": "Джин"
+          },
+          "d": {
+            "es": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias o Martin Miller's.",
+            "en": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias or Martin Miller's.",
+            "de": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias oder Martin Miller's.",
+            "fr": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias ou Martin Miller's.",
+            "nl": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias of Martin Miller's.",
+            "uk": "Larios, Seagram's, Beefeater, Tanqueray, Puerto de Indias чи Martin Miller's."
+          }
+        },
+        {
+          "p": "5,50",
+          "alg": [],
+          "n": {
+            "es": "Ron",
+            "en": "Rum",
+            "de": "Rum",
+            "fr": "Rhum",
+            "nl": "Rum",
+            "uk": "Ром"
+          },
+          "d": {
+            "es": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem o Zacapa.",
+            "en": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem or Zacapa.",
+            "de": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem oder Zacapa.",
+            "fr": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem ou Zacapa.",
+            "nl": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem of Zacapa.",
+            "uk": "Cacique, Santa Teresa, Bacardí, Brugal, Barceló, Matusalem чи Zacapa."
+          }
+        },
+        {
+          "p": "6,00",
+          "alg": [],
+          "n": {
+            "es": "Whisky",
+            "en": "Whisky",
+            "de": "Whisky",
+            "fr": "Whisky",
+            "nl": "Whisky",
+            "uk": "Віскі"
+          },
+          "d": {
+            "es": "J&B, Jameson, Johnnie Walker, Ballantine's o Cardhu.",
+            "en": "J&B, Jameson, Johnnie Walker, Ballantine's or Cardhu.",
+            "de": "J&B, Jameson, Johnnie Walker, Ballantine's oder Cardhu.",
+            "fr": "J&B, Jameson, Johnnie Walker, Ballantine's ou Cardhu.",
+            "nl": "J&B, Jameson, Johnnie Walker, Ballantine's of Cardhu.",
+            "uk": "J&B, Jameson, Johnnie Walker, Ballantine's чи Cardhu."
+          }
+        },
+        {
+          "p": "4,00",
+          "alg": [],
+          "n": {
+            "es": "Licores",
+            "en": "Liqueurs",
+            "de": "Liköre",
+            "fr": "Liqueurs",
+            "nl": "Likeuren",
+            "uk": "Лікери"
+          },
+          "d": {
+            "es": "Martini, brandy, Bailey's, Ricard, orujo, limoncello o chupito.",
+            "en": "Martini, brandy, Bailey's, Ricard, orujo, limoncello or shot.",
+            "de": "Martini, Brandy, Bailey's, Ricard, Orujo, Limoncello oder Shot.",
+            "fr": "Martini, brandy, Bailey's, Ricard, orujo, limoncello ou shot.",
+            "nl": "Martini, brandy, Bailey's, Ricard, orujo, limoncello of shotje.",
+            "uk": "Martini, бренді, Bailey's, Ricard, орухо, лімончело чи чарка."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cocteles",
+      "name": {
+        "es": "Cócteles",
+        "en": "Cocktails",
+        "de": "Cocktails",
+        "fr": "Cocktails",
+        "nl": "Cocktails",
+        "uk": "Коктейлі"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "7,00",
+          "alg": [],
+          "n": {
+            "es": "Sex on the beach",
+            "en": "Sex on the Beach",
+            "de": "Sex on the Beach",
+            "fr": "Sex on the Beach",
+            "nl": "Sex on the Beach",
+            "uk": "Sex on the Beach"
+          },
+          "d": {
+            "es": "Vodka, melocotón y frutas.",
+            "en": "Vodka, peach and fruit.",
+            "de": "Wodka, Pfirsich und Früchte.",
+            "fr": "Vodka, pêche et fruits.",
+            "nl": "Wodka, perzik en fruit.",
+            "uk": "Горілка, персик і фрукти."
+          }
+        },
+        {
+          "p": "6,50",
+          "alg": [],
+          "n": {
+            "es": "Mojito",
+            "en": "Mojito",
+            "de": "Mojito",
+            "fr": "Mojito",
+            "nl": "Mojito",
+            "uk": "Мохіто"
+          },
+          "d": {
+            "es": "Con ron, lima y menta. Sin alcohol 3,80 €.",
+            "en": "With rum, lime and mint. Non-alcoholic €3.80.",
+            "de": "Mit Rum, Limette und Minze. Alkoholfrei 3,80 €.",
+            "fr": "Rhum, citron vert et menthe. Sans alcool 3,80 €.",
+            "nl": "Met rum, limoen en munt. Alcoholvrij € 3,80.",
+            "uk": "З ромом, лаймом і м'ятою. Безалкогольний 3,80 €."
+          },
+          "pop": true
+        },
+        {
+          "p": "6,50",
+          "alg": [],
+          "n": {
+            "es": "Aperol Spritz",
+            "en": "Aperol Spritz",
+            "de": "Aperol Spritz",
+            "fr": "Aperol Spritz",
+            "nl": "Aperol Spritz",
+            "uk": "Апероль Шпріц"
+          },
+          "d": {
+            "es": "Aperol, cava y soda.",
+            "en": "Aperol, cava and soda.",
+            "de": "Aperol, Cava und Soda.",
+            "fr": "Aperol, cava et soda.",
+            "nl": "Aperol, cava en soda.",
+            "uk": "Апероль, кава і сода."
+          }
+        },
+        {
+          "p": "8,00",
+          "alg": [
+            "frutos",
+            "lacteos"
+          ],
+          "n": {
+            "es": "Piña colada",
+            "en": "Piña colada",
+            "de": "Piña Colada",
+            "fr": "Piña colada",
+            "nl": "Piña colada",
+            "uk": "Піна колада"
+          },
+          "d": {
+            "es": "Ron, piña y coco.",
+            "en": "Rum, pineapple and coconut.",
+            "de": "Rum, Ananas und Kokos.",
+            "fr": "Rhum, ananas et coco.",
+            "nl": "Rum, ananas en kokos.",
+            "uk": "Ром, ананас і кокос."
+          }
+        },
+        {
+          "p": "7,00",
+          "alg": [],
+          "n": {
+            "es": "Negroni",
+            "en": "Negroni",
+            "de": "Negroni",
+            "fr": "Negroni",
+            "nl": "Negroni",
+            "uk": "Негроні"
+          },
+          "d": {
+            "es": "Ginebra, Campari y vermut.",
+            "en": "Gin, Campari and vermouth.",
+            "de": "Gin, Campari und Wermut.",
+            "fr": "Gin, Campari et vermouth.",
+            "nl": "Gin, Campari en vermout.",
+            "uk": "Джин, Кампарі й вермут."
+          }
+        },
+        {
+          "p": "8,00",
+          "alg": [],
+          "n": {
+            "es": "Caipiriña",
+            "en": "Caipirinha",
+            "de": "Caipirinha",
+            "fr": "Caïpirinha",
+            "nl": "Caipirinha",
+            "uk": "Кайпіринья"
+          },
+          "d": {
+            "es": "Cachaça, lima y azúcar.",
+            "en": "Cachaça, lime and sugar.",
+            "de": "Cachaça, Limette und Zucker.",
+            "fr": "Cachaça, citron vert et sucre.",
+            "nl": "Cachaça, limoen en suiker.",
+            "uk": "Кашаса, лайм і цукор."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cafes",
+      "name": {
+        "es": "Cafés",
+        "en": "Coffee",
+        "de": "Kaffee",
+        "fr": "Cafés",
+        "nl": "Koffie",
+        "uk": "Кава"
+      },
+      "note": {
+        "es": "",
+        "en": "",
+        "de": "",
+        "fr": "",
+        "nl": "",
+        "uk": ""
+      },
+      "items": [
+        {
+          "p": "2,50",
+          "alg": [
+            "lacteos"
+          ],
+          "n": {
+            "es": "Iced coffee",
+            "en": "Iced coffee",
+            "de": "Eiskaffee",
+            "fr": "Café glacé",
+            "nl": "IJskoffie",
+            "uk": "Айс-кава"
+          },
+          "d": {
+            "es": "Café frío con hielo.",
+            "en": "Cold coffee over ice.",
+            "de": "Kalter Kaffee auf Eis.",
+            "fr": "Café froid sur glace.",
+            "nl": "Koude koffie op ijs.",
+            "uk": "Холодна кава з льодом."
+          }
+        },
+        {
+          "p": "4,50",
+          "alg": [
+            "lacteos"
+          ],
+          "n": {
+            "es": "Frappuccino",
+            "en": "Frappuccino",
+            "de": "Frappuccino",
+            "fr": "Frappuccino",
+            "nl": "Frappuccino",
+            "uk": "Фрапучино"
+          },
+          "d": {
+            "es": "Vainilla o chocolate.",
+            "en": "Vanilla or chocolate.",
+            "de": "Vanille oder Schokolade.",
+            "fr": "Vanille ou chocolat.",
+            "nl": "Vanille of chocolade.",
+            "uk": "Ваніль або шоколад."
+          }
+        },
+        {
+          "p": "3,50",
+          "alg": [
+            "lacteos"
+          ],
+          "n": {
+            "es": "Cappuccino con nata",
+            "en": "Cappuccino with cream",
+            "de": "Cappuccino mit Sahne",
+            "fr": "Cappuccino chantilly",
+            "nl": "Cappuccino met slagroom",
+            "uk": "Капучино з вершками"
+          },
+          "d": {
+            "es": "Con nata montada.",
+            "en": "With whipped cream.",
+            "de": "Mit Schlagsahne.",
+            "fr": "Avec chantilly.",
+            "nl": "Met slagroom.",
+            "uk": "Зі збитими вершками."
+          }
+        }
+      ]
+    }
+  ]
+};
+
+const UI = {
+  es:{tagline:"Tapas, cócteles y buen fútbol",reviews:"Reseñas en Google",filterLabel:"Ocultar platos con",aGluten:"Gluten",aLact:"Lácteos",aNuts:"Frutos secos",aEgg:"Huevo",aFish:"Pescado",aCrust:"Crustáceos",aSulf:"Sulfitos",legal:"Información de alérgenos según el Reglamento (UE) 1169/2011. Consulte al personal antes de pedir si tiene alguna alergia o intolerancia.",hours:"Horario",hoursVal:"Todos los días · consulta horario de partidos",where:"Dónde",book:"Reservas",sign:"Ven a ver el partido con nosotros.",navCall:"Reservar",navMap:"Cómo llegar",navRev:"Reseña",pop:"Popular"},
+  en:{tagline:"Tapas, cocktails & live football",reviews:"Reviews on Google",filterLabel:"Hide dishes containing",aGluten:"Gluten",aLact:"Dairy",aNuts:"Nuts",aEgg:"Egg",aFish:"Fish",aCrust:"Shellfish",aSulf:"Sulphites",legal:"Allergen information under Regulation (EU) 1169/2011. Please tell our staff about any allergy or intolerance before ordering.",hours:"Hours",hoursVal:"Open daily · check match schedule",where:"Where",book:"Bookings",sign:"Come watch the match with us.",navCall:"Book a table",navMap:"Directions",navRev:"Review",pop:"Popular"},
+  de:{tagline:"Tapas, Cocktails & Live-Fußball",reviews:"Bewertungen bei Google",filterLabel:"Gerichte ausblenden mit",aGluten:"Gluten",aLact:"Milch",aNuts:"Nüsse",aEgg:"Ei",aFish:"Fisch",aCrust:"Krebstiere",aSulf:"Sulfite",legal:"Allergenangaben gemäß Verordnung (EU) 1169/2011. Bitte informieren Sie unser Personal vor der Bestellung über Allergien oder Unverträglichkeiten.",hours:"Öffnungszeiten",hoursVal:"Täglich geöffnet · Spielplan beachten",where:"Adresse",book:"Reservierung",sign:"Schau das Spiel bei uns.",navCall:"Reservieren",navMap:"Route",navRev:"Bewerten",pop:"Beliebt"},
+  fr:{tagline:"Tapas, cocktails & foot en direct",reviews:"Avis sur Google",filterLabel:"Masquer les plats avec",aGluten:"Gluten",aLact:"Lait",aNuts:"Fruits à coque",aEgg:"Œuf",aFish:"Poisson",aCrust:"Crustacés",aSulf:"Sulfites",legal:"Informations sur les allergènes selon le règlement (UE) 1169/2011. Signalez toute allergie ou intolérance à notre équipe avant de commander.",hours:"Horaires",hoursVal:"Ouvert tous les jours · voir calendrier des matchs",where:"Adresse",book:"Réservations",sign:"Venez voir le match chez nous.",navCall:"Réserver",navMap:"Itinéraire",navRev:"Avis",pop:"Populaire"},
+  nl:{tagline:"Tapas, cocktails & live voetbal",reviews:"Recensies op Google",filterLabel:"Verberg gerechten met",aGluten:"Gluten",aLact:"Zuivel",aNuts:"Noten",aEgg:"Ei",aFish:"Vis",aCrust:"Schaaldieren",aSulf:"Sulfieten",legal:"Allergeneninformatie volgens Verordening (EU) 1169/2011. Meld allergieën of intoleranties aan ons personeel voordat u bestelt.",hours:"Openingstijden",hoursVal:"Dagelijks open · bekijk wedstrijdschema",where:"Adres",book:"Reserveren",sign:"Kom de wedstrijd bij ons kijken.",navCall:"Reserveren",navMap:"Route",navRev:"Recensie",pop:"Populair"},
+  uk:{tagline:"Тапас, коктейлі та футбол",reviews:"Відгуки в Google",filterLabel:"Сховати страви з",aGluten:"Глютен",aLact:"Молочне",aNuts:"Горіхи",aEgg:"Яйце",aFish:"Риба",aCrust:"Ракоподібні",aSulf:"Сульфіти",legal:"Інформація про алергени згідно з Регламентом (ЄС) 1169/2011. Повідомте персонал про алергію чи непереносимість перед замовленням.",hours:"Години роботи",hoursVal:"Щодня · дивись розклад матчів",where:"Адреса",book:"Бронювання",sign:"Приходь дивитися матч до нас.",navCall:"Бронювати",navMap:"Маршрут",navRev:"Відгук",pop:"Популярне"},
+};
+
+const ALG_NAMES = {
+  gluten:{es:"Gluten",en:"Gluten",de:"Gluten",fr:"Gluten",nl:"Gluten",uk:"Глютен"},
+  lacteos:{es:"Lácteos",en:"Dairy",de:"Milch",fr:"Lait",nl:"Zuivel",uk:"Молочне"},
+  frutos:{es:"Frutos secos",en:"Nuts",de:"Nüsse",fr:"Fruits à coque",nl:"Noten",uk:"Горіхи"},
+  huevo:{es:"Huevo",en:"Egg",de:"Ei",fr:"Œuf",nl:"Ei",uk:"Яйце"},
+  pescado:{es:"Pescado",en:"Fish",de:"Fisch",fr:"Poisson",nl:"Vis",uk:"Риба"},
+  crustaceos:{es:"Crustáceos",en:"Shellfish",de:"Krebstiere",fr:"Crustacés",nl:"Schaaldieren",uk:"Ракоподібні"},
+  sulfitos:{es:"Sulfitos",en:"Sulphites",de:"Sulfite",fr:"Sulfites",nl:"Sulfieten",uk:"Сульфіти"},
+};
+
+const SUPPORTED = ["es","en","de","fr","nl","uk"];
+let lang = "es";
+let hidden = new Set();
+
+function detectLang(){
+  const q = new URLSearchParams(location.search).get("lang");
+  if(q && SUPPORTED.includes(q)) return q;
+  for(const l of (navigator.languages||[navigator.language||"es"])){
+    const code = l.slice(0,2).toLowerCase();
+    if(SUPPORTED.includes(code)) return code;
+  }
+  return "es";
+}
+
+function renderMenu(){
+  const root = document.getElementById("menu");
+  root.innerHTML = "";
+  DATA.sections.forEach(sec=>{
+    const el = document.createElement("section");
+    el.className = "sec";
+    el.innerHTML = `<div class="sec-head"><h2>${sec.name[lang]}</h2><div class="rule"></div></div>
+      <p class="sec-note">${sec.note[lang]}</p>`;
+    sec.items.forEach(it=>{
+      const wilt = it.alg.some(a=>hidden.has(a));
+      const tags = it.alg.map(a=>`<span>${ALG_NAMES[a][lang]}</span>`).join("");
+      const pop = it.pop ? `<span class="badge">${UI[lang].pop}</span>` : "";
+      const d = document.createElement("article");
+      d.className = "item" + (wilt ? " wilt" : "");
+      d.innerHTML = `<div class="item-top">
+          <span class="item-name">${it.n[lang]}</span>${pop}
+          <span class="dots"></span><span class="price">${it.p} €</span>
+        </div>
+        <p class="desc">${it.d[lang]}</p>
+        ${tags ? `<div class="alg">${tags}</div>` : ""}`;
+      el.appendChild(d);
+    });
+    root.appendChild(el);
+  });
+}
+
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i]").forEach(el=>{
+    const key = el.dataset.i;
+    if(UI[lang][key]) el.textContent = UI[lang][key];
+  });
+  document.querySelectorAll(".langs button").forEach(b=>
+    b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+  renderMenu();
+}
+
+document.querySelectorAll(".langs button").forEach(b=>{
+  b.addEventListener("click",()=>{ lang = b.dataset.lang; applyLang(); track("lang_"+lang); });
+});
+
+document.querySelectorAll(".filter button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    const a = b.dataset.alg;
+    hidden.has(a) ? hidden.delete(a) : hidden.add(a);
+    b.setAttribute("aria-pressed", String(hidden.has(a)));
+    renderMenu();
+    track("filter_"+a);
+  });
+});
+
+/* Заглушка аналітики — сюди підключається Plausible/Umami */
+function track(ev){
+  if(window.plausible) window.plausible(ev);
+  console.log("[track]", ev);
+}
+document.querySelectorAll("[data-track]").forEach(a=>
+  a.addEventListener("click",()=>track(a.dataset.track)));
+
+/* Номер столу з мітки: ?t=7 */
+const table = new URLSearchParams(location.search).get("t");
+if(table) track("table_"+table);
+
+lang = detectLang();
+applyLang();
+</script>
+</body>
+</html>
