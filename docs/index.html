@@ -160,6 +160,17 @@ main{padding-top:16px}
   font-weight:700;align-self:center
 }
 
+/* ---------- add-to-picks button ---------- */
+.item.picked{border-color:rgba(198,39,58,.65)}
+.add-btn{
+  width:26px;height:26px;flex-shrink:0;align-self:center;padding:0;
+  border-radius:999px;border:1px solid rgba(198,39,58,.45);
+  background:transparent;color:var(--moss);font-size:15px;line-height:1;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s ease
+}
+.add-btn:hover{background:rgba(198,39,58,.14)}
+.add-btn[aria-pressed="true"]{background:var(--moss);color:var(--sand);border-color:var(--moss)}
+
 /* ---------- legal ---------- */
 .legal{
   margin-top:46px;padding:20px 0;border-top:1px solid var(--line);
@@ -186,15 +197,54 @@ main{padding-top:16px}
   border:1px solid rgba(91,107,49,.2);border-radius:999px;padding:6px;
   box-shadow:0 14px 34px -14px rgba(46,42,32,.4);
 }
-.bar a{
+.bar a,.bar button{
   display:flex;flex-direction:column;align-items:center;gap:4px;
   padding:9px 15px;text-decoration:none;color:var(--ink-dim);border-radius:999px;
-  font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;transition:.2s ease
+  font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;transition:.2s ease;
+  background:none;border:none;font-family:var(--body);cursor:pointer;position:relative
 }
-.bar a:hover{background:rgba(91,107,49,.12);color:var(--ink)}
-.bar a svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5}
+.bar a:hover,.bar button:hover{background:rgba(91,107,49,.12);color:var(--ink)}
+.bar a svg,.bar button svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5}
 .bar a.primary{background:var(--moss);color:var(--sand)}
 .bar a.primary:hover{background:var(--moss-deep);color:var(--sand)}
+.bar .count{
+  position:absolute;top:2px;right:6px;background:var(--moss);color:var(--sand);
+  font-size:9px;font-weight:800;min-width:15px;height:15px;border-radius:999px;
+  display:flex;align-items:center;justify-content:center;padding:0 3px
+}
+.bar .count:empty{display:none}
+
+/* ---------- picks overlay ---------- */
+.cart-overlay{
+  position:fixed;inset:0;z-index:20;background:rgba(14,11,12,.72);
+  display:flex;align-items:flex-end;justify-content:center
+}
+.cart-overlay.hidden{display:none}
+.cart-panel{
+  width:100%;max-width:620px;background:var(--bg);color:var(--ink);
+  border:1px solid var(--line);border-bottom:none;border-radius:22px 22px 0 0;
+  padding:22px 22px calc(20px + env(safe-area-inset-bottom));
+  max-height:78vh;overflow-y:auto
+}
+.cart-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.cart-head h3{font-family:var(--display);font-weight:500;font-size:22px}
+.cart-x{background:none;border:none;color:var(--ink-dim);font-size:22px;line-height:1;cursor:pointer;padding:4px 6px}
+.cart-empty{color:var(--ink-dim);font-size:14px;text-align:center;padding:24px 0}
+.cart-row{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+.cart-row .name{flex:1;font-family:var(--display);font-size:16px}
+.cart-row .price{color:var(--moss);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cart-row .rm{background:none;border:none;color:var(--ink-dim);font-size:20px;line-height:1;cursor:pointer;padding:4px 6px}
+.cart-total{
+  display:flex;justify-content:space-between;font-family:var(--display);font-size:18px;
+  margin-top:14px;padding-top:14px;border-top:1px solid var(--line)
+}
+.cart-total b{color:var(--moss)}
+.cart-actions{display:flex;gap:10px;margin-top:20px}
+.cart-actions button{
+  flex:1;padding:12px;border-radius:999px;border:1px solid var(--sage);
+  background:transparent;color:var(--ink);font-weight:600;font-family:var(--body);cursor:pointer
+}
+.cart-actions .primary{background:var(--moss);border-color:var(--moss);color:var(--sand)}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -274,7 +324,22 @@ main{padding-top:16px}
     <svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8L3.5 9.7l5.9-.9z"/></svg>
     <span data-i="navRev">Reseña</span>
   </a>
+  <button type="button" id="cartBtn" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24"><path d="M9 6h10M9 12h10M9 18h10"/><path d="M4.5 6l1 1 2-2M4.5 12l1 1 2-2M4.5 18l1 1 2-2"/></svg>
+    <span data-i="navCart">Mi selección</span>
+    <span class="count" id="cartCount"></span>
+  </button>
 </nav>
+
+<div class="cart-overlay hidden" id="cartOverlay" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+  <div class="cart-panel">
+    <div class="cart-head">
+      <h3 id="cartTitle" data-i="cartTitle">Mi selección</h3>
+      <button type="button" class="cart-x" id="cartClose" aria-label="Cerrar">&times;</button>
+    </div>
+    <div id="cartBody"></div>
+  </div>
+</div>
 
 <script>
 /* ============================================================
@@ -3126,13 +3191,13 @@ const DATA = {
 };
 
 const UI = {
-  es:{tagline:"Tapas, cócteles y buen fútbol",reviews:"Reseñas en Google",filterLabel:"Ocultar platos con",aGluten:"Gluten",aLact:"Lácteos",aNuts:"Frutos secos",aEgg:"Huevo",aFish:"Pescado",aCrust:"Crustáceos",aSulf:"Sulfitos",legal:"Información de alérgenos según el Reglamento (UE) 1169/2011. Consulte al personal antes de pedir si tiene alguna alergia o intolerancia.",hours:"Horario",hoursVal:"Todos los días · consulta horario de partidos",where:"Dónde",book:"Reservas",sign:"Ven a ver el partido con nosotros.",navCall:"Reservar",navMap:"Cómo llegar",navRev:"Reseña",pop:"Popular"},
-  en:{tagline:"Tapas, cocktails & live football",reviews:"Reviews on Google",filterLabel:"Hide dishes containing",aGluten:"Gluten",aLact:"Dairy",aNuts:"Nuts",aEgg:"Egg",aFish:"Fish",aCrust:"Shellfish",aSulf:"Sulphites",legal:"Allergen information under Regulation (EU) 1169/2011. Please tell our staff about any allergy or intolerance before ordering.",hours:"Hours",hoursVal:"Open daily · check match schedule",where:"Where",book:"Bookings",sign:"Come watch the match with us.",navCall:"Book a table",navMap:"Directions",navRev:"Review",pop:"Popular"},
-  de:{tagline:"Tapas, Cocktails & Live-Fußball",reviews:"Bewertungen bei Google",filterLabel:"Gerichte ausblenden mit",aGluten:"Gluten",aLact:"Milch",aNuts:"Nüsse",aEgg:"Ei",aFish:"Fisch",aCrust:"Krebstiere",aSulf:"Sulfite",legal:"Allergenangaben gemäß Verordnung (EU) 1169/2011. Bitte informieren Sie unser Personal vor der Bestellung über Allergien oder Unverträglichkeiten.",hours:"Öffnungszeiten",hoursVal:"Täglich geöffnet · Spielplan beachten",where:"Adresse",book:"Reservierung",sign:"Schau das Spiel bei uns.",navCall:"Reservieren",navMap:"Route",navRev:"Bewerten",pop:"Beliebt"},
-  fr:{tagline:"Tapas, cocktails & foot en direct",reviews:"Avis sur Google",filterLabel:"Masquer les plats avec",aGluten:"Gluten",aLact:"Lait",aNuts:"Fruits à coque",aEgg:"Œuf",aFish:"Poisson",aCrust:"Crustacés",aSulf:"Sulfites",legal:"Informations sur les allergènes selon le règlement (UE) 1169/2011. Signalez toute allergie ou intolérance à notre équipe avant de commander.",hours:"Horaires",hoursVal:"Ouvert tous les jours · voir calendrier des matchs",where:"Adresse",book:"Réservations",sign:"Venez voir le match chez nous.",navCall:"Réserver",navMap:"Itinéraire",navRev:"Avis",pop:"Populaire"},
-  nl:{tagline:"Tapas, cocktails & live voetbal",reviews:"Recensies op Google",filterLabel:"Verberg gerechten met",aGluten:"Gluten",aLact:"Zuivel",aNuts:"Noten",aEgg:"Ei",aFish:"Vis",aCrust:"Schaaldieren",aSulf:"Sulfieten",legal:"Allergeneninformatie volgens Verordening (EU) 1169/2011. Meld allergieën of intoleranties aan ons personeel voordat u bestelt.",hours:"Openingstijden",hoursVal:"Dagelijks open · bekijk wedstrijdschema",where:"Adres",book:"Reserveren",sign:"Kom de wedstrijd bij ons kijken.",navCall:"Reserveren",navMap:"Route",navRev:"Recensie",pop:"Populair"},
-  it:{tagline:"Tapas, cocktail e buon calcio",reviews:"Recensioni su Google",filterLabel:"Nascondi piatti con",aGluten:"Glutine",aLact:"Latticini",aNuts:"Frutta a guscio",aEgg:"Uovo",aFish:"Pesce",aCrust:"Crostacei",aSulf:"Solfiti",legal:"Informazioni sugli allergeni secondo il Regolamento (UE) 1169/2011. Informi il personale di eventuali allergie o intolleranze prima di ordinare.",hours:"Orario",hoursVal:"Aperto tutti i giorni · consulta il calendario delle partite",where:"Dove",book:"Prenotazioni",sign:"Vieni a vedere la partita con noi.",navCall:"Prenota",navMap:"Come arrivare",navRev:"Recensione",pop:"Popolare"},
-  uk:{tagline:"Тапас, коктейлі та футбол",reviews:"Відгуки в Google",filterLabel:"Сховати страви з",aGluten:"Глютен",aLact:"Молочне",aNuts:"Горіхи",aEgg:"Яйце",aFish:"Риба",aCrust:"Ракоподібні",aSulf:"Сульфіти",legal:"Інформація про алергени згідно з Регламентом (ЄС) 1169/2011. Повідомте персонал про алергію чи непереносимість перед замовленням.",hours:"Години роботи",hoursVal:"Щодня · дивись розклад матчів",where:"Адреса",book:"Бронювання",sign:"Приходь дивитися матч до нас.",navCall:"Бронювати",navMap:"Маршрут",navRev:"Відгук",pop:"Популярне"},
+  es:{tagline:"Tapas, cócteles y buen fútbol",reviews:"Reseñas en Google",filterLabel:"Ocultar platos con",aGluten:"Gluten",aLact:"Lácteos",aNuts:"Frutos secos",aEgg:"Huevo",aFish:"Pescado",aCrust:"Crustáceos",aSulf:"Sulfitos",legal:"Información de alérgenos según el Reglamento (UE) 1169/2011. Consulte al personal antes de pedir si tiene alguna alergia o intolerancia.",hours:"Horario",hoursVal:"Todos los días · consulta horario de partidos",where:"Dónde",book:"Reservas",sign:"Ven a ver el partido con nosotros.",navCall:"Reservar",navMap:"Cómo llegar",navRev:"Reseña",pop:"Popular",navCart:"Mi selección",cartTitle:"Mi selección",cartEmpty:"Aún no has elegido nada. Toca + junto a un plato.",cartTotal:"Total",cartClear:"Vaciar todo",cartClose:"Cerrar",addLabel:"Añadir a mi selección",removeLabel:"Quitar"},
+  en:{tagline:"Tapas, cocktails & live football",reviews:"Reviews on Google",filterLabel:"Hide dishes containing",aGluten:"Gluten",aLact:"Dairy",aNuts:"Nuts",aEgg:"Egg",aFish:"Fish",aCrust:"Shellfish",aSulf:"Sulphites",legal:"Allergen information under Regulation (EU) 1169/2011. Please tell our staff about any allergy or intolerance before ordering.",hours:"Hours",hoursVal:"Open daily · check match schedule",where:"Where",book:"Bookings",sign:"Come watch the match with us.",navCall:"Book a table",navMap:"Directions",navRev:"Review",pop:"Popular",navCart:"My picks",cartTitle:"My picks",cartEmpty:"Nothing chosen yet. Tap + next to a dish.",cartTotal:"Total",cartClear:"Clear all",cartClose:"Close",addLabel:"Add to my picks",removeLabel:"Remove"},
+  de:{tagline:"Tapas, Cocktails & Live-Fußball",reviews:"Bewertungen bei Google",filterLabel:"Gerichte ausblenden mit",aGluten:"Gluten",aLact:"Milch",aNuts:"Nüsse",aEgg:"Ei",aFish:"Fisch",aCrust:"Krebstiere",aSulf:"Sulfite",legal:"Allergenangaben gemäß Verordnung (EU) 1169/2011. Bitte informieren Sie unser Personal vor der Bestellung über Allergien oder Unverträglichkeiten.",hours:"Öffnungszeiten",hoursVal:"Täglich geöffnet · Spielplan beachten",where:"Adresse",book:"Reservierung",sign:"Schau das Spiel bei uns.",navCall:"Reservieren",navMap:"Route",navRev:"Bewerten",pop:"Beliebt",navCart:"Meine Auswahl",cartTitle:"Meine Auswahl",cartEmpty:"Noch nichts ausgewählt. Tippe auf + bei einem Gericht.",cartTotal:"Gesamt",cartClear:"Alles leeren",cartClose:"Schließen",addLabel:"Zur Auswahl hinzufügen",removeLabel:"Entfernen"},
+  fr:{tagline:"Tapas, cocktails & foot en direct",reviews:"Avis sur Google",filterLabel:"Masquer les plats avec",aGluten:"Gluten",aLact:"Lait",aNuts:"Fruits à coque",aEgg:"Œuf",aFish:"Poisson",aCrust:"Crustacés",aSulf:"Sulfites",legal:"Informations sur les allergènes selon le règlement (UE) 1169/2011. Signalez toute allergie ou intolérance à notre équipe avant de commander.",hours:"Horaires",hoursVal:"Ouvert tous les jours · voir calendrier des matchs",where:"Adresse",book:"Réservations",sign:"Venez voir le match chez nous.",navCall:"Réserver",navMap:"Itinéraire",navRev:"Avis",pop:"Populaire",navCart:"Ma sélection",cartTitle:"Ma sélection",cartEmpty:"Rien choisi pour l'instant. Touchez + à côté d'un plat.",cartTotal:"Total",cartClear:"Tout effacer",cartClose:"Fermer",addLabel:"Ajouter à ma sélection",removeLabel:"Retirer"},
+  nl:{tagline:"Tapas, cocktails & live voetbal",reviews:"Recensies op Google",filterLabel:"Verberg gerechten met",aGluten:"Gluten",aLact:"Zuivel",aNuts:"Noten",aEgg:"Ei",aFish:"Vis",aCrust:"Schaaldieren",aSulf:"Sulfieten",legal:"Allergeneninformatie volgens Verordening (EU) 1169/2011. Meld allergieën of intoleranties aan ons personeel voordat u bestelt.",hours:"Openingstijden",hoursVal:"Dagelijks open · bekijk wedstrijdschema",where:"Adres",book:"Reserveren",sign:"Kom de wedstrijd bij ons kijken.",navCall:"Reserveren",navMap:"Route",navRev:"Recensie",pop:"Populair",navCart:"Mijn keuze",cartTitle:"Mijn keuze",cartEmpty:"Nog niets gekozen. Tik op + naast een gerecht.",cartTotal:"Totaal",cartClear:"Alles wissen",cartClose:"Sluiten",addLabel:"Toevoegen aan mijn keuze",removeLabel:"Verwijderen"},
+  it:{tagline:"Tapas, cocktail e buon calcio",reviews:"Recensioni su Google",filterLabel:"Nascondi piatti con",aGluten:"Glutine",aLact:"Latticini",aNuts:"Frutta a guscio",aEgg:"Uovo",aFish:"Pesce",aCrust:"Crostacei",aSulf:"Solfiti",legal:"Informazioni sugli allergeni secondo il Regolamento (UE) 1169/2011. Informi il personale di eventuali allergie o intolleranze prima di ordinare.",hours:"Orario",hoursVal:"Aperto tutti i giorni · consulta il calendario delle partite",where:"Dove",book:"Prenotazioni",sign:"Vieni a vedere la partita con noi.",navCall:"Prenota",navMap:"Come arrivare",navRev:"Recensione",pop:"Popolare",navCart:"La mia selezione",cartTitle:"La mia selezione",cartEmpty:"Non hai ancora scelto nulla. Tocca + accanto a un piatto.",cartTotal:"Totale",cartClear:"Svuota tutto",cartClose:"Chiudi",addLabel:"Aggiungi alla selezione",removeLabel:"Rimuovi"},
+  uk:{tagline:"Тапас, коктейлі та футбол",reviews:"Відгуки в Google",filterLabel:"Сховати страви з",aGluten:"Глютен",aLact:"Молочне",aNuts:"Горіхи",aEgg:"Яйце",aFish:"Риба",aCrust:"Ракоподібні",aSulf:"Сульфіти",legal:"Інформація про алергени згідно з Регламентом (ЄС) 1169/2011. Повідомте персонал про алергію чи непереносимість перед замовленням.",hours:"Години роботи",hoursVal:"Щодня · дивись розклад матчів",where:"Адреса",book:"Бронювання",sign:"Приходь дивитися матч до нас.",navCall:"Бронювати",navMap:"Маршрут",navRev:"Відгук",pop:"Популярне",navCart:"Мій вибір",cartTitle:"Мій вибір",cartEmpty:"Ще нічого не обрано. Тисни «+» біля страви.",cartTotal:"Разом",cartClear:"Очистити все",cartClose:"Закрити",addLabel:"Додати до вибору",removeLabel:"Прибрати"},
 };
 
 const ALG_NAMES = {
@@ -3148,6 +3213,17 @@ const ALG_NAMES = {
 const SUPPORTED = ["es","en","de","fr","nl","it","uk"];
 let lang = "es";
 let hidden = new Set();
+
+const ITEM_INDEX = {};
+DATA.sections.forEach(sec=>{
+  sec.items.forEach((it,idx)=>{ ITEM_INDEX[sec.id+"-"+idx] = it; });
+});
+
+let picked = new Set();
+try{ picked = new Set(JSON.parse(localStorage.getItem("picked")||"[]")); }catch(e){}
+function savePicked(){
+  try{ localStorage.setItem("picked", JSON.stringify([...picked])); }catch(e){}
+}
 
 function detectLang(){
   const q = new URLSearchParams(location.search).get("lang");
@@ -3167,15 +3243,18 @@ function renderMenu(){
     el.className = "sec";
     el.innerHTML = `<div class="sec-head"><h2>${sec.name[lang]}</h2><div class="rule"></div></div>
       <p class="sec-note">${sec.note[lang]}</p>`;
-    sec.items.forEach(it=>{
+    sec.items.forEach((it,idx)=>{
+      const id = sec.id+"-"+idx;
+      const isPicked = picked.has(id);
       const wilt = it.alg.some(a=>hidden.has(a));
       const tags = it.alg.map(a=>`<span>${ALG_NAMES[a][lang]}</span>`).join("");
       const pop = it.pop ? `<span class="badge">${UI[lang].pop}</span>` : "";
       const d = document.createElement("article");
-      d.className = "item" + (wilt ? " wilt" : "");
+      d.className = "item" + (wilt ? " wilt" : "") + (isPicked ? " picked" : "");
       d.innerHTML = `<div class="item-top">
           <span class="item-name">${it.n[lang]}</span>${pop}
           <span class="dots"></span><span class="price">${it.p} €</span>
+          <button type="button" class="add-btn" data-id="${id}" aria-pressed="${isPicked}" aria-label="${UI[lang].addLabel}">${isPicked ? "✓" : "+"}</button>
         </div>
         <p class="desc">${it.d[lang]}</p>
         ${tags ? `<div class="alg">${tags}</div>` : ""}`;
@@ -3194,6 +3273,8 @@ function applyLang(){
   document.querySelectorAll(".langs button").forEach(b=>
     b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
   renderMenu();
+  updateCartCount();
+  if(!document.getElementById("cartOverlay").classList.contains("hidden")) renderCart();
 }
 
 document.querySelectorAll(".langs button").forEach(b=>{
@@ -3208,6 +3289,71 @@ document.querySelectorAll(".filter button").forEach(b=>{
     renderMenu();
     track("filter_"+a);
   });
+});
+
+function updateCartCount(){
+  document.getElementById("cartCount").textContent = picked.size ? String(picked.size) : "";
+}
+
+function fmtPrice(n){ return n.toFixed(2).replace(".", ","); }
+
+function renderCart(){
+  const body = document.getElementById("cartBody");
+  if(!picked.size){
+    body.innerHTML = `<p class="cart-empty">${UI[lang].cartEmpty}</p>`;
+    return;
+  }
+  let total = 0;
+  const rows = [...picked].map(id=>{
+    const it = ITEM_INDEX[id];
+    if(!it) return "";
+    total += parseFloat(String(it.p).replace(",", ".")) || 0;
+    return `<div class="cart-row">
+        <span class="name">${it.n[lang]}</span>
+        <span class="price">${it.p} €</span>
+        <button type="button" class="rm" data-id="${id}" aria-label="${UI[lang].removeLabel}">&times;</button>
+      </div>`;
+  }).join("");
+  body.innerHTML = rows +
+    `<div class="cart-total"><span>${UI[lang].cartTotal}</span><b>${fmtPrice(total)} €</b></div>
+     <div class="cart-actions">
+       <button type="button" id="cartClear">${UI[lang].cartClear}</button>
+       <button type="button" class="primary" id="cartDone">${UI[lang].cartClose}</button>
+     </div>`;
+}
+
+function openCart(){ renderCart(); document.getElementById("cartOverlay").classList.remove("hidden"); }
+function closeCart(){ document.getElementById("cartOverlay").classList.add("hidden"); }
+
+document.getElementById("cartBtn").addEventListener("click",()=>{ openCart(); track("cart_open"); });
+document.getElementById("cartClose").addEventListener("click", closeCart);
+document.getElementById("cartOverlay").addEventListener("click", e=>{
+  if(e.target.id === "cartOverlay") closeCart();
+});
+document.addEventListener("keydown", e=>{ if(e.key === "Escape") closeCart(); });
+
+document.getElementById("cartBody").addEventListener("click", e=>{
+  const rm = e.target.closest(".rm");
+  if(rm){
+    picked.delete(rm.dataset.id);
+    savePicked(); renderMenu(); updateCartCount(); renderCart();
+    return;
+  }
+  if(e.target.id === "cartClear"){
+    picked.clear();
+    savePicked(); renderMenu(); updateCartCount(); renderCart();
+    return;
+  }
+  if(e.target.id === "cartDone") closeCart();
+});
+
+document.getElementById("menu").addEventListener("click", e=>{
+  const btn = e.target.closest(".add-btn");
+  if(!btn) return;
+  const id = btn.dataset.id;
+  picked.has(id) ? picked.delete(id) : picked.add(id);
+  savePicked(); renderMenu(); updateCartCount();
+  track(picked.has(id) ? "pick_add" : "pick_remove");
 });
 
 /* Заглушка аналітики — сюди підключається Plausible/Umami */
