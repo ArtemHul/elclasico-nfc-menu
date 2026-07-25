@@ -62,7 +62,9 @@ button:hover{background:var(--deep)}
 const $ = s => document.querySelector(s);
 
 if (location.protocol.startsWith("http")) {
-  $("#url").value = location.href.replace(/qr\.html.*$/, "");
+  // Cloudflare Pages віддає цю сторінку як /qr, GitHub Pages — як /qr.html.
+  // Зрізаємо обидва варіанти разом із ?query і #hash, щоб лишився корінь меню.
+  $("#url").value = location.href.replace(/qr(\.html)?([?#].*)?$/, "");
 }
 
 function build(){
