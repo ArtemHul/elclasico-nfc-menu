@@ -1,43 +1,39 @@
 # El Clásico · NFC Menu
 
 Онлайн-меню для **El Clásico Football Bar** — C. de la Virgen del Socorro, 39, 03002 Alicante.
-Одна сторінка, вісім мов, фільтр алергенів, QR і NFC. Хостинг — GitHub Pages, безкоштовно.
+Одна сторінка, вісім мов, фільтр алергенів, QR і NFC. Хостинг — Cloudflare Pages, безкоштовно.
 
 Меню оцифроване з фото двох карт (крейдяної дошки + друкованого буклета).
 Дублікати страв усунені, все зведене в одну карту зі 104 позиціями у 14 розділах.
 
 ---
 
-## Запуск за 5 хвилин
+## Де живе сайт
 
-**1. Створи репозиторій**
+**https://elclasico-nfc-menu.pages.dev**
 
-На GitHub: New repository → назва `elclasico-nfc-menu` → Public → Create.
+Деплой автоматичний: кожен push у `main` — і Cloudflare сам пересобирає та публікує
+сайт за 1–3 хвилини. Робити нічого не треба.
 
-**2. Залий файли**
+Налаштування збірки в панелі Cloudflare (Workers & Pages → проєкт → Settings → Build):
 
-```bash
-./deploy.sh ТВІЙ_НІК
-```
+| Поле | Значення |
+|---|---|
+| Build command | `python3 scripts/build.py` |
+| Build output directory | `docs` |
+| Framework preset | None |
 
-Або вручну:
+Версію Python задає файл `.python-version` у корені.
 
-```bash
-git init && git add . && git commit -m "El Clásico NFC Menu"
-git branch -M main
-git remote add origin https://github.com/ТВІЙ_НІК/elclasico-nfc-menu.git
-git push -u origin main
-```
+Той самий сайт паралельно лишається на GitHub Pages як запасний:
+`https://artemhul.github.io/elclasico-nfc-menu/`
 
-**3. Увімкни Pages**
+**QR для столів**
 
-Settings → Pages → Source: **GitHub Actions** → Save.
+Відкрий **https://elclasico-nfc-menu.pages.dev/qr** — адреса меню підставиться сама,
+лишиться вказати кількість столів і надрукувати.
 
-Сайт: `https://ТВІЙ_НІК.github.io/elclasico-nfc-menu/`
-
-**4. QR для столів**
-
-Відкрий `.../qr.html`, встав адресу, вкажи столи, друкуй.
+Зверни увагу: саме `/qr`, без `.html`. Cloudflare зрізає розширення в адресах.
 
 ---
 
