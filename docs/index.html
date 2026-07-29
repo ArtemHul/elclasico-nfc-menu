@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>El Clásico · Football Bar · Alicante</title>
 <meta name="description" content="Brasa, pizza de leña y pasta. Calle del Dr. Bergez 59, Alicante.">
-<meta name="theme-color" content="#0E0B0C">
+<meta name="theme-color" content="#EBDFCF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --sand:#F4ECE2;        /* світлий крем — фон карток-текст */
-  --oat:#211A1B;         /* картка: майже чорний з бордовим підтоном */
-  --ink:#F4ECE2;         /* основний текст — кремовий */
-  --ink-dim:#E0D2CC;     /* другорядний текст — освітлено для читабельності */
-  --moss:#C6273A;        /* акцент — клубно-червоний (ціни, назви розділів) */
+  --sand:#FFF9F2;        /* майже білий — текст на червоних плашках */
+  --oat:#FBF6EF;         /* картка: тепла кремова, світліша за фон */
+  --ink:#2A1F1B;         /* основний текст — темна кава */
+  --ink-dim:#6E5B4E;     /* другорядний текст — приглушений коричневий */
+  --moss:#B01F31;        /* акцент — клубно-червоний (ціни, назви розділів) */
   --moss-deep:#7E1622;   /* глибокий бордовий */
-  --clay:#C6273A;        /* банер / бейдж */
-  --sage:#6E3038;        /* рамка тегів алергенів */
-  --bg:#0E0B0C;          /* фон сторінки — вугільний */
-  --line:rgba(198,39,58,.30);
+  --clay:#C6273A;        /* банер / бейдж — заливка під білий текст */
+  --sage:#CBB49C;        /* рамка тегів і кнопок */
+  --bg:#EBDFCF;          /* фон сторінки — світло-кавовий */
+  --line:rgba(90,62,48,.22);
   --display:"Oswald",Georgia,serif;
   --body:"Epilogue",system-ui,sans-serif;
 }
@@ -28,7 +28,7 @@
 html{-webkit-text-size-adjust:100%}
 body{
   background:var(--bg);
-  background-image:radial-gradient(120% 60% at 50% -10%, rgba(126,22,34,.55) 0%, rgba(14,11,12,0) 60%);
+  background-image:radial-gradient(120% 55% at 50% -10%, rgba(255,250,242,.6) 0%, rgba(235,223,207,0) 55%);
   background-attachment:fixed;
   color:var(--ink);
   font-family:var(--body);
@@ -78,7 +78,7 @@ h1{
   margin:28px 0 10px
 }
 .langs button{
-  background:var(--sand);border:1px solid var(--sage);color:var(--oat);
+  background:#FFFFFF;border:1px solid var(--sage);color:var(--ink);
   font-family:var(--body);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;
   padding:9px 14px;border-radius:999px;cursor:pointer;transition:.22s ease
 }
@@ -100,7 +100,7 @@ h1{
   text-transform:uppercase;color:var(--ink-dim);margin-bottom:12px
 }
 .filter button{
-  background:transparent;border:1px solid rgba(240,205,210,.5);color:#F2E6E4;
+  background:rgba(255,255,255,.6);border:1px solid var(--sage);color:var(--ink);
   font-family:var(--body);font-size:14px;font-weight:500;padding:9px 15px;border-radius:999px;
   cursor:pointer;transition:.22s ease
 }
@@ -120,7 +120,7 @@ main{padding-top:16px}
 }
 .sec-head .rule{
   flex:1;height:8px;align-self:center;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='8'><path d='M1 4 Q7 0 13 4 T25 4' stroke='%235B6B31' stroke-width='1.4' fill='none' stroke-linecap='round'/></svg>");
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='8'><path d='M1 4 Q7 0 13 4 T25 4' stroke='%23B79A7A' stroke-width='1.4' fill='none' stroke-linecap='round'/></svg>");
   background-repeat:repeat-x;background-position:left center;opacity:.7
 }
 .sec-note{
@@ -150,8 +150,8 @@ main{padding-top:16px}
 .alg{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
 .alg span{
   font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;
-  border:1px solid rgba(240,205,210,.55);
-  color:#F6E3E6;background:rgba(198,39,58,.22);
+  border:1px solid rgba(176,31,49,.32);
+  color:#8A2333;background:rgba(198,39,58,.10);
   padding:5px 11px;border-radius:999px;font-weight:600
 }
 .badge{
@@ -194,8 +194,8 @@ main{padding-top:16px}
   position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));
   transform:translateX(-50%);z-index:10;
   display:flex;gap:2px;background:var(--oat);
-  border:1px solid rgba(91,107,49,.2);border-radius:999px;padding:6px;
-  box-shadow:0 14px 34px -14px rgba(46,42,32,.4);
+  border:1px solid rgba(90,62,48,.18);border-radius:999px;padding:6px;
+  box-shadow:0 14px 34px -14px rgba(74,52,38,.45);
 }
 .bar a,.bar button{
   display:flex;flex-direction:column;align-items:center;gap:4px;
@@ -203,7 +203,7 @@ main{padding-top:16px}
   font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;transition:.2s ease;
   background:none;border:none;font-family:var(--body);cursor:pointer;position:relative
 }
-.bar a:hover,.bar button:hover{background:rgba(91,107,49,.12);color:var(--ink)}
+.bar a:hover,.bar button:hover{background:rgba(176,31,49,.10);color:var(--ink)}
 .bar a svg,.bar button svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5}
 .bar a.primary{background:var(--moss);color:var(--sand)}
 .bar a.primary:hover{background:var(--moss-deep);color:var(--sand)}
@@ -216,7 +216,7 @@ main{padding-top:16px}
 
 /* ---------- picks overlay ---------- */
 .cart-overlay{
-  position:fixed;inset:0;z-index:20;background:rgba(14,11,12,.72);
+  position:fixed;inset:0;z-index:20;background:rgba(43,31,25,.55);
   display:flex;align-items:flex-end;justify-content:center
 }
 .cart-overlay.hidden{display:none}
